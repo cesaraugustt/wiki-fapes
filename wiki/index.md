@@ -9,6 +9,6 @@ Base de conhecimento para a FAPES.
 
 ## entidades
 
-- [Avaliador](/entidades/avaliador.md) — Especialista responsável pela análise técnica, mérito científico ou avaliação mercadológica de propostas e projetos submetidos à FAPES.
+- [Avaliador](/entidades/avaliador.md) — Especialista ou instância colegiada responsável pela análise técnica, mérito científico, relevância estratégica ou viabilidade de mercado de propostas e projetos apoiados pela FAPES.
 
 <!-- catalog:end -->

@@ -19,6 +19,7 @@ import re
 import sys
 import time
 import unicodedata
+import http.client
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -119,28 +120,57 @@ def polite_open(url, method="GET"):
         _last_request_time = time.monotonic()
 
 
-def collect(round_no):
+DEFAULT_YEARS = ["2024", "2025", "2026"]
+
+
+def collect_closed_editais(body, target_years):
+    """Extrai links apenas das tabelas dos anos selecionados em /Editais/Encerrados."""
+    found = {}
+    parts = re.split(r"Editais Encerrados\s+(\d{4})", body)
+    for i in range(1, len(parts), 2):
+        year = parts[i]
+        if year not in target_years:
+            continue
+        section_html = parts[i + 1]
+        idx = section_html.find("</table>")
+        table_html = section_html[:idx] if idx != -1 else section_html
+        p = Links()
+        p.feed(table_html)
+        for h in p.hrefs:
+            h = urllib.parse.unquote(h)
+            if re.search(r"/media/|\.pdf($|\?)", h, re.IGNORECASE) and not EXCLUDE.search(h):
+                url = urllib.parse.urljoin(BASE + "/", h)
+                if urllib.parse.urlparse(url).netloc == "fapes.es.gov.br":
+                    found.setdefault(url, "editais-encerrados")
+    return found
+
+
+def collect(round_no, target_years=None):
     """Retorna {url_absoluta: secao} com os PDFs/arquivos linkados nas páginas-semente."""
     found = {}
+    target_years = set(target_years or DEFAULT_YEARS)
     for secao, pages in ROUNDS[round_no].items():
         for page in pages:
             if round_no in SAVE_PAGES:
                 found.setdefault(BASE + page, secao)
             with polite_open(BASE + page) as r:
                 body = r.read().decode("utf-8", "replace")
-            p = Links()
-            p.feed(body)
-            for h in p.hrefs:
-                h = urllib.parse.unquote(h)
-                if re.search(r"/media/|\.pdf($|\?)", h, re.IGNORECASE) and not EXCLUDE.search(h):
-                    url = urllib.parse.urljoin(BASE + "/", h)
-                    if urllib.parse.urlparse(url).netloc == "fapes.es.gov.br":
-                        found.setdefault(url, secao)
+            if round_no == 2 and secao == "editais-encerrados":
+                found.update(collect_closed_editais(body, target_years))
+            else:
+                p = Links()
+                p.feed(body)
+                for h in p.hrefs:
+                    h = urllib.parse.unquote(h)
+                    if re.search(r"/media/|\.pdf($|\?)", h, re.IGNORECASE) and not EXCLUDE.search(h):
+                        url = urllib.parse.urljoin(BASE + "/", h)
+                        if urllib.parse.urlparse(url).netloc == "fapes.es.gov.br":
+                            found.setdefault(url, secao)
     return found
 
 
-def plan(round_no):
-    found = collect(round_no)
+def plan(round_no, target_years=None):
+    found = collect(round_no, target_years=target_years)
     items, total = [], 0
     for url, secao in sorted(found.items()):
         size, ctype = None, None
@@ -184,17 +214,25 @@ def run():
             continue
         now = datetime.now(UTC).strftime("%Y-%m-%dT%H:%M:%SZ")
         rows = [r for r in rows if r["url"] != it["url"]]  # descarta tentativa anterior com erro
-        try:
-            with polite_open(it["url"]) as r:
-                data = r.read()
-                status, ctype = r.status, r.headers.get("Content-Type")
-        except (urllib.error.URLError, TimeoutError, ConnectionError) as e:
-            code = getattr(e, "code", "")
-            rows.append({"url": it["url"], "data_coleta": now, "sha256": "", "secao": it["secao"],
-                         "tipo": "", "status": "erro", "http_status": code, "content_type": "",
-                         "bytes": "", "local_path": ""})
-            print("ERRO", code or e, it["url"])
-            save(rows)
+        data, status, ctype = None, None, None
+        for attempt in range(3):
+            try:
+                with polite_open(it["url"]) as r:
+                    data = r.read()
+                    status, ctype = r.status, r.headers.get("Content-Type")
+                break
+            except (urllib.error.URLError, TimeoutError, ConnectionError, http.client.HTTPException) as e:
+                if attempt < 2:
+                    time.sleep(3)
+                    continue
+                code = getattr(e, "code", "")
+                rows.append({"url": it["url"], "data_coleta": now, "sha256": "", "secao": it["secao"],
+                             "tipo": "", "status": "erro", "http_status": code, "content_type": "",
+                             "bytes": "", "local_path": ""})
+                print("ERRO", code or e, it["url"])
+                save(rows)
+                break
+        if data is None:
             continue
         digest = hashlib.sha256(data).hexdigest()
         path = Path(urllib.parse.urlparse(it["url"]).path)
@@ -229,5 +267,7 @@ if __name__ == "__main__":
     g.add_argument("--plan", action="store_true")
     g.add_argument("--run", action="store_true")
     ap.add_argument("--round", type=int, choices=ROUNDS, default=1)
+    ap.add_argument("--years", help="Anos dos editais encerrados separados por vírgula (padrão: 2024,2025,2026)")
     a = ap.parse_args()
-    plan(a.round) if a.plan else run()
+    years = [y.strip() for y in a.years.split(",")] if a.years else DEFAULT_YEARS
+    plan(a.round, target_years=years) if a.plan else run()
