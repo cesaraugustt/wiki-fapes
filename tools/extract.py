@@ -6,6 +6,7 @@
 """Extrai texto de raw/ para raw-text/ (derivado, fora do git).
 
   uv run tools/extract.py [--force] [PREFIXO]
+  uv run tools/extract.py --ocr [PREFIXO]     OCR só nos PDFs que saíram sem texto (requer ocrmypdf)
 
 PDFs viram texto com marcadores `[p. N]` no início de cada página, para facilitar
 o localizador das notas de rodapé. DOCX e XLSX são lidos só com a biblioteca padrão.
@@ -13,7 +14,10 @@ PDFs sem texto (digitalizados) são listados no final: precisam de OCR.
 """
 import argparse
 import re
+import shutil
+import subprocess
 import sys
+import tempfile
 import zipfile
 from html.parser import HTMLParser
 from pathlib import Path
@@ -116,10 +120,27 @@ EXTRACTORS = {".pdf": pdf_text, ".docx": docx_text, ".xlsx": xlsx_text,
               ".html": html_text, ".pptx": pptx_text}
 
 
+def is_empty(text):
+    return len(re.sub(r"\[p\. \d+\]|\s", "", text)) < 50
+
+
+def ocr_text(path):
+    """OCR via ocrmypdf (tesseract, português). Não altera o original: só lê o texto do sidecar."""
+    if not shutil.which("ocrmypdf"):
+        raise RuntimeError("ocrmypdf não instalado")
+    with tempfile.TemporaryDirectory() as tmp:
+        side = Path(tmp) / "side.txt"
+        subprocess.run(["ocrmypdf", "--force-ocr", "-l", "por", "--sidecar", str(side), str(path),
+                        str(Path(tmp) / "out.pdf")], check=True, capture_output=True)
+        pages = side.read_text(encoding="utf-8").split("\f")
+    return "\n\n".join(f"[p. {i}]\n{p.strip()}" for i, p in enumerate(pages, 1) if p.strip() or i == 1)
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("prefix", nargs="?", default="", help="só arquivos cujo caminho em raw/ começa com isto")
     ap.add_argument("--force", action="store_true", help="regerar mesmo se já existir")
+    ap.add_argument("--ocr", action="store_true", help="aplicar OCR (ocrmypdf) nos PDFs extraídos sem texto")
     a = ap.parse_args()
 
     done = skipped = 0
@@ -129,15 +150,18 @@ def main():
         if not rel.as_posix().startswith(a.prefix):
             continue
         dst = (OUT / rel).with_suffix(".txt")
-        if dst.exists() and not a.force:
+        if a.ocr:  # só PDFs já extraídos sem texto
+            if src.suffix.lower() != ".pdf" or not dst.exists() or not is_empty(dst.read_text(encoding="utf-8")):
+                continue
+        elif dst.exists() and not a.force:
             skipped += 1
             continue
         try:
-            text = EXTRACTORS[src.suffix.lower()](src)
+            text = ocr_text(src) if a.ocr else EXTRACTORS[src.suffix.lower()](src)
         except Exception as e:  # noqa: BLE001 - segue para o próximo arquivo
             failed.append((rel.as_posix(), str(e)))
             continue
-        if len(re.sub(r"\[p\. \d+\]|\s", "", text)) < 50:
+        if is_empty(text):
             empty.append(rel.as_posix())
         dst.parent.mkdir(parents=True, exist_ok=True)
         dst.write_text(text, encoding="utf-8")
