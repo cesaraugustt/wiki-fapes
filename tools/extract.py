@@ -29,6 +29,12 @@ ROOT = Path(__file__).resolve().parent.parent
 RAW, OUT = ROOT / "raw", ROOT / "raw-text"
 W = "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}"
 S = "{http://schemas.openxmlformats.org/spreadsheetml/2006/main}"
+A = "{http://schemas.openxmlformats.org/drawingml/2006/main}"
+
+
+def _extract_openxml_paras(root, ns_uri):
+    paras = ("".join(t.text or "" for t in p.iter(f"{ns_uri}t")) for p in root.iter(f"{ns_uri}p"))
+    return [p for p in paras if p.strip()]
 
 
 def pdf_text(path):
@@ -42,8 +48,7 @@ def pdf_text(path):
 def docx_text(path):
     with zipfile.ZipFile(path) as z:
         root = ET.fromstring(z.read("word/document.xml"))
-    paras = ("".join(t.text or "" for t in p.iter(f"{W}t")) for p in root.iter(f"{W}p"))
-    return "\n".join(p for p in paras if p.strip())
+    return "\n".join(_extract_openxml_paras(root, W))
 
 
 def xlsx_text(path):
@@ -53,23 +58,37 @@ def xlsx_text(path):
             sst = ET.fromstring(z.read("xl/sharedStrings.xml"))
             shared = ["".join(t.text or "" for t in si.iter(f"{S}t")) for si in sst.iter(f"{S}si")]
         out = []
-        for name in sorted(n for n in z.namelist() if re.match(r"xl/worksheets/sheet\d+\.xml", n)):
+        sheet_files = [n for n in z.namelist() if re.match(r"xl/worksheets/sheet\d+\.xml", n)]
+        sheet_files.sort(key=lambda n: int(re.findall(r"\d+", n)[-1]) if re.findall(r"\d+", n) else 0)
+        for name in sheet_files:
             out.append(f"[{name.rsplit('/', 1)[1]}]")
             for row in ET.fromstring(z.read(name)).iter(f"{S}row"):
                 cells = []
                 for c in row.iter(f"{S}c"):
-                    v = c.find(f"{S}v")
-                    if v is None or v.text is None:
-                        continue
-                    cells.append(shared[int(v.text)] if c.get("t") == "s" else v.text)
+                    t = c.get("t")
+                    val = None
+                    if t == "s":
+                        v = c.find(f"{S}v")
+                        if v is not None and v.text and v.text.isdigit():
+                            idx = int(v.text)
+                            if 0 <= idx < len(shared):
+                                val = shared[idx]
+                    elif t == "inlineStr":
+                        val = "".join(elem.text or "" for elem in c.iter(f"{S}t"))
+                    else:
+                        v = c.find(f"{S}v")
+                        if v is not None and v.text is not None:
+                            val = v.text
+                    if val is not None:
+                        cells.append(val)
                 if cells:
                     out.append("\t".join(cells))
     return "\n".join(out)
 
 
 class _Text(HTMLParser):
-    SKIP = {"script", "style", "noscript", "nav", "header", "footer", "head", "svg"}
-    BLOCK = {"p", "div", "br", "li", "tr", "h1", "h2", "h3", "h4", "h5", "h6", "section", "article"}
+    SKIP = frozenset({"script", "style", "noscript", "nav", "header", "footer", "head", "svg"})
+    BLOCK = frozenset({"p", "div", "br", "li", "tr", "h1", "h2", "h3", "h4", "h5", "h6", "section", "article"})
 
     def __init__(self):
         super().__init__()
@@ -86,8 +105,8 @@ class _Text(HTMLParser):
     def handle_endtag(self, tag):
         if tag in self.SKIP and self.skip:
             self.skip -= 1
-        if tag == "a" and self.href and not self.skip:
-            if not self.href.startswith(("#", "javascript")):
+        if tag == "a":
+            if self.href and not self.skip and not self.href.startswith(("#", "javascript")):
                 self.out.append(f" <{self.href}>")
             self.href = None
 
@@ -104,15 +123,14 @@ def html_text(path):
 
 
 def pptx_text(path):
-    A = "{http://schemas.openxmlformats.org/drawingml/2006/main}"
     with zipfile.ZipFile(path) as z:
         slides = sorted((n for n in z.namelist() if re.match(r"ppt/slides/slide\d+\.xml", n)),
                         key=lambda n: int(re.findall(r"\d+", n)[-1]))
         out = []
         for i, n in enumerate(slides, 1):
             root = ET.fromstring(z.read(n))
-            paras = ("".join(t.text or "" for t in p.iter(f"{A}t")) for p in root.iter(f"{A}p"))
-            out.append(f"[slide {i}]\n" + "\n".join(p for p in paras if p.strip()))
+            paras = _extract_openxml_paras(root, A)
+            out.append(f"[slide {i}]\n" + "\n".join(paras))
     return "\n\n".join(out)
 
 
@@ -130,8 +148,12 @@ def ocr_text(path):
         raise RuntimeError("ocrmypdf não instalado")
     with tempfile.TemporaryDirectory() as tmp:
         side = Path(tmp) / "side.txt"
-        subprocess.run(["ocrmypdf", "--force-ocr", "-l", "por", "--sidecar", str(side), str(path),
-                        str(Path(tmp) / "out.pdf")], check=True, capture_output=True)
+        try:
+            subprocess.run(["ocrmypdf", "--force-ocr", "-l", "por", "--sidecar", str(side), str(path),
+                            str(Path(tmp) / "out.pdf")], check=True, capture_output=True)
+        except subprocess.CalledProcessError as e:
+            err = e.stderr.decode("utf-8", errors="replace").strip() if e.stderr else str(e)
+            raise RuntimeError(f"ocrmypdf falhou: {err}") from e
         pages = side.read_text(encoding="utf-8").split("\f")
     return "\n\n".join(f"[p. {i}]\n{p.strip()}" for i, p in enumerate(pages, 1) if p.strip() or i == 1)
 

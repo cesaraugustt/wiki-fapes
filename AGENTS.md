@@ -132,12 +132,6 @@ existam fontes em `raw/sigfapes/` (manuais, prints, dumps de esquema, documenta�
 Sempre rotular em requisitos e regras: `origem: norma publicada` ou `origem: sistema atual`.
 Se uma regra publicada parecer divergir do comportamento do sistema, registrar como pergunta em aberto.
 
-## Dados pessoais (LGPD)
-
-Documentos como resultados de editais, listas de servidores e contratos contêm dados pessoais.
-Na wiki, registrar regras e estruturas, não listas de pessoas. Não copiar nomes, CPFs ou
-e-mails individuais para as páginas. Em caso de dúvida, perguntar ao humano.
-
 ## Coleta de dados (crawler)
 
 - Respeitar `robots.txt`, usar delay entre requisições e User-Agent identificado.
@@ -165,6 +159,7 @@ Quando o humano pedir lint/auditoria, verificar e reportar em lista numerada com
 - `log.md` segue o OKF: títulos de data `## YYYY-MM-DD`, **entradas mais novas no topo**,
   prefixos em negrito (`**Creation**`, `**Update**`, `**Deprecation**`).
 - Linguagem clara e simples; frases curtas; tabelas para regras comparáveis entre editais.
+- Produção textual: aplicar os princípios da skill `humanizer` em todo o conteúdo da wiki.
 - Trabalhar um passo por vez: propor o plano e esperar aprovação antes de escrever
   arquivos em lote ou rodar downloads.
 - Na dúvida sobre como categorizar algo, perguntar ao humano.

@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
-"""Crawler da seção de Editais da FAPES (somente biblioteca padrão).
+"""Crawler de documentos e editais da FAPES (somente biblioteca padrão).
 
 Uso:
-  python tools/crawl.py --plan [--round 1|2]   lista PDFs/links, tamanho (HEAD); não baixa
-  python tools/crawl.py --run  [--round 1|2]   baixa o plano aprovado e atualiza o manifest
+  python tools/crawl.py --plan [--round 1|2|3]   lista PDFs/links, tamanho (HEAD); não baixa
+  python tools/crawl.py --run                     baixa o plano aprovado e atualiza o manifest
 
 Rodadas:
   1 = editais abertos + em julgamento
   2 = editais encerrados
-Resultados de editais ficam de fora (dados pessoais).
+  3 = legislação, prestação de contas, formulários e institucional
 """
 import argparse
 import csv
@@ -18,12 +18,12 @@ import json
 import re
 import sys
 import time
+import unicodedata
 import urllib.error
 import urllib.parse
 import urllib.request
 import urllib.robotparser
-import unicodedata
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
 BASE = "https://fapes.es.gov.br"
@@ -70,7 +70,7 @@ DIRS = {"editais-abertos": "editais", "editais-em-julgamento": "editais", "edita
 # rodadas cujas páginas-semente também são fontes (o conteúdo está no HTML)
 SAVE_PAGES = {3}
 # fora do escopo: vídeos (sem transcrição não viram texto) e o e-book comemorativo
-EXCLUDE = re.compile(r"\.(mp4|mov|avi|mkv)($|\?)|/Livro-Fapes-20-Anos", re.I)
+EXCLUDE = re.compile(r"\.(mp4|mov|avi|mkv)($|\?)|/Livro-Fapes-20-Anos", re.IGNORECASE)
 
 
 class Links(html.parser.HTMLParser):
@@ -85,26 +85,30 @@ class Links(html.parser.HTMLParser):
                 self.hrefs.append(href)
 
 
-_last = 0.0
-_robots = None
+_last_request_time = 0.0
+_robot_parser = None
 
 
 def polite_open(url, method="GET"):
     """Aplica delay entre requisições e checa robots.txt (404 = tudo permitido)."""
-    global _last, _robots
-    if _robots is None:
-        _robots = urllib.robotparser.RobotFileParser()
+    global _last_request_time, _robot_parser
+    if _robot_parser is None:
+        _robot_parser = urllib.robotparser.RobotFileParser()
         try:
+            wait = DELAY - (time.monotonic() - _last_request_time)
+            if wait > 0:
+                time.sleep(wait)
             req = urllib.request.Request(BASE + "/robots.txt", headers={"User-Agent": UA})
-            _robots.parse(urllib.request.urlopen(req, timeout=30).read().decode().splitlines())
+            _robot_parser.parse(urllib.request.urlopen(req, timeout=30).read().decode().splitlines())
+            _last_request_time = time.monotonic()
         except urllib.error.HTTPError as e:
             if e.code == 404:
-                _robots.parse(["User-agent: *", "Allow: /"])
+                _robot_parser.parse(["User-agent: *", "Allow: /"])
             else:
                 raise
-    if not _robots.can_fetch(UA, url):
+    if not _robot_parser.can_fetch(UA, url):
         raise PermissionError(f"bloqueado por robots.txt: {url}")
-    wait = DELAY - (time.monotonic() - _last)
+    wait = DELAY - (time.monotonic() - _last_request_time)
     if wait > 0:
         time.sleep(wait)
     req = urllib.request.Request(urllib.parse.quote(url, safe=":/?&=%#+"), method=method,
@@ -112,7 +116,7 @@ def polite_open(url, method="GET"):
     try:
         return urllib.request.urlopen(req, timeout=60)
     finally:
-        _last = time.monotonic()
+        _last_request_time = time.monotonic()
 
 
 def collect(round_no):
@@ -128,7 +132,7 @@ def collect(round_no):
             p.feed(body)
             for h in p.hrefs:
                 h = urllib.parse.unquote(h)
-                if re.search(r"/media/|\.pdf($|\?)", h, re.I) and not EXCLUDE.search(h):
+                if re.search(r"/media/|\.pdf($|\?)", h, re.IGNORECASE) and not EXCLUDE.search(h):
                     url = urllib.parse.urljoin(BASE + "/", h)
                     if urllib.parse.urlparse(url).netloc == "fapes.es.gov.br":
                         found.setdefault(url, secao)
@@ -178,7 +182,7 @@ def run():
     for it in items:
         if it["url"] in by_url:
             continue
-        now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+        now = datetime.now(UTC).strftime("%Y-%m-%dT%H:%M:%SZ")
         rows = [r for r in rows if r["url"] != it["url"]]  # descarta tentativa anterior com erro
         try:
             with polite_open(it["url"]) as r:
@@ -214,6 +218,7 @@ def run():
             "bytes": len(data), "local_path": local,
         }
         rows.append(row)
+        by_url.add(it["url"])
         print("ok", local)
         save(rows)
 
