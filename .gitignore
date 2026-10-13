@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+.DS_Store
+.env
+# dados coletados (recriáveis com o crawler); só _manifest.csv é versionado
+raw/*
+!raw/_manifest.csv
+raw-text/
