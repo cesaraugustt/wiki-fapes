@@ -15,6 +15,7 @@ import argparse
 import re
 import sys
 import zipfile
+from html.parser import HTMLParser
 from pathlib import Path
 from xml.etree import ElementTree as ET
 
@@ -62,7 +63,57 @@ def xlsx_text(path):
     return "\n".join(out)
 
 
-EXTRACTORS = {".pdf": pdf_text, ".docx": docx_text, ".xlsx": xlsx_text}
+class _Text(HTMLParser):
+    SKIP = {"script", "style", "noscript", "nav", "header", "footer", "head", "svg"}
+    BLOCK = {"p", "div", "br", "li", "tr", "h1", "h2", "h3", "h4", "h5", "h6", "section", "article"}
+
+    def __init__(self):
+        super().__init__()
+        self.out, self.skip, self.href = [], 0, None
+
+    def handle_starttag(self, tag, attrs):
+        if tag in self.SKIP:
+            self.skip += 1
+        if tag in self.BLOCK:
+            self.out.append("\n")
+        if tag == "a":
+            self.href = dict(attrs).get("href")
+
+    def handle_endtag(self, tag):
+        if tag in self.SKIP and self.skip:
+            self.skip -= 1
+        if tag == "a" and self.href and not self.skip:
+            if not self.href.startswith(("#", "javascript")):
+                self.out.append(f" <{self.href}>")
+            self.href = None
+
+    def handle_data(self, data):
+        if not self.skip:
+            self.out.append(data)
+
+
+def html_text(path):
+    p = _Text()
+    p.feed(Path(path).read_text(encoding="utf-8", errors="replace"))
+    lines = (" ".join(l.split()) for l in "".join(p.out).splitlines())
+    return "\n".join(l for l in lines if l)
+
+
+def pptx_text(path):
+    A = "{http://schemas.openxmlformats.org/drawingml/2006/main}"
+    with zipfile.ZipFile(path) as z:
+        slides = sorted((n for n in z.namelist() if re.match(r"ppt/slides/slide\d+\.xml", n)),
+                        key=lambda n: int(re.findall(r"\d+", n)[-1]))
+        out = []
+        for i, n in enumerate(slides, 1):
+            root = ET.fromstring(z.read(n))
+            paras = ("".join(t.text or "" for t in p.iter(f"{A}t")) for p in root.iter(f"{A}p"))
+            out.append(f"[slide {i}]\n" + "\n".join(p for p in paras if p.strip()))
+    return "\n\n".join(out)
+
+
+EXTRACTORS = {".pdf": pdf_text, ".docx": docx_text, ".xlsx": xlsx_text,
+              ".html": html_text, ".pptx": pptx_text}
 
 
 def main():

@@ -22,6 +22,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 import urllib.robotparser
+import unicodedata
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -49,7 +50,27 @@ ROUNDS = {
         ],
     },
     2: {"editais-encerrados": ["/Editais/Encerrados"]},
+    3: {
+        "legislacao": ["/leis", "/resolucoes", "/decretos", "/portarias", "/notatecnica"],
+        "prestacao-contas": [
+            "/prestacao-de-contas", "/orientacoes", "/manual", "/itens-financiaveis-e-nao-financiaveis",
+            "/instrucoes-de-uso-de-diarias", "/formularios-2", "/tutoriais-prestacao-contas",
+            "/termo-de-fomento-colaboracao-cooperacao", "/relatorio-ordenador-de-despesas-2",
+        ],
+        "formularios": ["/formularios", "/tutoriais", "/perguntas-frequentes"],
+        "institucional": [
+            "/pcti-es", "/conselho-cientifico-administrativo-ccaf", "/camaras-de-assessoramento",
+            "/competencias", "/UECI", "/sobre-a-ueci", "/normas-de-procedimento-UECI",
+            "/legislacoes-e-publicacoes-ueci",
+        ],
+    },
 }
+# secao -> subpasta de raw/ (padrão: o próprio nome da seção)
+DIRS = {"editais-abertos": "editais", "editais-em-julgamento": "editais", "editais-encerrados": "editais"}
+# rodadas cujas páginas-semente também são fontes (o conteúdo está no HTML)
+SAVE_PAGES = {3}
+# fora do escopo: vídeos (sem transcrição não viram texto) e o e-book comemorativo
+EXCLUDE = re.compile(r"\.(mp4|mov|avi|mkv)($|\?)|/Livro-Fapes-20-Anos", re.I)
 
 
 class Links(html.parser.HTMLParser):
@@ -99,13 +120,15 @@ def collect(round_no):
     found = {}
     for secao, pages in ROUNDS[round_no].items():
         for page in pages:
+            if round_no in SAVE_PAGES:
+                found.setdefault(BASE + page, secao)
             with polite_open(BASE + page) as r:
                 body = r.read().decode("utf-8", "replace")
             p = Links()
             p.feed(body)
             for h in p.hrefs:
                 h = urllib.parse.unquote(h)
-                if re.search(r"/media/|\.pdf($|\?)", h, re.I):
+                if re.search(r"/media/|\.pdf($|\?)", h, re.I) and not EXCLUDE.search(h):
                     url = urllib.parse.urljoin(BASE + "/", h)
                     if urllib.parse.urlparse(url).netloc == "fapes.es.gov.br":
                         found.setdefault(url, secao)
@@ -143,38 +166,56 @@ def run():
         sys.exit("rode --plan antes de --run")
     items = json.loads(PLAN_FILE.read_text(encoding="utf-8"))
     rows = read_manifest()
-    by_url = {r["url"] for r in rows}
+    by_url = {r["url"] for r in rows if r["status"] == "ok"}
     by_hash = {r["sha256"]: r["local_path"] for r in rows if r["sha256"]}
-    dest_dir = RAW / "editais"
-    dest_dir.mkdir(parents=True, exist_ok=True)
+
+    def save(rows):
+        with MANIFEST.open("w", encoding="utf-8", newline="") as f:
+            w = csv.DictWriter(f, fieldnames=FIELDS)
+            w.writeheader()
+            w.writerows(rows)
+
     for it in items:
         if it["url"] in by_url:
             continue
-        with polite_open(it["url"]) as r:
-            data = r.read()
-            status, ctype = r.status, r.headers.get("Content-Type")
+        now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+        rows = [r for r in rows if r["url"] != it["url"]]  # descarta tentativa anterior com erro
+        try:
+            with polite_open(it["url"]) as r:
+                data = r.read()
+                status, ctype = r.status, r.headers.get("Content-Type")
+        except (urllib.error.URLError, TimeoutError, ConnectionError) as e:
+            code = getattr(e, "code", "")
+            rows.append({"url": it["url"], "data_coleta": now, "sha256": "", "secao": it["secao"],
+                         "tipo": "", "status": "erro", "http_status": code, "content_type": "",
+                         "bytes": "", "local_path": ""})
+            print("ERRO", code or e, it["url"])
+            save(rows)
+            continue
         digest = hashlib.sha256(data).hexdigest()
-        ext = Path(urllib.parse.urlparse(it["url"]).path).suffix.lower() or ".bin"
+        path = Path(urllib.parse.urlparse(it["url"]).path)
+        ext = path.suffix.lower()
+        if not ext:
+            ext = ".html" if "html" in (ctype or "") else ".bin"
         if digest in by_hash:
             local = by_hash[digest]  # conteúdo duplicado: não grava de novo
         else:
-            name = Path(urllib.parse.urlparse(it["url"]).path).stem
-            slug = re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")[:80]
-            local = f"raw/editais/{slug}-{digest[:8]}{ext}"
+            ascii_name = unicodedata.normalize("NFKD", path.stem or "index").encode("ascii", "ignore").decode()
+            slug = re.sub(r"[^a-z0-9]+", "-", ascii_name.lower()).strip("-")[:80] or "arquivo"
+            folder = DIRS.get(it["secao"], it["secao"])
+            local = f"raw/{folder}/{slug}-{digest[:8]}{ext}"
+            (ROOT / local).parent.mkdir(parents=True, exist_ok=True)
             (ROOT / local).write_bytes(data)
             by_hash[digest] = local
         row = {
-            "url": it["url"], "data_coleta": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "url": it["url"], "data_coleta": now,
             "sha256": digest, "secao": it["secao"], "tipo": ext.lstrip("."),
             "status": "ok", "http_status": status, "content_type": ctype,
             "bytes": len(data), "local_path": local,
         }
         rows.append(row)
         print("ok", local)
-        with MANIFEST.open("w", encoding="utf-8", newline="") as f:
-            w = csv.DictWriter(f, fieldnames=FIELDS)
-            w.writeheader()
-            w.writerows(rows)
+        save(rows)
 
 
 if __name__ == "__main__":
