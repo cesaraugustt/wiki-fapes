@@ -2,6 +2,7 @@
 
 ## 2026-10-14
 
+- **Update**: Homologação do Docling (GPU) como extrator padrão para `raw-md/` (substituindo `raw-text/`), formalizado em [docs/decisoes/docling-eval.md](/docs/decisoes/docling-eval.md) e `tools/convert_docling.py`. Conversão piloto de 154 documentos elegíveis concluída com 100% de sucesso e quarentena zerada.
 - **Update**: Expurgados 111 falsos positivos em empresas e 267 falsos positivos em unidades públicas; bases `tools/companies_extracted.*` e `tools/institutions_extracted.*` regeradas exclusivamente com dados auditados e validados.
 
 - **Update**: [wiki/entidades/instituicoes-atendidas.md](/entidades/instituicoes-atendidas.md) seção 6 ampliada com tabelas nominais de Startups (Lume Robotics, Dersalis, Jade Autism, Endelevo, Multifidelidade, Buskar.me, PicPay, Vix Team) e Grandes Empresas Coinvestidoras (ArcelorMittal, Vale, Suzano, Petrobras, Marcopolo, ES GÁS, Sincades).

@@ -17,7 +17,8 @@ raw/                    fontes originais — IMUTÁVEL, nunca modificar; FORA do
   editais/ legislacao/ prestacao-contas/ bolsas/ institucional/ formularios/
   _manifest.csv         url, data_coleta, sha256, secao, tipo, status, http_status, content_type, bytes
                         (único arquivo de raw/ versionado no git)
-raw-text/               texto extraído dos PDFs/HTML (derivado; fora do git; pode ser regerado)
+raw-md/                 fontes em markdown geradas via Docling GPU (versionado no git)
+                        _conversion_manifest.csv (manifesto da conversão com status e rastreio)
 wiki/                   BUNDLE OKF — mantido pelo agente
   index.md              catálogo (progressive disclosure)
   log.md                histórico de mudanças
@@ -106,7 +107,7 @@ Datas sempre em ISO 8601 com fuso (`Z`).
 Quando o humano adicionar fontes em `raw/` e pedir ingestão:
 
 1. Conferir a entrada no `raw/_manifest.csv` (url de origem, data de coleta, hash).
-2. Ler o documento completo (usar `raw-text/` se for PDF).
+2. Ler o documento completo (usar `raw-md/` gerado via `tools/convert_docling.py`).
 3. **Discutir os pontos principais com o humano antes de escrever.**
 4. Criar a página em `wiki/fontes/` (type `Fonte`) com resumo e metadados.
 5. Criar/atualizar páginas de edital, norma, entidades, regras, processos e requisitos afetados.
