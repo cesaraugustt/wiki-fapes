@@ -159,7 +159,7 @@ Quando o humano pedir lint/auditoria, verificar e reportar em lista numerada com
 - `log.md` segue o OKF: títulos de data `## YYYY-MM-DD`, **entradas mais novas no topo**,
   prefixos em negrito (`**Creation**`, `**Update**`, `**Deprecation**`).
 - Linguagem clara e simples; frases curtas; tabelas para regras comparáveis entre editais.
-- Produção textual: aplicar os princípios da skill `humanizer` em todo o conteúdo da wiki.
+- Produção textual: aplicar a skill `humanizer` em todo o conteúdo da wiki.
 - Trabalhar um passo por vez: propor o plano e esperar aprovação antes de escrever
   arquivos em lote ou rodar downloads.
 - Na dúvida sobre como categorizar algo, perguntar ao humano.

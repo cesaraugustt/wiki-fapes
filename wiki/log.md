@@ -1,5 +1,11 @@
 # Log
 
+## 2026-10-14
+
+- **Creation**: [wiki/entidades/instituicoes-atendidas.md](/entidades/instituicoes-atendidas.md) catálogo mestre das instituições atendidas e conveniadas com a FAPES (ICTs públicas, IES privadas, fundações de apoio, secretarias e autarquias estaduais, incubadoras e empresas), estruturando hierarquia de unidades (administrativas, acadêmicas, PPGs, NITs, laboratórios e campi) e requisitos para modelagem do novo SIGFAPES.
+- **Creation**: `tools/extract_institutions.py` minerador de instituições, unidades organizacionais e CNPJs em lote sobre `raw-text/`, com saída consolidada em JSON e CSV.
+- **Update**: [wiki/index.md](/index.md) atualizado com a inclusão de `instituicoes-atendidas.md`.
+
 ## 2026-10-13
 
 - **Update**: [wiki/entidades/avaliador.md](file:///home/cesar_augusto/projetos/fapes-wiki/wiki/entidades/avaliador.md) ampliado de 5 para 10 modalidades de avaliadores com base em 130 editais encerrados (adicionados Comitê Julgador CNPq/FAPES, Comissão Bipartida do PPSUS, Comitê Regional Gênesis, Bancas de Acompanhamento SAP/SAF, Comitê Gestor e Comissões de IES), aplicando os princípios da skill humanizer.
