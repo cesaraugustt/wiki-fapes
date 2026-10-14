@@ -2,7 +2,7 @@
 type: Entidade
 title: Instituições Atendidas e Unidades Organizacionais
 description: Catálogo mestre das instituições de ensino, pesquisa, inovação, órgãos públicos e empresas atendidas pela FAPES, incluindo suas unidades administrativas e acadêmicas.
-tags: [entidades, instituicoes, executora, proponente, gestora, unidades, cnpjs, sigfapes]
+tags: [entidades, instituicoes, executora, proponente, gestora, unidades, cnpjs, conectafapes]
 status: draft
 generated: { by: "gemini/antigravity", at: 2026-10-14T10:15:00Z }
 sources:
@@ -134,22 +134,48 @@ A FAPES fomenta incubadoras de empresas para acelerar startups e projetos nascid
 
 ---
 
-## 6. Empresas Privadas e Startups (Subvenção Econômica)
+## 6. Empresas Privadas, Startups e Parceiras Corporativas
 
-No âmbito dos programas de transferência de tecnologia e subvenção direta a empresas (como **Tecnova**, **Centelha**, **Parcerias Startups** e **Clusters Inovadores**), a pessoa jurídica privada de direito comercial figura como **proponente beneficiária direta**:[^livro-fapes-20-anos]
+O ecossistema empresarial atendido pela FAPES divide-se em duas categorias operacionais:[^livro-fapes-20-anos]
 
-1. **Requisitos de Registro**:
-   - CNPJ ativo com sede ou filial no Estado do Espírito Santo há pelo menos 6 ou 12 meses (conforme a faixa do edital).
-   - Regularidade fiscal federal, estadual, municipal, trabalhista (CNDT) e FGTS.
-   - Quadro societário sem vínculo de subordinação ou parentesco com avaliadores diretos da chamada.
-2. **Modalidades de Participação**:
-   - **Startups em Fase de Ideação / Pré-Incubação**: atendidas via Programa Centelha (com bolsas de fixação e subvenção para protótipos).
-   - **Pequenas e Médias Empresas (PMEs)**: atendidas via Programa Tecnova (desenvolvimento de produtos e processos inéditos para o mercado nacional).
-   - **Consórcios Empresa–ICT**: projetos em que uma empresa parceira aporta contrapartida financeira ou econômica junto a uma ICT executora.
+1. **Startups e MPEs Inovadoras**: pessoas jurídicas que recebem recursos públicos não reembolsáveis via subvenção econômica e bolsas de estímulo à inovação (programas Centelha, Tecnova, Negócios de Impacto Socioambiental e SEEDES).
+2. **Grandes Corporações e Empresas Parceiras**: empresas âncoras industriais que cofinanciam editais em rede ou atuam em consórcio com ICTs capixabas para absorção de tecnologia.
+
+### 6.1. Startups e Empresas de Base Tecnológica Fomentadas
+
+| Nome da Empresa / Startup | Programa FAPES de Origem | Domínio / Setor Tecnológico | Solução Tecnológica / Destaque Documentado |
+| :--- | :--- | :--- | :--- |
+| **Lume Robotics** | Tecnova II / Spin-off | Robótica Autônoma / Veículos Autônomos | Desenvolveu o protótipo do 1º micro-ônibus autônomo da América Latina (21 passageiros), com direção autônoma sem intervenção humana, em parceria industrial com a Marcopolo.[^livro-fapes-20-anos] |
+| **Dersalis** | Tecnova II | IoT / Saúde Ocupacional e Wearables | Criou pulseira inteligente de monitoramento contínuo em tempo real de temperatura e frequência cardíaca para prevenção de fadiga e estresse em ambientes fabris.[^livro-fapes-20-anos] |
+| **Jade Autism** | Programa Centelha | HealthTech / EdTech / Neurodiversidade | Plataforma gamificada de desenvolvimento cognitivo infantil para crianças com Transtorno do Espectro Autista (TEA); premiada internacionalmente em Dubai e vencedora do Web Summit Rio.[^livro-fapes-20-anos] |
+| **Endelevo** | Centelha / Negócios de Impacto (NIS) | Sustentabilidade e Arquitetura Bioclimática | Desenvolveu o projeto de abrigo de ônibus autossustentável na Ilha do Príncipe (Vitória), integrando painéis solares, miniturbina eólica e brises vegetais térmicos.[^livro-fapes-20-anos] |
+| **Multifidelidade** | SEEDES (Aceleração de Startups) | TIC / Marketing e Varejo Digital | Plataforma omnichannel de loyalty e fidelização de consumidores; acelerada no 1º ciclo estadual de aceleração de startups.[^livro-fapes-20-anos] |
+| **Buskar.me** | SEEDES | Mobilidade Urbana e Logística | Solução de roteirização e busca inteligente atraída e acelerada no ecossistema de inovação capixaba.[^livro-fapes-20-anos] |
+| **PicPay** | TecVitória / Apoio Inicial CTI | Fintech / Pagamentos Móveis | Nascida e incubada no ambiente da TecVitória com fomento inicial estadual de base tecnológica, evoluindo para abrangência nacional.[^livro-fapes-20-anos] |
+| **Vix Team** | TecVitória / PDI | TIC / Software Corporativo | Empresa de base tecnológica graduada no polo de software capixaba fomentado pelo Estado.[^livro-fapes-20-anos] |
+
+### 6.2. Grandes Empresas e Parceiras Coinvestidoras de Redes de PDI
+
+| Empresa Corporativa | Natureza da Parceria com a FAPES | Área Tecnológica / Foco da Cooperação |
+| :--- | :--- | :--- |
+| **ArcelorMittal Tubarão** | Edital Parceria SIMACC / Redes de PDI | Chamada compartilhada FAPES/ArcelorMittal para projetos em rede e bolsas (mestrado, doutorado e PIC Jr) nos eixos de siderurgia, meio ambiente, reaproveitamento de coprodutos e construção civil.[^relges-funcitec-2023] |
+| **Vale S.A.** | Redes de Pesquisa e Termos de Cooperação | Parcerias científicas para dispersão de particulados atmosféricos, automação de malha ferroviária e restauração florestal no Corredor Centro-Leste. |
+| **Suzano** | Projetos Cooperados em Silvicultura | Pesquisas de biotecnologia florestal, melhoramento genético de eucalipto e sustentabilidade hídrica em bacias hidrográficas do Norte do ES. |
+| **Petrobras** | Cláusula de P&D da ANP / Redes de Petróleo e Gás | Investimentos regulatórios direcionados a laboratórios da UFES (LabPetro e LabTel) em exploração offshore, óleo pesado e transição energética. |
+| **Marcopolo S.A.** | Parceria Industrial Privada (Edital Tecnova II) | Parceria técnica com a startup capixaba Lume Robotics para validação e produção da carroceria e integração eletrônica do micro-ônibus autônomo.[^livro-fapes-20-anos] |
+| **ES GÁS** | Chamadas Conjuntas de P&D Regulatório | Eficiência energética de redes de distribuição, injeção de biometano na rede de gás canalizado e segurança operacional. |
+| **Sincades Tech** | Parceria Setorial / Hub de Inovação | Acordo com o Sindicato do Comércio Atacadista e Distribuidor para aceleração de startups voltadas à cadeia de suprimentos e logística estadual. |
+
+### 6.3. Base Bruta para Carga de Dados no ConectaFapes
+
+Para subsidiar o povoamento inicial e a migração de registros cadastrais do ConectaFapes, foi gerado o inventário de fornecedores, startups e empresas a partir dos termos de outorga e contratos históricos:
+
+- **Base Consolidada de Empresas**: [tools/companies_extracted.csv](file:///home/user/projetos/fapes-wiki/tools/companies_extracted.csv) e [tools/companies_extracted.json](file:///home/user/projetos/fapes-wiki/tools/companies_extracted.json) (37 empresas e startups validadas, com razão social, tipo, programa, setor e CNPJs, expurgando 111 falsos positivos).
+- **Base Consolidada de Instituições e Unidades Públicas**: [tools/institutions_extracted.csv](file:///home/user/projetos/fapes-wiki/tools/institutions_extracted.csv) e [tools/institutions_extracted.json](file:///home/user/projetos/fapes-wiki/tools/institutions_extracted.json) (33 instituições principais com 65 unidades organizacionais validadas, expurgando 267 falsos positivos).
 
 ---
 
-## 7. Requisitos para o Modelo de Dados do Novo Sistema (Substituição SIGFAPES)
+## 7. Requisitos para o Modelo de Dados do ConectaFapes
 
 Para suportar todas as classes organizacionais catalogadas acima, o novo sistema deverá estruturar a modelagem de entidades sob as seguintes diretrizes:
 

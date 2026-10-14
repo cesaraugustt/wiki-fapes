@@ -2,7 +2,7 @@
 type: Entidade
 title: Avaliador
 description: Especialista ou instância colegiada responsável pela análise técnica, mérito científico, relevância estratégica ou viabilidade de mercado de propostas e projetos apoiados pela FAPES.
-tags: [entidades, avaliacao, julgamento, sigfapes, merito, camaras, pareceristas]
+tags: [entidades, avaliacao, julgamento, conectafapes, merito, camaras, pareceristas]
 status: draft
 generated: { by: "gemini/antigravity", at: 2026-10-13T18:30:00Z }
 sources:
@@ -113,7 +113,7 @@ Pesquisadores que recebem apoio financeiro da FAPES mediante Termo de Outorga as
 
 ## Requisitos para o novo sistema
 
-A substituição do SIGFAPES exige suporte funcional a múltiplos fluxos avaliativos:
+O ConectaFapes exige suporte funcional a múltiplos fluxos avaliativos:
 
 1. **Gestão de cadastro e territorialidade**: ficha cadastral integrada às áreas do conhecimento do CNPq, histórico Lattes, endereço profissional e marcação explícita de territorialidade (UF de atuação) para bloqueio de avaliadores locais em chamadas acadêmicas.
 2. **Prevenção algorítmica de conflitos**: checagem cruzada que impeça a distribuição de propostas para pareceristas com coautoria recente com o proponente, mesmo departamento/instituição ou inscrição no mesmo edital.

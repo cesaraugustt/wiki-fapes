@@ -2,7 +2,11 @@
 
 ## 2026-10-14
 
-- **Creation**: [wiki/entidades/instituicoes-atendidas.md](/entidades/instituicoes-atendidas.md) catálogo mestre das instituições atendidas e conveniadas com a FAPES (ICTs públicas, IES privadas, fundações de apoio, secretarias e autarquias estaduais, incubadoras e empresas), estruturando hierarquia de unidades (administrativas, acadêmicas, PPGs, NITs, laboratórios e campi) e requisitos para modelagem do novo SIGFAPES.
+- **Update**: Expurgados 111 falsos positivos em empresas e 267 falsos positivos em unidades públicas; bases `tools/companies_extracted.*` e `tools/institutions_extracted.*` regeradas exclusivamente com dados auditados e validados.
+
+- **Update**: [wiki/entidades/instituicoes-atendidas.md](/entidades/instituicoes-atendidas.md) seção 6 ampliada com tabelas nominais de Startups (Lume Robotics, Dersalis, Jade Autism, Endelevo, Multifidelidade, Buskar.me, PicPay, Vix Team) e Grandes Empresas Coinvestidoras (ArcelorMittal, Vale, Suzano, Petrobras, Marcopolo, ES GÁS, Sincades).
+- **Creation**: `tools/extract_companies.py` minerador especializado em empresas privadas e startups, gerando bases brutas de 139 registros em `tools/companies_extracted.csv` e `tools/companies_extracted.json`.
+- **Creation**: [wiki/entidades/instituicoes-atendidas.md](/entidades/instituicoes-atendidas.md) catálogo mestre das instituições atendidas e conveniadas com a FAPES (ICTs públicas, IES privadas, fundações de apoio, secretarias e autarquias estaduais, incubadoras e empresas), estruturando hierarquia de unidades (administrativas, acadêmicas, PPGs, NITs, laboratórios e campi) e requisitos para modelagem do ConectaFapes.
 - **Creation**: `tools/extract_institutions.py` minerador de instituições, unidades organizacionais e CNPJs em lote sobre `raw-text/`, com saída consolidada em JSON e CSV.
 - **Update**: [wiki/index.md](/index.md) atualizado com a inclusão de `instituicoes-atendidas.md`.
 

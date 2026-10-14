@@ -5,7 +5,7 @@ com o formato de armazenamento **Open Knowledge Format (OKF) v0.2**.
 
 Objetivo: extrair dos documentos publicados pela FAPES (<https://fapes.es.gov.br/>)
 as regras, entidades, processos e requisitos necessários para especificar o
-novo sistema que substituirá o SIGFAPES.
+novo sistema **ConectaFapes**.
 
 O humano cura as fontes, faz as perguntas e **revisa** o conteúdo.
 O agente lê, sintetiza, conecta e mantém a wiki.
@@ -124,12 +124,13 @@ Quando o humano adicionar fontes em `raw/` e pedir ingestão:
 3. Se a resposta não está na wiki, dizer claramente. Não preencher com conhecimento geral.
 4. Se a resposta for valiosa, oferecer salvá-la em `wiki/respostas/` (type `Resposta`).
 
-## Distinção crítica: publicado vs. sistema atual
+## Distinção crítica: publicado vs. sistema legado / ConectaFapes
 
-A wiki reflete o que a **FAPES publica**. Ela **não** descreve o comportamento interno
-do SIGFAPES atual (telas, campos, regras implementadas, modelo de dados), a menos que
-existam fontes em `raw/sigfapes/` (manuais, prints, dumps de esquema, documentação interna).
-Sempre rotular em requisitos e regras: `origem: norma publicada` ou `origem: sistema atual`.
+A wiki reflete o que a **FAPES publica** e serve para subsidiar a concepção e especificação
+do novo sistema **ConectaFapes**. Ela **não** descreve o comportamento interno
+do sistema legado (telas, campos, regras implementadas, modelo de dados), a menos que
+existam fontes em `raw/legado/` (manuais, prints, dumps de esquema, documentação interna).
+Sempre rotular em requisitos e regras: `origem: norma publicada` ou `origem: sistema legado`.
 Se uma regra publicada parecer divergir do comportamento do sistema, registrar como pergunta em aberto.
 
 ## Coleta de dados (crawler)

@@ -258,6 +258,64 @@ EXECUTORA_PATTERNS = [
 ]
 
 
+JUNK_UNIT_WORDS = [
+    "e-docs", "documento original", "tabela", "anexo", "termo", "concess", "distribui",
+    "docente", "artigo", "parágrafo", "cláusula", "pesquisa", "pagamento", "foto", "fapes",
+    "projeto", "edital", "valor", "recursos", "bolsa", "critério", "cadastrados", "cadastro",
+    "relatório", "vigência", "contratação", "prestação", "centro empresarial", "torre norte",
+    "dados", "proponente", "beneficiár", "coordenador", "orientador", "stricto sensu"
+]
+
+
+def is_valid_unit(name: str, utype: str) -> bool:
+    nl = name.lower()
+    if any(jw in nl for jw in JUNK_UNIT_WORDS):
+        return False
+    if re.match(r"^\d", name) or re.search(r"\d{3,}", name):
+        return False
+    if len(name.split()) > 7 or len(name) < 4:
+        return False
+
+    if utype == "NIT / Inovação":
+        if not any(x in nl for x in ["núcleo de inovação tecnológica", "agência de inovação", "nit-"]):
+            if nl != "núcleo de inovação tecnológica":
+                return False
+        if any(bad in nl for bad in ["renato", "art", "informará", "ainda", "apoio", "academia"]):
+            return False
+
+    elif utype == "Incubadora":
+        if not any(x in nl for x in ["tecvitória", "ifes", "sul capixaba", "growup", "prosperas", "itacaranha"]):
+            return False
+
+    elif utype == "Pós-Graduação / PPG":
+        valid_ppg = (
+            nl.startswith("programa de pós-graduação em ")
+            or nl in ["profept", "ppgps"]
+            or any(f"ppg {disc}" in nl for disc in ["biotecnologia", "bioquímica", "química", "física", "saúde", "doenças", "educação", "informática"])
+        )
+        if not valid_ppg:
+            return False
+
+    elif utype == "Campus / Unidade Descentralizada":
+        valid_campi = ["alegre", "goiabeiras", "maruípe", "são mateus", "vitória", "vila velha", "serra", "cariacica", "colatina", "linhares", "cachoeiro", "itapina", "santa teresa", "venda nova", "aracruz", "guarapari"]
+        if not any(c in nl for c in valid_campi):
+            return False
+
+    elif utype == "Laboratório":
+        valid_labs = ["nb-3", "labtel", "labpetro", "ensaios", "lacen", "lab.ges", "cpid", "labpoca", "espectroscopia", "neurotoxicologia", "biotecnologia", "telecomunicações", "sistemas eletrônicos"]
+        if not any(x in nl for x in valid_labs):
+            return False
+
+    elif utype == "Acadêmica":
+        if name in ["CT", "CCS", "CCHN", "CCE", "CCJE", "CEFD", "CEUNES", "CCAE", "CEET Vasco Coutinho", "CTC", "CDM", "CRJ"]:
+            return True
+        valid_centers = ["centro tecnológico", "ciências da saúde", "ciências humanas", "ciências exatas", "ciências jurídicas", "ciências agrárias", "educação física", "vasco coutinho", "técnico criativo", "desenvolvimento metalmecânico", "referência das juventudes"]
+        if not any(x in nl for x in valid_centers):
+            return False
+
+    return True
+
+
 def extract():
     institution_counts = defaultdict(lambda: {"count": 0, "files": set(), "cnpjs": set(), "units": defaultdict(set)})
     all_cnpjs = defaultdict(lambda: {"files": set(), "contexts": []})
@@ -305,11 +363,8 @@ def extract():
                 for unit_regex, unit_type in UNIT_PATTERNS:
                     for u_match in re.finditer(unit_regex, text, re.IGNORECASE):
                         unit_name = u_match.group(1).strip()
-                        # Normalizar e limpar ruídos
                         unit_clean = re.sub(r"\s+", " ", unit_name).strip(" -:;,.")
-                        if 3 < len(unit_clean) < 80 and not any(
-                            bad in unit_clean.lower() for bad in ["projeto", "edital", "artigo", "fapes", "valor"]
-                        ):
+                        if is_valid_unit(unit_clean, unit_type):
                             institution_counts[inst_key]["units"][unit_type].add(unit_clean)
 
         # 4. Buscar cláusulas explícitas de Executora / Razão Social
@@ -317,7 +372,11 @@ def extract():
             for m in pat.finditer(text):
                 candidate = m.group(1).strip()
                 cand_clean = re.sub(r"\s+", " ", candidate).strip(" -:;,.")
-                if 4 < len(cand_clean) < 70 and not cand_clean.startswith("["):
+                if (
+                    4 < len(cand_clean) < 70
+                    and not cand_clean.startswith("[")
+                    and not any(bad in cand_clean.lower() for bad in ["sistema", "anuência", "anuencia", "sigfapes", "prestar", "prejuízo"])
+                ):
                     generic_executors[cand_clean]["count"] += 1
                     generic_executors[cand_clean]["files"].add(rel_path)
 
