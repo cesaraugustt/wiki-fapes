@@ -164,3 +164,17 @@ Quando o humano pedir lint/auditoria, verificar e reportar em lista numerada com
   arquivos em lote ou rodar downloads.
 - Na dúvida sobre como categorizar algo, perguntar ao humano.
 - Mudanças neste `AGENTS.md` só com aprovação do humano; sugerir melhorias quando um erro se repetir.
+
+## Agent skills
+
+### Issue tracker
+
+GitHub Issues via `gh` CLI. See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+Canonical roles mapped 1:1 (`needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`). See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Single-context layout (`CONTEXT.md` + `docs/adr/`). See `docs/agents/domain.md`.

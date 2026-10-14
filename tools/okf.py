@@ -79,14 +79,14 @@ def cmd_find(a):
     needles = [t.lower() for t in a.term.split()] if not a.regex else []
     hits = []
     for cid, _p, meta, body in concepts():
-        if a.type and str(meta.get("type", "")).lower() != a.type.lower():
+        if a.type and str(meta.get("type") or "").lower() != a.type.lower():
             continue
         if a.tag and a.tag not in (meta.get("tags") or []):
             continue
         if a.status and meta.get("status") != a.status:
             continue
-        title = str(meta.get("title", ""))
-        desc = str(meta.get("description", ""))
+        title = str(meta.get("title") or "")
+        desc = str(meta.get("description") or "")
         tags = " ".join(str(t) for t in (meta.get("tags") or []))
         head = f"{title} {desc} {tags}"
 
