@@ -23,13 +23,25 @@ def test_sanitize_fts_query():
     assert sanitize_fts_query("bolsa mestrado") == "bolsa mestrado"
     # Aspas balanceadas mantidas como frase
     assert sanitize_fts_query('"iniciação científica" fapes') == '"iniciação científica" fapes'
-    # Aspas não balanceadas corrigidas/fechadas
-    sanitized = sanitize_fts_query('"termo sem fechar')
-    assert '"' not in sanitized or sanitized.count('"') % 2 == 0
+    # Aspas não balanceadas: preserva frase válida e fecha/remove a solta
+    sanitized_odd = sanitize_fts_query('"iniciação científica" fapes "')
+    assert '"iniciação científica"' in sanitized_odd
+    assert sanitized_odd.count('"') % 2 == 0
     # Caracteres de controle do FTS5 removidos ou escapados
     assert ":" not in sanitize_fts_query("categoria:bolsa")
     assert "*" not in sanitize_fts_query("bolsa*")
     assert "^" not in sanitize_fts_query("início^")
+
+
+def test_format_snippet_accent_insensitivity():
+    from wiki_search import format_snippet
+    prefix = "A" * 300 + " "
+    content = prefix + "O processo de seleção exige inscrição presencial e comprovação de títulos."
+    snippet = format_snippet(content, query="inscricao", max_chars=80)
+    assert "inscrição" in snippet
+    assert "AAAA" not in snippet
+
+
 
 
 def test_search_index_ranking_and_filters(tmp_path):
@@ -78,6 +90,11 @@ O edital destina R$ 10.662.000,00 para projetos.
     assert len(res2["hits"]) >= 1
     assert "edital-10-2026.md" in res2["hits"][0]["file_path"]
 
+    # Filtro de pasta com barra final
+    res2_slash = search_index(db_path, query="projetos", pasta="editais/")
+    assert len(res2_slash["hits"]) >= 1
+    assert "edital-10-2026.md" in res2_slash["hits"][0]["file_path"]
+
     res_vazio = search_index(db_path, query="projetos", pasta="bolsas")
     assert len(res_vazio["hits"]) == 0
 
@@ -93,13 +110,18 @@ def test_get_page_content(tmp_path):
     doc_path.write_text("""---
 title: Teste
 ---
-<!-- page 1 -->
+<!--  page 1  -->
 Texto da página um.
 <!-- page 2 -->
 Texto da página dois.
 <!-- page 3 -->
 Texto da página três.
 """, encoding="utf-8")
+
+    # Lê página 1 com espaçamento alternativo no marcador
+    p1 = get_page_content(doc_path, page_num=1)
+    assert "Texto da página um." in p1
+    assert "Texto da página dois." not in p1
 
     # Lê página 2
     p2 = get_page_content(doc_path, page_num=2)
@@ -113,16 +135,26 @@ Texto da página três.
     assert "Texto da página dois." in p1_2
     assert "Texto da página três." not in p1_2
 
+    # Intervalo invertido gera mensagem de erro
+    p_inv = get_page_content(doc_path, page_num=3, to_page=1)
+    assert "Erro:" in p_inv or "inválido" in p_inv.lower()
+
 
 def test_get_outline(tmp_path):
     doc_path = tmp_path / "raw-md" / "doc.md"
     doc_path.parent.mkdir(parents=True)
     doc_path.write_text("""---
 title: Teste
+# Comentário no frontmatter
 ---
 <!-- page 1 -->
 # Título 1
 Texto 1.
+```python
+# Comentário dentro de bloco de código
+def foo():
+    pass
+```
 ## Subtítulo 1.1
 Texto 2.
 <!-- page 2 -->

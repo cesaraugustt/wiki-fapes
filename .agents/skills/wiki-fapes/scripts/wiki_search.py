@@ -1,19 +1,27 @@
 #!/usr/bin/env python3
 # /// script
 # requires-python = ">=3.10"
-# dependencies = ["pyyaml"]
+# dependencies = []
 # ///
 """CLI de busca e inspeção lexical ponderada (SQLite FTS5) no acervo FAPES."""
 
 from __future__ import annotations
 
 import argparse
-import os
 import re
 import sqlite3
 import sys
+import unicodedata
 from pathlib import Path
 from typing import Any
+
+
+def strip_accents(text: str) -> str:
+    """Remove marcas diacríticas/acentos para comparação insensível a acentuação."""
+    return "".join(
+        c for c in unicodedata.normalize("NFKD", text)
+        if not unicodedata.combining(c)
+    )
 
 
 def sanitize_fts_query(raw_query: str) -> str:
@@ -22,9 +30,10 @@ def sanitize_fts_query(raw_query: str) -> str:
     if not raw:
         return ""
 
-    # Se houver aspas ímpares, fecha a última aspa ou remove
+    # Se houver aspas ímpares, remove apenas a última aspa não pareada
     if raw.count('"') % 2 != 0:
-        raw = raw.replace('"', " ")
+        last_quote_idx = raw.rfind('"')
+        raw = raw[:last_quote_idx] + " " + raw[last_quote_idx + 1:]
 
     parts: list[str] = []
     # Encontra frases entre aspas e termos soltos
@@ -36,6 +45,7 @@ def sanitize_fts_query(raw_query: str) -> str:
         if token.startswith('"') and token.endswith('"'):
             # Frase entre aspas: remove aspas internas e caracteres de controle do FTS5
             clean_phrase = re.sub(r'[*^:{}()~"]', ' ', token[1:-1]).strip()
+            clean_phrase = " ".join(clean_phrase.split())
             if clean_phrase:
                 parts.append(f'"{clean_phrase}"')
         else:
@@ -54,12 +64,12 @@ def format_snippet(content: str, query: str, max_chars: int = 400) -> str:
     if len(clean_text) <= max_chars:
         return clean_text
 
-    # Extrai palavras da query para busca
-    words = re.findall(r"\w+", query.lower())
+    normalized_text = strip_accents(clean_text).lower()
+    words = re.findall(r"\w+", strip_accents(query).lower())
     match_pos = -1
     for w in words:
         if len(w) >= 3:
-            pos = clean_text.lower().find(w)
+            pos = normalized_text.find(w)
             if pos != -1:
                 match_pos = pos
                 break
@@ -75,11 +85,11 @@ def format_snippet(content: str, query: str, max_chars: int = 400) -> str:
     # Ajusta para não cortar palavras no meio
     if start > 0:
         first_space = clean_text.find(" ", start)
-        if first_space != -1 and first_space < start + 20:
+        if first_space != -1 and first_space < start + 20 and first_space < end:
             start = first_space + 1
     if end < len(clean_text):
         last_space = clean_text.rfind(" ", 0, end)
-        if last_space != -1 and last_space > end - 20:
+        if last_space != -1 and last_space > end - 20 and last_space > start:
             end = last_space
 
     prefix = "..." if start > 0 else ""
@@ -102,15 +112,13 @@ def search_index(
     if not sanitized:
         return {"hits": [], "total_chars": 0, "error": "Consulta vazia ou inválida após sanitização."}
 
-    conn = sqlite3.connect(db_path)
-    cursor = conn.cursor()
-
     where_clauses = ["chunks_fts MATCH ?"]
     params: list[Any] = [sanitized]
 
     if pasta:
+        clean_pasta = pasta.rstrip("/")
         where_clauses.append("(f.pasta = ? OR f.path LIKE ?)")
-        params.extend([pasta, f"{pasta}/%"])
+        params.extend([clean_pasta, f"{clean_pasta}/%"])
 
     if ano is not None:
         where_clauses.append("f.year = ?")
@@ -137,21 +145,20 @@ def search_index(
     total_chars = 0
 
     try:
-        rows = cursor.execute(sql, params).fetchall()
-        # Se não encontrou resultados e a busca tem múltiplos termos sem OR explícito, tenta OR
-        if not rows and " OR " not in sanitized:
-            tokens = re.findall(r'("[^"]+"|\S+)', sanitized)
-            if len(tokens) > 1:
-                or_query = " OR ".join(tokens)
-                or_params = [or_query] + params[1:]
-                rows = cursor.execute(sql, or_params).fetchall()
-                if rows:
-                    sanitized = or_query
+        with sqlite3.connect(db_path) as conn:
+            cursor = conn.cursor()
+            rows = cursor.execute(sql, params).fetchall()
+            # Se não encontrou resultados e a busca tem múltiplos termos sem OR explícito, tenta OR
+            if not rows and " OR " not in sanitized:
+                tokens = re.findall(r'("[^"]+"|\S+)', sanitized)
+                if len(tokens) > 1:
+                    or_query = " OR ".join(tokens)
+                    or_params = [or_query] + params[1:]
+                    rows = cursor.execute(sql, or_params).fetchall()
+                    if rows:
+                        sanitized = or_query
     except sqlite3.OperationalError as e:
-        conn.close()
         return {"hits": [], "total_chars": 0, "error": f"Erro SQLite FTS5: {e}"}
-
-    conn.close()
 
     for path, start_page, end_page, heading_path, content, rank in rows:
         snippet = format_snippet(content, query, max_chars=400)
@@ -165,7 +172,6 @@ def search_index(
         }
         hits.append(hit)
 
-        # Estima caracteres formatados
         chars = len(path) + len(str(heading_path or "")) + len(snippet) + 50
         total_chars += chars
 
@@ -182,7 +188,6 @@ def resolve_file_path(file_path_str: str, base_dir: Path | None = None) -> Path:
     if p.is_file():
         return p
 
-    # Tenta prefixos comuns
     candidates = [
         p,
         Path("raw-md") / p,
@@ -199,7 +204,6 @@ def resolve_file_path(file_path_str: str, base_dir: Path | None = None) -> Path:
         if c.is_file():
             return c
 
-    # Se passou sem o .md, tenta com .md
     if not p.suffix:
         for c in candidates:
             with_md = c.with_suffix(".md")
@@ -216,16 +220,19 @@ def get_page_content(file_path: Path | str, page_num: int, to_page: int | None =
         return f"Erro: Arquivo não encontrado: {file_path}"
 
     text = p.read_text(encoding="utf-8", errors="replace")
-    if "<!-- page " not in text:
+    if not re.search(r"<!--\s*page\s+\d+\s*-->", text):
         return f"Aviso: O arquivo '{p.name}' não contém marcadores de página (<!-- page N -->).\n\nConteúdo completo:\n\n{text}"
 
     if to_page is None:
         to_page = page_num
 
-    pages_found: list[tuple[int, int]] = []  # (page_num, start_index)
+    if to_page < page_num:
+        return f"Erro: Intervalo de páginas inválido (página inicial {page_num} maior que página final {to_page})."
+
+    pages_found: list[tuple[int, int, int]] = []  # (page_num, start_index, end_index)
     for m in re.finditer(r"<!--\s*page\s+(\d+)\s*-->", text):
         num = int(m.group(1))
-        pages_found.append((num, m.end()))
+        pages_found.append((num, m.start(), m.end()))
 
     if not pages_found:
         return f"Nenhum marcador de página encontrado em {p.name}."
@@ -234,15 +241,15 @@ def get_page_content(file_path: Path | str, page_num: int, to_page: int | None =
     target_start = -1
     target_end = len(text)
 
-    for i, (p_num, start_idx) in enumerate(pages_found):
+    for i, (p_num, start_idx, end_idx) in enumerate(pages_found):
         if p_num == page_num and target_start == -1:
-            target_start = start_idx
+            target_start = end_idx
         if p_num > to_page:
-            target_end = pages_found[i][1] - len(f"<!-- page {p_num} -->")
+            target_end = start_idx
             break
 
     if target_start == -1:
-        max_page = pages_found[-1][0]
+        max_page = max(p[0] for p in pages_found)
         return f"Página {page_num} não encontrada em {p.name}. O documento vai até a página {max_page}."
 
     page_text = text[target_start:target_end].strip()
@@ -258,8 +265,27 @@ def get_outline(file_path: Path | str) -> list[dict[str, Any]]:
     lines = p.read_text(encoding="utf-8", errors="replace").splitlines()
     outline: list[dict[str, Any]] = []
     current_page: int | None = None
+    in_frontmatter = False
+    in_code_block = False
+
+    if lines and lines[0].strip() == "---":
+        in_frontmatter = True
+        lines = lines[1:]
 
     for line in lines:
+        if in_frontmatter:
+            if line.strip() == "---":
+                in_frontmatter = False
+            continue
+
+        stripped = line.strip()
+        if stripped.startswith("```"):
+            in_code_block = not in_code_block
+            continue
+
+        if in_code_block:
+            continue
+
         pm = re.match(r"^\s*<!--\s*page\s+(\d+)\s*-->", line)
         if pm:
             current_page = int(pm.group(1))
@@ -283,13 +309,11 @@ def get_stats(db_path: Path) -> dict[str, Any]:
     if not db_path.exists():
         return {"error": f"Índice {db_path} não encontrado."}
 
-    conn = sqlite3.connect(db_path)
-    cursor = conn.cursor()
-
-    total_files = cursor.execute("SELECT COUNT(*) FROM files").fetchone()[0]
-    total_chunks = cursor.execute("SELECT COUNT(*) FROM chunks").fetchone()[0]
-    no_page_files = cursor.execute("SELECT COUNT(*) FROM files WHERE has_pages = 0").fetchone()[0]
-    conn.close()
+    with sqlite3.connect(db_path) as conn:
+        cursor = conn.cursor()
+        total_files = cursor.execute("SELECT COUNT(*) FROM files").fetchone()[0]
+        total_chunks = cursor.execute("SELECT COUNT(*) FROM chunks").fetchone()[0]
+        no_page_files = cursor.execute("SELECT COUNT(*) FROM files WHERE has_pages = 0").fetchone()[0]
 
     db_size = db_path.stat().st_size
 
@@ -361,13 +385,15 @@ def main():
             output_buffer.append(block)
 
         full_output = "\n".join(output_buffer)
-        # Limita saída total a ~4.000 caracteres
         if len(full_output) > 4000:
             full_output = full_output[:3950].rstrip() + "\n\n... [saída truncada em 4.000 caracteres]"
         print(full_output)
 
     elif args.command == "page":
         content = get_page_content(args.arquivo, page_num=args.pagina, to_page=args.ate)
+        if content.startswith("Erro:"):
+            print(content, file=sys.stderr)
+            sys.exit(1)
         print(content)
 
     elif args.command == "outline":
@@ -394,3 +420,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
