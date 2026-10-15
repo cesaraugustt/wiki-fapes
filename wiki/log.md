@@ -1,5 +1,10 @@
 # Log
 
+## 2026-10-15
+
+- **Update**: `tools/convert_docling.py` atualizado com migração de OCR para EasyOCR (`EasyOcrOptions`), fallback automático para PDFs com saída vazia ou anômala, calibração da razão alfanumérica para 80%, suporte a páginas com carimbos digitais (Docusign/DIO) ou vetores gráficos e nova flag `--retry-failed` com consolidação do manifesto.
+- **Update**: [docs/decisoes/docling-eval.md](/docs/decisoes/docling-eval.md) Seção 7 adicionada com diagnóstico da conversão de 653 arquivos e resolução de falhas para execução na máquina com GPU.
+
 ## 2026-10-14
 
 - **Update**: Homologação do Docling (GPU) como extrator padrão para `raw-md/` (substituindo `raw-text/`), formalizado em [docs/decisoes/docling-eval.md](/docs/decisoes/docling-eval.md) e `tools/convert_docling.py`. Conversão piloto de 154 documentos elegíveis concluída com 100% de sucesso e quarentena zerada.

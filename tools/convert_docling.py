@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # /// script
 # requires-python = ">=3.10"
-# dependencies = ["docling", "pymupdf", "pyyaml"]
+# dependencies = ["docling", "pymupdf", "pyyaml", "easyocr"]
 # ///
 """Converte raw/ -> raw-md/ com Docling (GPU), espelhando a estrutura de pastas.
 
@@ -17,6 +17,7 @@ Padrão OKF v0.2 para a Wiki FAPES.
 Uso:
     uv run tools/convert_docling.py --limit 5
     uv run tools/convert_docling.py --missing-only
+    uv run tools/convert_docling.py --retry-failed
     nohup uv run tools/convert_docling.py > raw-md/_conversion.log 2>&1 &
 """
 import argparse
@@ -38,7 +39,7 @@ MANIFEST_FILE = RAW / "_manifest.csv"
 
 EXTS = {".pdf", ".docx", ".html", ".htm", ".xlsx", ".pptx"}
 RESTART_EVERY = 30          # recria worker a cada N arquivos para purgar VRAM/RAM
-OCR_MIN_ALNUM_RATIO = 0.85  # proporção mínima Docling / PyMuPDF get_text
+OCR_MIN_ALNUM_RATIO = 0.80  # proporção mínima Docling / PyMuPDF get_text (calibrado para descartes de cabeçalho/rodapé repetido)
 
 FIELDS = ["rel", "sha256", "status", "pages", "ocr_forced", "ocr_pages", "seconds", "detail"]
 
@@ -53,13 +54,30 @@ BAD = re.compile(r"[\x00-\x08\x0b\x0c\x0e-\x1f\ufffd\u2700-\u27bf\ue000-\uf8ff]"
 
 
 def page_is_suspect(page) -> tuple[bool, str]:
-    """Detecta se uma página tem camada de texto corrompida ou vazia."""
+    """Detecta se uma página tem camada de texto corrompida, vazia ou apenas carimbos digitais."""
     text = page.get_text()
     s = re.sub(r"\s", "", text)
     if len(s) < 25:
-        # Sem camada de texto: suspeita se tiver imagem
-        has_img = bool(page.get_images())
-        return has_img, "sem_texto_com_imagem" if has_img else "sem_texto"
+        # Sem camada de texto: suspeita se tiver imagens ou desenhos vetoriais
+        has_visual = bool(page.get_images()) or len(page.get_drawings()) > 10
+        return has_visual, "sem_texto_com_visual" if has_visual else "sem_texto"
+
+    # Carimbos/watermarks conhecidos que disfarçam páginas escaneadas ou desenhadas
+    # Ex: 'Docusign Envelope ID', carimbos do DIO, cabeçalho de assinatura digital
+    clean_text = text.lower()
+    is_mostly_stamp = (
+        "docusign envelope id" in clean_text
+        or "assinado digitalmente pelo dio" in clean_text
+        or "e-docs - documento original" in clean_text
+    ) and len(s) < 300
+    if is_mostly_stamp:
+        has_visual = bool(page.get_images()) or len(page.get_drawings()) > 20
+        if has_visual:
+            return True, "carimbo_com_visual_sem_corpo"
+
+    # Muitas curvas vetoriais e pouco texto nativo (típico de páginas renderizadas como paths no DIO)
+    if len(page.get_drawings()) > 100 and len(s) < 500:
+        return True, "vetores_sem_texto_suficiente"
 
     # Caracteres inválidos / controle / private use area
     bad_matches = len(BAD.findall(s))
@@ -85,13 +103,19 @@ def page_is_suspect(page) -> tuple[bool, str]:
 def build_converter(force_ocr: bool, device: str):
     from docling.datamodel.accelerator_options import AcceleratorDevice, AcceleratorOptions
     from docling.datamodel.base_models import InputFormat
-    from docling.datamodel.pipeline_options import PdfPipelineOptions, RapidOcrOptions
+    from docling.datamodel.pipeline_options import EasyOcrOptions, OcrMode, PdfPipelineOptions
     from docling.document_converter import DocumentConverter, PdfFormatOption
 
     opts = PdfPipelineOptions()
     opts.do_ocr = force_ocr
     opts.do_table_structure = True
-    opts.ocr_options = RapidOcrOptions(force_full_page_ocr=force_ocr)
+    ocr_options = EasyOcrOptions(
+        lang=["pt", "en"],
+        use_gpu=(device == "cuda"),
+    )
+    if force_ocr:
+        ocr_options.mode = OcrMode.FULL_PAGE
+    opts.ocr_options = ocr_options
     opts.accelerator_options = AcceleratorOptions(
         device={"cuda": AcceleratorDevice.CUDA, "cpu": AcceleratorDevice.CPU}.get(
             device, AcceleratorDevice.AUTO
@@ -112,7 +136,7 @@ def slugify(text: str) -> str:
 
 
 def convert_one(job: dict, cache: dict, device: str) -> dict:
-    import fitz  # PyMuPDF
+    import pymupdf as fitz
 
     src = Path(job["src"])
     dst = Path(job["dst"])
@@ -130,32 +154,47 @@ def convert_one(job: dict, cache: dict, device: str) -> dict:
 
     force_ocr = bool(ocr_pages)
 
-    if force_ocr not in cache:
-        cache[force_ocr] = build_converter(force_ocr, device)
+    def run_conversion(with_ocr: bool):
+        if with_ocr not in cache:
+            cache[with_ocr] = build_converter(with_ocr, device)
+        d = cache[with_ocr].convert(str(src)).document
+        if n_pages is not None:
+            parts = [
+                f"<!-- page {n} -->\n\n{d.export_to_markdown(page_no=n).strip()}"
+                for n in sorted(d.pages.keys())
+            ]
+            b = "\n\n".join(parts)
+            markers = len(re.findall(r"<!-- page \d+ -->", b))
+        else:
+            b = d.export_to_markdown().strip()
+            markers = None
+        return b, markers
 
-    doc = cache[force_ocr].convert(str(src)).document
+    body, n_markers = run_conversion(force_ocr)
 
-    if n_pages is not None:
-        parts = [
-            f"<!-- page {n} -->\n\n{doc.export_to_markdown(page_no=n).strip()}"
-            for n in sorted(doc.pages.keys())
-        ]
-        body = "\n\n".join(parts)
-        n_markers = len(re.findall(r"<!-- page \d+ -->", body))
-    else:
-        body = doc.export_to_markdown().strip()
-        n_markers = None
+    def validate_body(b: str, markers: int | None, with_ocr: bool) -> list[str]:
+        probs = []
+        if n_pages is not None and markers != n_pages:
+            probs.append(f"marcadores={markers} paginas={n_pages}")
+        if n_pages is not None and not with_ocr and ref_alnum and ref_alnum > 200:
+            out_alnum = alnum_count(re.sub(r"<!-- [^>]*-->", "", b))
+            if out_alnum / ref_alnum < OCR_MIN_ALNUM_RATIO:
+                probs.append(f"alnum_docling={out_alnum / ref_alnum:.0%} do get_text")
+        if not re.sub(r"<!-- [^>]*-->|\s", "", b):
+            probs.append("saida vazia")
+        return probs
 
-    # Validação pós-conversão
-    problems = []
-    if n_pages is not None and n_markers != n_pages:
-        problems.append(f"marcadores={n_markers} paginas={n_pages}")
-    if n_pages is not None and not force_ocr and ref_alnum and ref_alnum > 200:
-        out_alnum = alnum_count(re.sub(r"<!-- [^>]*-->", "", body))
-        if out_alnum / ref_alnum < OCR_MIN_ALNUM_RATIO:
-            problems.append(f"alnum_docling={out_alnum / ref_alnum:.0%} do get_text")
-    if not re.sub(r"<!-- [^>]*-->|\s", "", body):
-        problems.append("saida vazia")
+    problems = validate_body(body, n_markers, force_ocr)
+
+    # Fallback automático: se conversão sem OCR falhou ou perdeu conteúdo essencial, retenta com EasyOCR
+    if problems and not force_ocr and src.suffix.lower() == ".pdf":
+        fallback_body, fallback_markers = run_conversion(True)
+        fallback_problems = validate_body(fallback_body, fallback_markers, True)
+        # Se o fallback resolveu ou melhorou a extração
+        if not fallback_problems or ("saida vazia" in problems and "saida vazia" not in fallback_problems):
+            force_ocr = True
+            ocr_pages = list(range(1, (n_pages or 1) + 1))
+            body, n_markers, problems = fallback_body, fallback_markers, fallback_problems
 
     status = "suspeito" if problems else "ok"
 
@@ -262,6 +301,7 @@ def main():
     ap.add_argument("--limit", type=int, default=0, help="processa no máximo N arquivos")
     ap.add_argument("--only", default="", help="só caminhos que contenham este texto")
     ap.add_argument("--missing-only", action="store_true", help="processa só os arquivos que não existem em raw-text/")
+    ap.add_argument("--retry-failed", action="store_true", help="reprocessa apenas arquivos com status diferente de 'ok' (erros e suspeitos)")
     args = ap.parse_args()
 
     raw, out = Path(args.raw), Path(args.out)
@@ -283,6 +323,11 @@ def main():
             txt_equiv = (RAW_TEXT / rel).with_suffix(".txt")
             if not txt_equiv.exists():
                 files.append(p)
+    elif args.retry_failed:
+        files = [
+            p for p in all_files
+            if p.relative_to(raw).as_posix() not in done or done[p.relative_to(raw).as_posix()]["status"] != "ok"
+        ]
     else:
         files = all_files
 
@@ -331,7 +376,7 @@ def main():
             sha = meta.get("sha256") or sha256_of(src)
 
             prev = done.get(rel)
-            if prev and prev["sha256"] == sha and prev["status"] in ("ok", "suspeito") and dst.exists():
+            if not args.retry_failed and prev and prev["sha256"] == sha and prev["status"] == "ok" and dst.exists():
                 continue
 
             if args.limit and processed >= args.limit:
@@ -381,8 +426,14 @@ def main():
         stop(proc, conn)
         mf.close()
 
-    # Quarentena de arquivos com status diferente de 'ok'
+    # Quarentena e consolidação do manifesto sem duplicatas
     latest = load_conversion_manifest(manifest_path)
+    with manifest_path.open("w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=FIELDS)
+        w.writeheader()
+        for rel_key in sorted(latest.keys()):
+            w.writerow(latest[rel_key])
+
     bad = [r for r in latest.values() if r["status"] != "ok"]
     quarentena_path = out / "_quarentena.csv"
     with quarentena_path.open("w", newline="", encoding="utf-8") as f:
@@ -393,7 +444,7 @@ def main():
     by_status = {}
     for r in latest.values():
         by_status[r["status"]] = by_status.get(r["status"], 0) + 1
-    print(f"\nResumo: {by_status} | Quarentena: {len(bad)} -> {quarentena_path}")
+    print(f"\nResumo consolidado: {by_status} | Quarentena: {len(bad)} -> {quarentena_path}")
 
 
 if __name__ == "__main__":

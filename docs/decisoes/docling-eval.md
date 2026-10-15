@@ -103,3 +103,29 @@ O modelo de detecção de layout classificou essa linha como rodapé descartáve
 
 1. **Adoção do Docling Homologada**: A combinação de GPU (RTX 5060) com o pipeline do Docling demonstrou estabilidade, velocidade média abaixo de 1 segundo por página e qualidade de extração tabular incomparavelmente superior ao texto puro anterior.
 2. **Execução do Piloto**: A ferramenta `tools/convert_docling.py` opera de forma não destrutiva, gravando exclusivamente em `raw-md/` com metadados OKF v0.2 completos e controle de quarentena.
+
+---
+
+## 7. Diagnóstico da Execução Completa (653 Arquivos) e Ajustes no Extrator
+
+A primeira execução em lote sobre todo o acervo revelou 567 conversões bem-sucedidas, 73 falhas e 13 casos suspeitos. A análise minuciosa do arquivo `raw-md/_conversion.log` e do manifesto orientou as seguintes correções:
+
+### 1. Falha Sistemática de OCR (`ImportError: onnxruntime is not installed`)
+
+- **Causa**: Ao identificar páginas corrompidas ou escaneadas, o script ativava o `RapidOcrOptions`. O RapidOCR depende do pacote `onnxruntime`, ausente nas dependências do script, interrompendo a conversão de 73 PDFs.
+- **Solução**: Migração para `easyocr` (`EasyOcrOptions(lang=["pt", "en"])`), executado nativamente sobre PyTorch na GPU (RTX 5060). Essa abordagem dispensa binários externos de sistema ou bibliotecas ONNX separadas.
+
+### 2. PDFs com Saída Vazia (Carimbos Digitais e Desenhos Vetoriais)
+
+- **Causa**: Documentos assinados digitalmente (Docusign, DIO) continham de 30 a 180 caracteres na página — apenas o carimbo de autenticação —, com o restante do conteúdo consistindo em imagens escaneadas ou desenhos vetoriais (`drawings > 2000`). O detector considerava o texto mínimo suficiente e não acionava OCR, resultando em Markdown vazio.
+- **Solução**: O detector `page_is_suspect` passou a checar elementos visuais e padrões conhecidos de autenticação. Além disso, foi adicionado um fallback automático: se qualquer conversão sem OCR gerar saída vazia ou anômala, o worker retenta a conversão com EasyOCR antes de finalizar o arquivo.
+
+### 3. Calibração da Validação Alfanumérica em Editais Extensos
+
+- **Causa**: Editais longos (como Procap Mestrado/Doutorado de 80 páginas e Redes de PDI de 99 páginas) repetem cabeçalhos institucionais e rodapés do sistema E-DOCS em todas as páginas. O classificador de layout do Docling descarta corretamente essas repetições de margem, gerando uma razão alfanumérica entre 81% e 84% em relação ao texto bruto do PyMuPDF, caindo falsamente no limiar anterior de 85%.
+- **Solução**: O limiar `OCR_MIN_ALNUM_RATIO` foi ajustado para 80% (0.80), preservando a aprovação desses editais sem mascarar perdas reais de conteúdo.
+
+### 4. Modo de Retentativa e Consolidação do Manifesto
+
+- Adição do parâmetro `--retry-failed` para processar exclusivamente os arquivos pendentes (`erro` ou `suspeito`), sem reprocessar os 567 documentos já homologados.
+- Consolidação automática do manifesto `_conversion_manifest.csv` ao término da execução, eliminando duplicatas e sincronizando `_quarentena.csv`.
