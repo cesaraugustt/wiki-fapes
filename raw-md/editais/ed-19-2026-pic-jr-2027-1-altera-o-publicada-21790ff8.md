@@ -1,0 +1,2474 @@
+---
+type: Fonte
+title: "ed-19-2026-pic-jr-2027-1-altera-o-publicada-21790ff8"
+status: draft
+pages: 105
+ocr_forced: false
+ocr_pages: []
+conversion_status: ok
+generated:
+  by: docling-gpu
+  at: 2026-10-15T11:45:30Z
+sources:
+  - id: "ed-19-2026-pic-jr-2027-1-altera-o-publicada-21790ff8"
+    resource: "https://fapes.es.gov.br/media/Editais/Ed. 19.2026 PIC JR 2027 - 1ª Alteração - Publicada.pdf"
+    local_path: "raw/editais/ed-19-2026-pic-jr-2027-1-altera-o-publicada-21790ff8.pdf"
+    sha256: "21790ff8b9e4b44a309423bcae7c811203f846abddf14d7cd6737505bea53c57"
+---
+
+<!-- page 1 -->
+
+## Fapes
+
+Fundação de Amparo à Pesquisa e Inovação do Espírito Santo
+
+## PICJr 2027
+
+Programa de Iniciação Científica Júnior do Espírito Santo - Pesquisador do Futuro
+
+## Aviso de alteração
+
+A Diretoria Executiva da Fapes, em sua 905ª Reunião Ordinária, realizada no dia 02 de setembro de 2026, autorizou a 1ª alteração do Edital Fapes/Sedu nº 19/2026 - Programa de Iniciação Científica Júnior do Espírito Santo - Pesquisador do Futuro.
+
+| Item            | Modificação Alteração: Prorrogação de data de Envio da proposta e documentos: ONDE SE LÊ: (...)Até 09/09/2026 (às 17h59) - Envio da proposta e documentos (...)                                                                                                                                                                                                       |
+|-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1.5. Cronograma | LEIA-SE: (...)Até 21/09/2026 (às 17h59) - Envio da proposta e documentos (...) Alteração: Prorrogação da data de Divulgação do resultado preliminar de habilitação: ONDE SE LÊ: (...)A partir de 02/10/2026 - Divulgação do resultado preliminar de habilitação (...) LEIA-SE: (...) A partir de 07/10/2026 - Divulgação do resultado preliminar de habilitação (...) |
+
+<!-- image -->
+
+Atenção: A versão atualizada, com a alteração incorporada, encontrase nas páginas seguintes.
+
+<!-- image -->
+
+<!-- page 2 -->
+
+## Edital Fapes/Sedu nº 19/2026
+
+<!-- image -->
+
+<!-- image -->
+
+## PICJr 2027 Programa de Iniciação Científica Júnior do Espírito Santo Pesquisador do Futuro
+
+<!-- image -->
+
+<!-- page 3 -->
+
+## Edital Fapes/Sedu nº 19/2026
+
+## PICJr 2027 Programa de Iniciação Científica Júnior do Espírito Santo Pesquisador do Futuro
+
+O Programa de Iniciação Científica Júnior (PICJr) apoia financeiramente projetos de pesquisa desenvolvidos em parceria entre escolas públicas de Educação Básica e Instituições de Ensino Superior e/ou de Pesquisa (IES/P) do Espírito Santo.
+
+Esses projetos aproximam os estudantes da rede pública de práticas científicas, sob a orientação de um pesquisador coordenador e a coorientação de um professor tutor de uma escola parceira.
+
+Em parceria com a Secretaria da Educação (Sedu), a Fapes publica este edital e convida pesquisadores vinculados a IES/P a apresentarem propostas de projetos, conforme as orientações estabelecidas neste documento.
+
+<!-- page 4 -->
+
+## Sumário
+
+- 1 Informações gerais, página 3
+
+|   1.1 | Apresentação do edital, página 4                          |
+|-------|-----------------------------------------------------------|
+|   1.2 | Objetivos, página 4                                       |
+|   1.3 | Participantes, página 6                                   |
+|   1.4 | Requisitos para participação, página 8                    |
+|   1.5 | Cronograma, página 11                                     |
+|   1.6 | Recursos financeiros, página 12                           |
+|   1.7 | Itens financiáveis, página 14                             |
+|     2 | Apresentação da proposta, página 15                       |
+|   2.1 | Documentos obrigatórios para envio da proposta, página 16 |
+|   2.2 | Diretrizes para o envio da proposta, página 17            |
+|   2.3 | Como enviar a proposta, página 18                         |
+|     3 | Julgamento das propostas, página 19                       |
+|   3.1 | Habilitação, página 19                                    |
+|   3.2 | Análise de mérito, página 20                              |
+|   3.3 | Divulgação dos resultados, página 25                      |
+|     4 | Recurso administrativo, página 25                         |
+|   4.1 | Procedimentos para recorrer, página 25                    |
+|   4.2 | Validação do recurso administrativo, página 26            |
+|   4.3 | Análise e deliberação, página 27                          |
+|     5 | Contratação da proposta, página 27                        |
+|   5.1 | Etapas da contratação, página 27                          |
+|   5.2 | Documentos para a contratação, página 28                  |
+|   5.3 | Diretrizes para a contratação, página 29                  |
+
+<!-- page 5 -->
+
+|   Fundação de Amparo à Pesquisa e Inovação do Espírito Santo | Fundação de Amparo à Pesquisa e Inovação do Espírito Santo   | Programa de Iniciação Científica Júnior do Espírito Santo - Pesquisador do Futuro   |
+|--------------------------------------------------------------|--------------------------------------------------------------|-------------------------------------------------------------------------------------|
+|                                                            6 | Acompanhamento da execução, página 30                        | Acompanhamento da execução, página 30                                               |
+|                                                          6.1 | Gestão de bolsas, página 30                                  | Gestão de bolsas, página 30                                                         |
+|                                                          6.2 | Gestão do projeto, página 40                                 | Gestão do projeto, página 40                                                        |
+|                                                          6.3 | Como citar a Fapes, página 44                                | Como citar a Fapes, página 44                                                       |
+|                                                          6.4 | Comunicar à Fapes os resultados do projeto, página 45        | Comunicar à Fapes os resultados do projeto, página 45                               |
+|                                                          6.5 | Obrigações das partes, página 46                             | Obrigações das partes, página 46                                                    |
+|                                                            7 | Prestação de contas, página 50                               | Prestação de contas, página 50                                                      |
+|                                                          7.1 | Relatório técnico do projeto, página 51                      | Relatório técnico do projeto, página 51                                             |
+|                                                          7.2 | Relatório técnico dos bolsistas, página 51                   | Relatório técnico dos bolsistas, página 51                                          |
+|                                                          7.3 | Relatório financeiro simplificado, página 52                 | Relatório financeiro simplificado, página 52                                        |
+|                                                          7.4 | Avaliação final, página 52                                   | Avaliação final, página 52                                                          |
+|                                                            8 | Legislações aplicáveis, página 53                            | Legislações aplicáveis, página 53                                                   |
+|                                                          8.1 | Leis e Decretos, página 53                                   | Leis e Decretos, página 53                                                          |
+|                                                          8.2 | Resoluções do CCAF/Fapes, página 54                          | Resoluções do CCAF/Fapes, página 54                                                 |
+|                                                            9 | Impugnação do edital, página 55                              | Impugnação do edital, página 55                                                     |
+|                                                          9.1 | Procedimentos para impugnação, página 55                     | Procedimentos para impugnação, página 55                                            |
+|                                                          9.2 | Análise e deliberação, página 56                             | Análise e deliberação, página 56                                                    |
+|                                                           10 | Disposições finais, página 56                                | Disposições finais, página 56                                                       |
+|                                                           11 | Glossário, página 57                                         | Glossário, página 57                                                                |
+|                                                           12 | Dúvidas e informações, página 61                             | Dúvidas e informações, página 61                                                    |
+|                                                           13 | Lista de Anexos, página 62                                   | Lista de Anexos, página 62                                                          |
+
+<!-- page 6 -->
+
+## 1
+
+## Informações gerais
+
+## 1.1 Apresentação do edital
+
+A Fundação de Amparo à Pesquisa e Inovação do Espírito Santo (Fapes) é um órgão público estadual dedicado a fomentar a pesquisa científica, o desenvolvimento tecnológico e a inovação no estado do Espírito Santo. Vinculada à Secretaria da Ciência, Tecnologia, Inovação e Educação Profissional (Secti), a Fapes atua alinhada às políticas públicas para promover o avanço científico e tecnológico no estado.
+
+No âmbito do processo 2026-RRWK4, a Fapes promove ações voltadas ao fortalecimento da educação científica e da formação de recursos humanos por meio do Programa de Iniciação Científica Júnior (PICJr).
+
+O Programa de Iniciação Científica Júnior (PICJr) busca fortalecer a integração entre ensino, pesquisa e inovação em todas as etapas e modalidades da educação - Educação Infantil, Ensino Fundamental, Ensino Médio, Educação Profissional Técnica de Nível Médio e Educação de Jovens e Adultos. Por isso, é destinado a pesquisadores e estudantes vinculados às IES/P, bem como a professores e estudantes da Rede Pública de Educação Básica do Estado do Espírito Santo.
+
+## 1.2 Objetivos
+
+O objetivo geral deste edital é selecionar projetos que despertem nos estudantes da Rede Pública de Educação Básica do Espírito Santo, o interesse pela ciência, pelo desenvolvimento tecnológico e por ações de inovação.
+
+<!-- page 7 -->
+
+Os projetos podem abranger as oito áreas do conhecimento estabelecidas pelo Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq):
+
+- A Ciências Agrárias;
+- B Ciências da Saúde;
+- C Ciências da Vida;
+- D Ciências Exatas e da Terra;
+- E Ciências Humanas;
+- F Ciências Sociais Aplicadas;
+- G Engenharias;
+- H Letras, Linguística e Artes.
+
+## 1.2.1 Objetivos específicos
+
+- I incentivar a participação ativa de estudantes da Rede Pública de Ensino Básico em projetos de pesquisa científica, tecnológica e de inovação;
+- J promover a popularização da ciência junto à comunidade escolar;
+- K estimular a parceria entre as IES/P e as escolas da Rede Pública de Ensino Básico;
+- L contribuir para a formação de qualidade dos estudantes, ampliando suas oportunidades acadêmicas e profissionais;
+
+<!-- page 8 -->
+
+- M promover a inclusão social e a cidadania em comunidades com maior situação de vulnerabilidade.
+
+## 1.3 Participantes
+
+## 1.3.1 Coordenador
+
+Pesquisador vinculado a uma IES/P, responsável por elaborar, enviar a proposta e desenvolver as ações do projeto. Atua como principal interlocutor junto à Fapes e os demais participantes.
+
+## 1.3.2 Instituição de Ensino Superior e/ou de Pesquisa (IES/P)
+
+Instituição localizada no Espírito Santo à qual o coordenador do projeto está vinculado. Apoia na execução do projeto e disponibiliza infraestrutura e recursos administrativos necessários.
+
+## 1.3.3 Escola parceira
+
+Unidade da Rede Pública de Educação Básica do Espírito Santo à qual o tutor e os estudantes de Iniciação Científica Júnior (ICJr) estão vinculados. Atua como local de desenvolvimento das atividades em parceria com a IES/P e contribui para a integração entre o ensino básico e a pesquisa científica.
+
+<!-- page 9 -->
+
+## 1.3.4 Tutor
+
+Professor da escola parceira, responsável por coorientar e acompanhar os estudantes da Educação Básica nas ações do projeto. Atua em articulação com o coordenador e os bolsistas ICT, garantindo a participação efetiva dos estudantes e a integração entre a escola e a IES/P.
+
+## 1.3.5 Bolsista de Iniciação Científica e Tecnológica (ICT)
+
+Estudante de graduação de uma Instituição de Ensino Superior (IES) pública ou privada do estado. Apoia o desenvolvimento das atividades do projeto, sob orientação do coordenador.
+
+## 1.3.6 Bolsista de Iniciação Científica Júnior (ICJr)
+
+Estudante regularmente matriculado na escola parceira, em qualquer etapa da Educação Básica. Participa do projeto sob a orientação do tutor, do coordenador e do bolsista ICT, desenvolvendo habilidades científicas, tecnológicas e de inovação.
+
+## 1.3.7 Gestor institucional da IES/P
+
+Dirigente máximo da IES/P ou autoridade legalmente designada. É responsável por representar a instituição junto à Fapes e assinar os documentos oficiais necessários para o desenvolvimento do projeto.
+
+<!-- page 10 -->
+
+## 1.4 Requisitos para participação
+
+Os requisitos apresentados a seguir estabelecem as condições mínimas que cada participante deve atender durante todas as etapas do projeto, considerando suas funções e responsabilidades específicas.
+
+## 1.4.1 Requisitos do coordenador
+
+- A ser o proponente do projeto;
+- B ter titulação mínima de mestre no momento do envio da proposta;
+- C ser brasileiro ou estrangeiro com autorização de residência por prazo indeterminado;
+- D ter cadastro atualizado no Sistema de Gestão da Fapes;
+- E ter cadastro na Plataforma Lattes atualizado há menos de 6 (seis) meses, contados do momento do envio da proposta;
+- F morar no Espírito Santo, no ato da contratação;
+- G ter vínculo estatutário ou celetista por tempo indeterminado com a IES/P;
+- H não estar afastado da IES/P no momento da contratação;
+- I não ter vínculo de parentesco natural ou civil, até o terceiro grau, com o diretor da escola parceira e com o tutor do projeto;
+- J estar regularizado junto à Fapes.
+
+<!-- page 11 -->
+
+## 1.4.2 Requisitos da IES/P
+
+- A ser a instituição com o qual o coordenador tem vínculo estatutário ou celetista por tempo indeterminado;
+- B estar localizada no Espírito Santo;
+- C ter condições de infraestrutura necessárias para executar o projeto submetido pelo coordenador;
+- D autorizar o uso de seus espaços para a realização das atividades do projeto.
+
+## 1.4.3 Requisitos da escola parceira
+
+- E fazer parte da rede pública de Educação Básica Federal, Estadual ou Municipal do Espírito Santo;
+- F ter condições de infraestrutura necessária para executar o projeto de pesquisa;
+- G obter a autorização formal da direção da escola para a participação no projeto, por meio do formulário de submissão (Anexo I).
+
+## 1.4.4 Requisitos do tutor
+
+- A não ser proponente de um projeto neste edital;
+- B participar como tutor em apenas uma proposta submetida neste edital;
+- C estar em exercício em sala de aula como professor efetivo ou temporário na escola parceira do projeto;
+
+<!-- page 12 -->
+
+- D morar no Espírito Santo, no ato da contratação;
+- E ter cadastro atualizado no Sistema de Gestão da Fapes;
+- F estar inserido no Sistema de Gestão da Fapes como membro de equipe e aprovar a sua participação na proposta;
+- G ter cadastro na Plataforma Lattes atualizado há menos de 6 (seis) meses, contados do momento do envio da proposta;
+- H ter autorização da direção da escola parceira para desenvolver o projeto;
+- I não ter vínculo de parentesco natural ou civil, até o terceiro grau, com o diretor da escola parceira e com o coordenador do projeto;
+- J estar regularizado junto à Fapes.
+
+<!-- page 13 -->
+
+## 1.5 Cronograma
+
+O cronograma previsto para este edital é apresentado a seguir, com as principais etapas e prazos para acompanhamento:
+
+| 31/07/2026                                                                                                   |
+|--------------------------------------------------------------------------------------------------------------|
+| Publicação do edital                                                                                         |
+| Até 21/09/2026 (às 17h59) Envio da proposta e documentos                                                     |
+| A partir de 07/10/2026 Divulgação do resultado preliminar de habilitação                                     |
+| Até 5 dias úteis após o resultado preliminar de habilitação Prazo para recorrer                              |
+| A partir de 26/10/2026 Divulgação do resultado final de habilitação                                          |
+| A partir de 05/01/2027 Divulgação do resultado preliminar de análise de mérito                               |
+| Até 5 dias úteis após o resultado preliminar de análise de mérito Prazo para recorrer A partir de 25/01/2027 |
+| Divulgação do resultado final de análise de mérito A partir de 09/02/2027                                    |
+| Contratação dos projetos selecionados                                                                        |
+| Início de execução dos projetos                                                                              |
+| A                                                                                                            |
+| partir de 01/03/2027                                                                                         |
+
+<!-- page 14 -->
+
+## 1.5.1 Alterações de datas e prazos
+
+A Fapes pode alterar as datas e os prazos definidos no cronograma por necessidade ou decisão institucional. Pode também reabrir o prazo para recebimento de propostas em casos de força maior ou de falhas comprovadas nas plataformas e sistemas da Fundação.
+
+## 1.6 Recursos financeiros
+
+O valor total previsto para este edital é de R$ 8.887.500,00. Desse total, R$ 6.222.477,00 são recursos do Fundo Estadual de Ciência e Tecnologia (Funcitec), fonte 1759 - Recursos vinculados do Tesouro do Estado, e R$ 2.665.023,00 são recursos descentralizados da Secretaria da Educação.
+
+Outros recursos financeiros, provenientes de futuras parcerias ou de disponibilidade orçamentária da Fapes e/ou do Funcitec, também podem ser utilizados. Esses valores adicionais podem complementar propostas já aprovadas ou viabilizar a contratação de novas propostas classificadas no mérito.
+
+## 1.6.1 Distribuição dos recursos financeiros
+
+Para atender as ações estratégicas deste edital e do Planejamento Estratégico do Governo do Estado do Espírito Santo, os recursos financeiros são distribuídos por faixa, respeitando os valores totais definidos abaixo:
+
+<!-- page 15 -->
+
+## A Faixa A - Educação Ambiental Formal
+
+Valor: R$ 1.422.000,00
+
+Requisito: projetos desenvolvidos em parceria com escolas da rede estadual de Educação Básica. Devem abordar temas como: mudanças climáticas; impactos ambientais nos ecossistemas locais; energias renováveis; água e floresta; sustentabilidade urbana; conservação da biodiversidade; e uso sustentável dos recursos naturais.
+
+## B Faixa B - Práticas de Ciências da Natureza e Matemática
+
+Valor: R$ 1.185.000,00
+
+Requisito: projetos desenvolvidos em parceria com escolas da rede estadual de Educação Básica. Deve envolver práticas de laboratório, experimentos e investigações sobre o ensino de Biologia, Física, Química e Matemática, realizadas em ambiente com recursos específicos.
+
+## C Faixa C - Bairros do Programa Estado Presente
+
+Valor: R$ 2.073.750,00
+
+Requisito: projetos desenvolvidos em parceria com escolas da rede estadual ou municipal, localizadas em bairros atendidos pelo Programa Estado Presente, conforme listagem disponível no Anexo II.
+
+## D Faixa D - Ampla concorrência
+
+Valor: R$ 4.206.750,00
+
+Requisito: projetos desenvolvidos em parceria com escolas públicas federais, estaduais ou municipais, localizadas em qualquer região do Espírito Santo.
+
+<!-- page 16 -->
+
+## 1.6.2 Transferência de recursos financeiros entre faixas
+
+Se, após a distribuição dos recursos financeiros da Faixa A, houver saldo remanescente, esse valor pode ser transferido para a Faixa B. O mesmo se aplica ao saldo não utilizado na Faixa B, que pode ser incorporado à Faixa A.
+
+Após a distribuição dos recursos entre as propostas aprovadas na faixa C, caso haja saldo remanescente, esse valor pode ser transferido para a faixa D.
+
+A distribuição dos recursos financeiros respeita a ordem de classificação das propostas, conforme os critérios estabelecidos no item 3.2.1 - Critérios de avaliação.
+
+## 1.7 Itens financiáveis
+
+Itens financiáveis são todas as despesas que podem ser pagas com recursos financeiros concedidos pela Fapes para desenvolver o projeto.
+
+Além das modalidades de bolsas, o coordenador de cada projeto contratado recebe um auxílio financeiro de R$ 10 mil (dez mil reais) para desenvolver o projeto de pesquisa, conforme as Resoluções CCAF 308/2022 e 309/2022 e suas alterações, que regulamentam o auxílio em Pesquisa, Desenvolvimento e Inovação (PD&amp;I) e demais itens financiáveis pela Fapes e pelo Funcitec.
+
+## 1.7.1 Modalidades de bolsas
+
+Cada proposta contempla:
+
+- A uma bolsa de coordenador (BCO);
+
+<!-- page 17 -->
+
+- B uma bolsa de tutor (BTU);
+- C uma bolsa de iniciação científica e tecnológica (ICT);
+- D cinco bolsas de iniciação científica júnior (ICJr).
+
+Somente as cinco bolsas de ICJr são obrigatórias para implementação. As demais modalidades - BCO, BTU e ICT - são opcionais e podem ser solicitadas conforme as necessidades do projeto.
+
+Os valores mensais das bolsas estão definidos na Tabela de Valores de Bolsas e Auxílios da Fapes e suas alterações. As bolsas são concedidas na forma de cooperação financeira não reembolsável.
+
+2
+
+## Apresentação da proposta
+
+A proposta do PICJr consiste no conjunto de informações enviadas pelo coordenador, incluindo a descrição detalhada do projeto. Nela, são apresentadas as informações gerais, os objetivos, a metodologia, o cronograma planejado e os resultados esperados.
+
+O projeto deve:
+
+- A estar enquadrado corretamente em uma das faixas estabelecidas no item 1.6.1 - Distribuição dos recursos financeiros;
+- B ser inédito para a Fapes, apresentando ideia, abordagem ou solução que ainda não tenha sido desenvolvida, aplicada ou explorada no mesmo contexto ou área. Para fins deste edital, não são considerados inéditos:
+- I projetos com alto grau de similaridade com outros já contratados pela Fapes, ainda que apresentem alterações de equipe ou cronograma;
+
+<!-- page 18 -->
+
+- II projetos que repitam ou deem continuidade a propostas já concluídas sem apresentar avanços significativos em termos de inovação ou impactos esperados;
+- C apresentar atividades de pesquisa, desenvolvimento e/ou inovação a serem executadas pelos bolsistas ICJr sob orientação do coordenador e acompanhamento dos demais membros da equipe;
+- D prever estratégias de popularização do conhecimento científico, ampliando o acesso à ciência e suas aplicações pela comunidade escolar e local;
+- E ser elaborado considerando a realidade econômica, social, ambiental e cultural da comunidade na qual a escola parceira e os estudantes estão inseridos.
+
+## 2.1 Documentos obrigatórios para envio da proposta
+
+- A Formulário de submissão do projeto (Anexo I): descrição detalhada da proposta de projeto do PICJr, assinado pelo coordenador, gestor/representante institucional da instituição executora, tutor e diretor da escola parceira, preferencialmente, por meio do Sistema de Gestão de Documentos Arquivísticos Eletrônicos do Governo do Estado (E-Docs).
+- B Diploma de maior titulação do coordenador (mestre ou doutor): cópia frente e verso, em um único arquivo PDF.
+- C Currículo Lattes do coordenador: atualizado há menos de 6 (seis) meses, contados da data limite de submissão das propostas.
+
+<!-- page 19 -->
+
+- D Currículo Lattes do tutor: atualizado há menos de 6 (seis) meses, contados da data limite de submissão das propostas.
+
+## 2.2 Diretrizes para o envio da proposta
+
+O coordenador é o único responsável pelo conteúdo e pela integridade da proposta enviada.
+
+A Fapes não pode ser responsabilizada pelo não recebimento de propostas nos seguintes casos:
+
+- A irregularidades do coordenador ou de membros da equipe junto à Fundação;
+- B problemas técnicos ou congestionamentos nas linhas de comunicação, exceto quando causados pelas plataformas da Fapes;
+- C perda do prazo por qualquer outro motivo.
+
+O coordenador pode solicitar correção de erros materiais na proposta ou na documentação. Isso ocorre desde que os erros não comprometam a análise e compreensão da proposta ou representem vantagem competitiva, mediante justificativa técnica aceita pela Fapes.
+
+Caso seja necessário alterar uma proposta já submetida, o coordenador deve solicitar a reversão do enquadramento pelo e-mail bolsas.duvidas@fapes.es.gov.br, desde que o prazo final de envio ainda esteja vigente.
+
+<!-- page 20 -->
+
+## 2.2.1 Solicitação de recursos de acessibilidade
+
+O coordenador que necessitar de adaptações, tecnologias assistivas ou outros recursos de acessibilidade para participar deste edital, deve informar a Fapes pelo e-mail bolsas.duvidas@fapes.es.gov.br.
+
+A concessão das adaptações, de tecnologias assistivas e de outros recursos de acessibilidade será avaliada segundo critérios de viabilidade e razoabilidade, considerando as condições comprovadas pelo coordenador, desde que solicitadas em até 10 dias do término de submissão das propostas.
+
+## 2.3 Como enviar a proposta
+
+O coordenador deve enviar a proposta por meio do Sistema de Gestão da Fapes, utilizando login e senha próprios, até 09/09/2026, às 17h59, conforme item 1.5 - Cronograma.
+
+Cada coordenador deve apresentar apenas uma proposta a este edital. Caso envie mais de uma proposta, será considerada apenas a última enviada.
+
+Para enviar a proposta, o coordenador deve:
+
+- A preencher os campos solicitados na proposta online por meio do Sistema de Gestão da Fapes;
+- B carregar no Sistema de Gestão da Fapes toda a documentação exigida, conforme item 2.1 - Documentos para envio da proposta.
+- C ter a anuência do Gestor Institucional no Sistema de Gestão da Fapes.
+
+<!-- page 21 -->
+
+Após o envio, o coordenador tem acesso ao recibo eletrônico de protocolo, que serve como comprovante da submissão.
+
+## 2.3.1 Anuência do Gestor Institucional
+
+O coordenador deve verificar quem são os representantes institucionais vinculados como Gestores Institucionais da sua IES/P no Sistema de Gestão da Fapes. O coordenador deve solicitar a um desses representantes que libere o envio da proposta no sistema para que ela siga para análise da Fapes.
+
+Atenção: A IES/P é responsável por cadastrar, atualizar e vincular o seu Gestor Institucional e/ou seus representantes. Esse procedimento deve ser realizado por meio do Formulário de Cadastro de Instituição/Empresa e Gestor/Representante Legal, disponível em Fapes - Formulários, com envio para o e-mail nutic@fapes.es.gov.br. A equipe da Fapes analisa o cadastro ou a atualização em até 3 (três) dias
+
+úteis após o recebimento.
+
+## 3 Julgamento das propostas
+
+As propostas passam por duas etapas de julgamento: habilitação e análise de mérito.
+
+## 3.1 Habilitação
+
+A equipe técnica da Fapes analisa se as regras do edital foram cumpridas nesta etapa. A proposta será habilitada se:
+
+<!-- page 22 -->
+
+- A atender ao item 1.4 - Requisitos para participação;
+- B cumprir as diretrizes do item 2 - Apresentação da proposta.
+
+## 3.1.1 Validação e aprovação do resultado de habilitação
+
+A Diretoria Setorial Técnico-Científica (Ditec) valida a lista de propostas habilitadas e de propostas inabilitadas, acompanhada dos itens não atendidos. Em seguida, a lista é encaminhada à Diretoria Executiva da Fapes (Direx) para análise e aprovação do resultado preliminar de habilitação.
+
+Atenção: a etapa de habilitação é eliminatória, portanto, somente as propostas habilitadas seguem para a etapa de análise de mérito.
+
+## 3.2 Análise de mérito
+
+A etapa da análise do mérito técnico-científico das propostas é realizada por meio do Sistema de Gestão da Fapes e cada proposta é avaliada por, no mínimo, dois avaliadores ad hoc. Esses avaliadores devem ser especialistas com título de doutor.
+
+O avaliador ad hoc não pode julgar propostas se:
+
+- A participar de proposta submetida, como coordenador ou membro da equipe;
+- B tiver cônjuge, companheiro ou parente até o terceiro grau participando da equipe;
+- C tiver interesse direto ou indireto no resultado da avaliação;
+
+<!-- page 23 -->
+
+- D estiver em litígio judicial ou administrativo com o coordenador, qualquer membro da equipe ou seus respectivos cônjuges ou companheiros.
+
+## 3.2.1 Critérios de avaliação
+
+As propostas são avaliadas de acordo com os seguintes critérios e pesos:
+
+- A Protagonismo estudantil (Peso: 2,0) Avalia se as atividades previstas colocam os estudantes como agentes centrais no desenvolvimento do projeto, com tarefas compatíveis à sua formação e oportunidades de protagonismo acadêmico e científico.
+- B Popularização da ciência (Peso: 2,0) Avalia se o projeto promove ações de divulgação científica
+
+acessíveis e relevantes para a comunidade escolar e seu entorno.
+
+- C Formação e resultados acadêmicos/profissionais dos
+
+estudantes (Peso: 2,0) Avalia se o projeto contribui para o aprendizado, desenvolvimento de competências e oportunidades acadêmicas e profissionais dos estudantes, estimulando a continuidade dos estudos em cursos técnicos e de nível superior.
+
+D Impacto social e equidade (Peso: 1,5) Avalia se o projeto promove inclusão social, equidade e cidadania, especialmente em comunidades vulneráveis, considerando suas condições socioeconômicas, culturais e ambientais, e se propõe soluções realistas e adequadas a essa realidade.
+
+<!-- page 24 -->
+
+- E Qualidade e sustentabilidade da parceria entre a IES/P com a escola da rede pública (Peso: 1,0)
+
+Avalia se a parceria é bem estruturada, com papéis claros, ações integradas e perspectiva de continuidade após o encerramento do edital, e se contribui para o desenvolvimento científico, tecnológico e de inovação.
+
+- F Viabilidade e clareza da metodologia e resultados (Peso: 1,0) Avalia a adequação da metodologia, clareza e viabilidade técnica, operacional e temporal do projeto. Verifica se os resultados e impactos estão claramente descritos, são mensuráveis e coerentes com os objetivos do edital, incluindo impacto social quando relevante.
+- G Mérito científico/tecnológico e inovação (Peso: 0,5) Avalia se o projeto aborda um problema científico e/ou tecnológico relevante, claramente identificado e justificado. Analisa a originalidade, diferenciação e inovação da proposta, considerando o impacto potencial no conhecimento científico, tecnológico ou social.
+
+## 3.2.1.1 Sistema de pontuação
+
+Cada critério de avaliação recebe uma nota de 0 (zero) a 10 (dez) pontos, atribuída individualmente por cada avaliador ad hoc. Para orientar a pontuação de cada critério, utiliza-se a seguinte escala:
+
+- 1 Excelente: 9,0 a 10,0
+- 2 Bom: de 7,0 a 8,9
+- 3 Razoável: de 5,0 a 6,9
+- 4 Incipiente: de 3,1 a 4,9
+
+<!-- page 25 -->
+
+## 5 Ruim: menor ou igual a 3,0
+
+Cada nota é multiplicada pelo peso correspondente do critério. A pontuação total de cada avaliador corresponde a soma das notas de todos os critérios, variando de 0 (zero) a 100 (cem) pontos.
+
+A nota final da proposta é calculada pela média simples das pontuações atribuídas pelos avaliadores.
+
+## 3.2.1.2 Avaliação adicional
+
+A proposta é julgada por um terceiro avaliador ad hoc quando houver diferença de, no mínimo, 30 (trinta) pontos entre as notas dos dois avaliadores, desde que uma delas seja igual ou superior a 70 (setenta) pontos.
+
+Após a atribuição da terceira nota, o cálculo da média da nota final será a média simples das duas notas dos avaliadores ad hoc que apresentarem a menor diferença de pontuação.
+
+## 3.2.1.3 Classificação das propostas
+
+São classificadas as propostas com nota final igual ou superior a 70 (setenta) pontos, organizadas em ordem decrescente de pontuação.
+
+São desclassificadas as propostas com nota final inferior a 70 (setenta) pontos.
+
+## 3.2.1.4 Critérios de desempate
+
+Em caso de empate na nota final, aplicam-se os seguintes critérios de desempate, na ordem apresentada, até que se configure o desempate:
+
+<!-- page 26 -->
+
+## Fapes
+
+- 2 Projeto a ser realizado em escola parceira localizada em bairro atendido pelo Programa Estado Presente (Anexo II).
+- 3 Maior pontuação, nesta ordem, nos critérios estabelecidos para avaliação:
+- I protagonismo estudantil;
+- II popularização da ciência;
+- III formação e resultados acadêmicos/profissionais dos estudantes;
+- IV impacto social e equidade.
+- V proposta submetida primeiro.
+
+## 3.2.1.5 Validação e aprovação do resultado de análise de mérito
+
+A Ditec confere os cálculos de pontuação da lista com todas as propostas classificadas e desclassificadas, e suas respectivas notas finais.
+
+Para elaboração da lista das propostas contempladas e suplentes, consideram-se:
+
+- A a distribuição dos recursos financeiros por faixa, conforme item 1.6.1 - Distribuição de recursos financeiros;
+- B a ordem decrescente de classificação por nota final das propostas.
+
+Os coordenadores podem solicitar acesso às avaliações através do e-mail bolsas.duvidas@fapes.es.gov.br.
+
+Após a validação, a lista é encaminhada à Direx para verificação e aprovação do resultado preliminar da análise mérito.
+
+<!-- page 27 -->
+
+Santo - Pesquisador do Futuro
+
+## 3.3 Divulgação dos resultados
+
+Os avisos dos resultados preliminares e finais, referente às etapas de habilitação e análise de mérito, são publicados no Diário Oficial do Estado do Espírito Santo (DIO-ES). Os resultados detalhados de todas as etapas do edital ficam disponíveis em Fapes - Resultados de Editais.
+
+Os resultados preliminares das etapas de habilitação e análise de mérito podem ser alterados após a divulgação, devido a análise dos recursos administrativos.
+
+## 4
+
+## Recurso administrativo
+
+Qualquer pessoa pode apresentar recurso administrativo para contestar o resultado. O prazo para apresentação é de até 5 (cinco) dias úteis, contados a partir da publicação dos resultados preliminares das etapas de habilitação e análise de mérito no DIO-ES.
+
+## 4.1 Procedimentos para recorrer
+
+O recurso deve ser enviado no Sistema de Automação de Fluxos do Governo do Estado (E-Flow) por meio do Formulário de Recurso Administrativo, disponível em Fapes - Formulários.
+
+No formulário, o recorrente deve:
+
+- A identificar os dados do edital;
+- B informar o motivo e a decisão que deseja contestar;
+- C apresentar os argumentos que fundamentam o pedido e indicar o que deseja que seja reexaminado;
+
+<!-- page 28 -->
+
+- D opcionalmente, incluir documentos que comprovem ou reforcem os argumentos apresentados.
+
+Após o envio via E-Flow, todos os atos e comunicações do processo de recurso administrativo são realizados no E-Docs. O recorrente utilizará o número do protocolo gerado no envio do formulário para acompanhar o andamento do processo. Esse protocolo comprova o recebimento do recurso pela Fapes.
+
+## 4.2 Validação do recurso administrativo
+
+Não será considerado recurso administrativo que:
+
+- A envolva mudanças na proposta original;
+- B seja apresentado após o prazo para recorrer;
+- C envolva alteração, inclusão, substituição ou exclusão de documentos após o envio da proposta.
+
+A Fapes não se responsabiliza por recursos administrativos não identificados ou enviados incorretamente.
+
+O prazo para recorrer só pode ser prorrogado em caso de comprovada falha técnica no sistema E-Flow que impeça o envio do recurso administrativo. O recorrente pode desistir do recurso a qualquer momento, desde que registre essa decisão no processo correspondente no E-Docs.
+
+<!-- page 29 -->
+
+## 4.3 Análise e deliberação
+
+A Assessoria Técnica da Fapes analisa o recurso, emite parecer e o encaminha ao Conselho Científico Administrativo da Fapes (CCAF) para deliberar sobre o recurso administrativo.
+
+Outras informações referentes ao fluxo dos recursos administrativos e as instâncias deliberativas estão disponíveis na Resolução CCAF 337/2024 e suas alterações.
+
+<!-- image -->
+
+## 5 Contratação da proposta
+
+## 5.1 Etapas da contratação
+
+A Fapes disponibiliza, em Fapes - Resultados de Editais, o cronograma e as orientações para a contratação das propostas aprovadas, juntamente com o resultado homologado pelo CCAF das propostas classificadas.
+
+A convocação de suplentes pode ocorrer em casos de desistência, não contratação de propostas aprovadas ou mediante ampliação dos recursos financeiros deste edital. A convocação ocorre individualmente, obedecendo a ordem de classificação por faixa. Caso não haja suplentes na faixa específica, a proposta suplente com maior pontuação final entre todas as faixas é convocada.
+
+## 5.1.1 Substituição do tutor
+
+Se, no momento da contratação, o tutor da escola parceira desistir ou não cumprir os requisitos do edital, o coordenador pode solicitar sua substituição.
+
+<!-- page 30 -->
+
+A solicitação deve ser feita à Fapes antes da formalização do contrato, acompanhada de uma Declaração da ESCOLA PARCEIRA do projeto atestando que o novo tutor indicado é professor efetivo ou por designação temporária na referida Escola, atuando em sala de aula e que possui anuência da Direção da Escola para participar do projeto; e uma Declaração do novo tutor atestando não ter vínculo de parentesco até o terceiro grau com o Diretor da escola parceira e com o coordenador do projeto, além de atender a todos os requisitos previstos no item 1.4.4 - Requisitos do tutor.
+
+## 5.2 Documentos para a contratação
+
+No ato da contratação, o coordenador deve apresentar no campo "Envio de Documentos Pessoais", do Sistema de Gestão da Fapes e dentro do prazo emitido no resultado final os seguintes documentos:
+
+- A documento oficial de identificação com foto e número do CPF;
+- B comprovante de residência atualizado, emitido nos últimos 6 (seis) meses, em conformidade com o cadastro no Sistema de Gestão da Fapes;
+
+Atenção: Caso o comprovante de residência não esteja em nome do coordenador, é necessário apresentar vínculo com o local de residência por meio de: cópia de certidão de nascimento, casamento ou união estável, declaração do locador/proprietário ou contrato de aluguel.
+
+- C certidão negativa de débitos trabalhistas;
+- D certidões de regularidades fiscais junto à:
+
+<!-- page 31 -->
+
+## Fapes
+
+- I Fazenda Pública Municipal, conforme domicílio informado no Sistema de Gestão da Fapes;
+- II Fazenda Pública Estadual do Espírito Santo;
+- III Fazenda Pública Federal.
+- E *Registro da Lista de Checagem de Documentação de Contratação em CT&amp;I.
+- (*) O Registro da Lista de Checagem deve ser enviado por meio do eFlow - Formulário nº 25 (site da FAPES).
+
+## 5.3 Diretrizes para a contratação
+
+No ato da contratação, a Subgerência de Contratos da Fapes (SUCON) disponibiliza o Termo de Outorga e o Projeto Aprovado para formalização.
+
+A formalização é realizada por meio da assinatura eletrônica pelo coordenador do projeto e o gestor institucional da Instituição Executora conforme modelo do Anexo IV, por meio do E-Docs. Para isso, é necessário que tenham cadastro ativo no Acesso Cidadão.
+
+A contratação não é efetivada caso o coordenador deixe de apresentar qualquer documento previsto no item 5.2 - Documentos para a contratação. Além disso, o coordenador não pode estar afastado de suas atividades no momento da contratação, nem durante a vigência do projeto.
+
+<!-- page 32 -->
+
+6
+
+## Acompanhamento da execução
+
+Os coordenadores e bolsistas são responsáveis por manter seus dados atualizados no Sistema de Gestão da Fapes. Todas as comunicações oficiais são feitas por meio do sistema.
+
+O auxílio financeiro de R$ 10 mil (dez mil reais) para desenvolver o projeto de pesquisa é repassado pela Fapes, em parcela única, na conta corrente do coordenador no Banestes - Banco do Estado do Espírito Santo S.A.
+
+## 6.1 Gestão de bolsas
+
+## 6.1.1 Indicação e implementação das bolsas
+
+O coordenador do projeto deve assegurar que os candidatos às bolsas estejam cadastrados no Sistema de Gestão da Fapes e indicar, no sistema, os bolsistas a serem contratados, respeitando os prazos definidos no calendário de contratação divulgada na página institucional da Fapes.
+
+A Fapes analisa cada solicitação e implementa apenas as bolsas com coordenadores e bolsistas que atendam aos requisitos do item 6.1.3 - Requisitos das bolsas.
+
+## 6.1.2 Duração e pagamento das bolsas
+
+As bolsas BCO, BTU e ICT têm duração de até 10 (dez) meses. Já as bolsas ICJr têm duração de até 9 (nove) meses.
+
+<!-- page 33 -->
+
+Todas as bolsas devem respeitar o cronograma do projeto e o número mínimo/máximo de parcelas.
+
+Para receber a bolsa, o bolsista deve ter uma conta corrente no banco Banestes, em seu nome, não sendo permitidas contas do tipo poupança ou salário. A Fapes realiza o pagamento das bolsas nessa conta corrente mensalmente.
+
+Caso tenha interesse em abrir conta em faixa especial (isenta de determinadas taxas), pode ser solicitado à Fapes a emissão de ofício, mediante pedido do coordenador por meio do Formulário para Solicitação de Ofício, específico do E-Flow, disponível em: Fapes - Formulários.
+
+Para viabilizar o pagamento, o coordenador deve informar os dados bancários do bolsista em até 15 (quinze) dias corridos após a data da implementação da bolsa. Esses dados devem ser registrados no Formulário de Atividades durante a requisição da bolsa no Sistema de Gestão da Fapes ou enviados posteriormente, pelo Formulário de Envio de Dados Bancários, específico do E-Flow, disponível em: Fapes - Formulários.
+
+Para receber o valor integral, o bolsista deve executar suas atividades por, no mínimo, 16 (dezesseis) dias em cada mês, além de manter os requisitos para recebimento das bolsas. Não há pagamento proporcional ou retroativo à data de implementação da bolsa pela Fapes.
+
+## 6.1.3 Requisitos para recebimento das bolsas
+
+O candidato à bolsa deve enviar seus documentos pessoais por meio do Sistema de Gestão da Fapes, na seção "Envio de Documentos Pessoais", no momento da solicitação.
+
+<!-- page 34 -->
+
+Cada modalidade de bolsa (ICJr, ICT, BTU e BCO) exige requisitos e documentos específicos. Porém, todos os bolsistas devem atender aos requisitos abaixo, desde a solicitação da bolsa até o fim do período de recebimento:
+
+- A ter cadastro atualizado no Sistema de Gestão da Fapes;
+- B morar no Espírito Santo;
+- C ser indicado pelo coordenador do projeto aprovado;
+- D ter o coordenador do projeto como orientador cadastrado no Sistema de Gestão da Fapes;
+- E apresentar Formulário de Atividades, conforme modelo disponível no Sistema de Gestão da Fapes;
+- F não ter outra bolsa, a não ser que seja uma bolsa social que permita acúmulo;
+- G não exercer trabalho remunerado (mesmo que ocasional), exceto para as bolsas BTU e BCO;
+- H não ter vínculo de parentesco natural ou civil, até o terceiro grau, com o diretor da escola parceira e com o tutor do projeto;
+- I ter currículo na Plataforma Lattes, sendo esta exigência dispensada para ICJr;
+- J estar regularizado junto à Fapes.
+
+## 6.1.3.1 Bolsa de Iniciação Científica Júnior (ICJr)
+
+## 6.1.3.1.1 Requisitos específicos
+
+- A estar matriculado na escola parceira do projeto;
+
+<!-- page 35 -->
+
+- B se for menor de 18 (dezoito) anos, ter autorização dos pais ou responsáveis;
+- C ter sido selecionado em processo interno na escola parceira.
+
+A escolha dos bolsistas ICJr é feita pelo coordenador, tutor e direção da escola, de forma transparente, justa e sem favorecimentos.
+
+## 6.1.3.1.2 Documentos
+
+- A RG, CNH ou certidão de nascimento;
+- B documento contendo CPF;
+- C Formulário Fapes - Inscrição de Candidato a Bolsa de ICJr, disponível em Fapes - Formulários.
+
+## 6.1.3.2 Bolsa de Iniciação Científica e Tecnológica (ICT)
+
+## 6.1.3.2.1 Requisitos específicos
+
+- A estar matriculado em uma IES do Espírito Santo;
+- B ter média igual ou maior que 5,0 no histórico escolar;
+- C estar regularizado junto às Fazendas Federal, Estadual e Municipal e à Justiça Trabalhista.
+
+## 6.1.3.2.2 Documentos
+
+- A RG, CNH ou certidão de nascimento;
+- B documento contendo CPF;
+- C Termo de Responsabilidade, formulário disponível em: Fapes - Formulários;
+
+<!-- page 36 -->
+
+- D comprovante de residência atualizado: pode estar em nome do candidato, pais, cônjuge (com certidão de casamento ou união estável), de terceiros (com declaração) ou do locador (com contrato de aluguel);
+- E comprovante de matrícula referente ao semestre vigente da solicitação da bolsa;
+- F histórico escolar da graduação com coeficiente de rendimento;
+- G cópia do Currículo Lattes atualizado nos últimos 30 (trinta) dias, contados da data de solicitação de implementação da bolsa;
+- H certidão negativa de débitos trabalhistas: Emitir aqui;
+- I certidões de regularidades fiscais junto à:
+- I Fazenda Pública Federal: Emitir aqui;
+- II Fazenda Pública Estadual do Espírito Santo: Emitir aqui;
+- III Fazenda Pública Municipal, emitida no site da prefeitura onde o candidato mora.
+
+## 6.1.3.3 Bolsa de Tutor (BTU)
+
+## 6.1.3.3.1 Requisitos específicos
+
+- A ser o tutor do projeto;
+- B ser professor efetivo ou contratado temporariamente na escola parceira;
+- C ser professor atuante em sala de aula;
+- D estar regularizado junto às Fazendas Municipal, Estadual e Federal e à Justiça do Trabalho.
+
+<!-- page 37 -->
+
+## 6.1.3.3.2 Documentos
+
+- A RG, CNH ou certidão de nascimento;
+- B documento contendo CPF;
+- C Termo de Responsabilidade, formulário disponível em: Fapes - Formulários;
+- D comprovante de residência atualizado: pode estar em nome do candidato, pais, cônjuge (com certidão de casamento ou união estável), de terceiros (com declaração) ou do locador (com contrato de aluguel);
+- E cópia do Currículo Lattes atualizado nos últimos 30 (trinta) dias, contados da data de solicitação de implementação da bolsa;
+- F certidão negativa de débitos trabalhistas: Emitir aqui;
+- G certidões de regularidades fiscais junto à:
+- I Fazenda Pública Federal: Emitir aqui;
+- II Fazenda Pública Estadual do Espírito Santo: Emitir aqui;
+- III Fazenda Pública Municipal, emitida no site da prefeitura onde o candidato mora.
+
+## 6.1.3.4 Bolsa de Coordenador (BCO)
+
+## 6.1.3.4.1 Requisitos específicos
+
+- A ser o coordenador do projeto;
+- B ter vínculo estatutário ou celetista com a IES/P do projeto;
+- C não estar afastado da IES/P;
+
+<!-- page 38 -->
+
+- D estar regularizado junto às Fazendas Municipal, Estadual e Federal e à Justiça do Trabalho.
+
+## 6.1.3.4.2 Documentos
+
+- A RG, CNH ou certidão de nascimento;
+- B documento contendo CPF;
+- C Termo de Responsabilidade, formulário disponível em: Fapes - Formulários;
+- D cópia do Currículo Lattes atualizado nos últimos 30 (trinta) dias, contados da data de solicitação de implementação da bolsa;
+- E certidão negativa de débitos trabalhistas: Emitir aqui;
+- F certidões de regularidades fiscais junto à:
+- I Fazenda Pública Federal: Emitir aqui;
+- II Fazenda Pública Estadual do Espírito Santo: Emitir aqui;
+- III Fazenda Pública Municipal, emitida no site da prefeitura onde o candidato mora.
+
+## 6.1.4 Afastamento do bolsista
+
+O afastamento do bolsista com pagamento integral da bolsa é permitido em caso de:
+
+- A licença médica por até 15 (quinze) dias;
+- B licença por advento de prole, como nascimento ou adoção de filhos, conforme regras previstas na Resolução CCAF 251/2019 e suas alterações.
+
+<!-- page 39 -->
+
+O coordenador deve comunicar oficialmente à Fapes o afastamento dos bolsistas e o retorno das suas atividades.
+
+A vigência do Formulário de Atividades do bolsista contratado não é prorrogável em casos de afastamento.
+
+## 6.1.5 Suspensão da bolsa
+
+A bolsa será suspensa nos casos de:
+
+- A solicitação do coordenador do projeto, mediante justificativa;
+- B afastamento do bolsista por período acima do estabelecido;
+- C inadimplência do bolsista ou do coordenador do projeto junto à Fapes.
+
+O coordenador deve comunicar oficialmente à Fapes a suspensão da bolsa na data em que isso acontecer e também a reativação do pagamento da bolsa no retorno do bolsista às atividades.
+
+Durante o período da suspensão, o pagamento é interrompido. A reativação ocorre somente se o projeto estiver vigente e se não houver inadimplência, descumprimento de obrigações ou dos requisitos pelo coordenador, conforme Termo de Outorga (TO).
+
+Não serão pagas parcelas retroativas correspondentes ao período de suspensão nos casos previstos nas alíneas "a" até "c" deste item.
+
+Nos casos em que as penalidades são aplicáveis, os bolsistas serão notificados pela Fapes com garantia do direito à ampla defesa.
+
+<!-- page 40 -->
+
+## 6.1.6 Cancelamento da bolsa
+
+A bolsa será cancelada nos casos de:
+
+- A abandono ou desistência por iniciativa própria do bolsista, mediante justificativa;
+- B solicitação do coordenador do projeto, mediante justificativa;
+- C não atendimento aos requisitos do bolsista estabelecidos no edital;
+- D afastamentos por motivos ou prazos fora do estabelecido no edital;
+- E prática de qualquer fraude;
+- F falecimento do bolsista.
+
+O coordenador deve comunicar oficialmente à Fapes, na data em que acontecer, qualquer caso de cancelamento de bolsa.
+
+Em casos em que as penalidades sejam aplicáveis, os bolsistas serão notificados pela Fapes com garantia do direito à ampla defesa.
+
+## 6.1.7 Ressarcimento das mensalidades de bolsas
+
+O bolsista deve ressarcir à Fapes os valores recebidos nos casos de:
+
+- A recursos financeiros recebidos indevidamente;
+- B descumprimento dos requisitos e obrigações do bolsista estabelecidos no edital;
+- C prática de fraude em que a concessão não teria ocorrido e/ou se mantido;
+
+<!-- page 41 -->
+
+- D atraso ou irregularidade na prestação de contas que persista após o vencimento dos prazos concedidos pela Fapes.
+
+O coordenador responde, de forma conjunta ao bolsista, em casos de omissão de informações à Fapes, devendo ressarcir os pagamentos indevidos. A análise e deliberação sobre essas situações cabem à Direx, mediante decisão fundamentada.
+
+A Direx pode determinar a devolução das parcelas referentes ao período em que ocorreu a irregularidade que possa resultar no cancelamento da bolsa, garantindo ao bolsista o direito às demais parcelas recebidas.
+
+Se o bolsista comprovar o cumprimento das atividades previstas no Formulário de Atividades até a data da ocorrência da irregularidade, a Direx pode dispensar a devolução das parcelas recebidas até aquele momento.
+
+Caso seja identificada uma irregularidade que pudesse resultar no cancelamento da bolsa, ainda que posterior a sua contratação e/ou temporária durante a sua vigência, a Direx pode exigir a devolução apenas das parcelas referentes a esse período, mantendo o direito do bolsista sobre as demais parcelas.
+
+O bolsista será notificado pela Fapes nos casos em que as penalidades sejam aplicáveis, nos termos da Resolução CCAF 314/2022 e suas alterações, com garantia de direito à ampla defesa.
+
+O bolsista pode ser penalizado mesmo que a inadimplência seja regularizada, nos termos das Resoluções CCAF 248/2019 e 313/2022 e suas alterações, após o devido processo legal, garantida sua ampla defesa.
+
+<!-- page 42 -->
+
+## 6.1.8 Utilização de parcelas remanescentes de bolsas
+
+As parcelas remanescentes de uma bolsa podem ser utilizadas para um novo candidato, desde que:
+
+- A seja solicitada pelo coordenador do projeto;
+- B o bolsista desligado ou substituído esteja em dia com suas obrigações junto à Fapes;
+- C haja o saldo de no mínimo 3 (três) parcelas de bolsa;
+- D haja prazo para implementação da bolsa, respeitando a vigência do TO;
+- E sejam atendidos todos os requisitos obrigatórios do bolsista previstos no edital.
+
+A utilização das parcelas faltantes da bolsa está sujeita a análise.
+
+## 6.2 Gestão do projeto
+
+## 6.2.1 Substituição do coordenador
+
+O coordenador do projeto pode ser substituído mediante solicitação justificada e aprovação da Fapes.
+
+A solicitação deve ser realizada pelo coordenador, acompanhada da seguinte documentação:
+
+- A documentação do novo candidato a coordenador, conforme o item 5.2 - Documentos para a contratação;
+- B diploma de maior titulação;
+
+<!-- page 43 -->
+
+- C carta de anuência da IES/P, onde deve constar o vínculo com a instituição, se o candidato está em pleno exercício de suas atividades na instituição;
+- D carta de ciencia da escola parceira na qual o projeto é desenvolvido, constando sua anuência;
+- E auto declaração de vínculo de parentesco natural ou cível, até o terceiro grau, com o diretor da escola parceira e com o tutor do projeto.
+
+O novo candidato deve atender aos requisitos estabelecidos no edital no momento do envio da proposta e dar continuidade ao projeto na forma como foi contratado, respeitando o período de vigência do TO.
+
+## 6.2.2 Substituição da IES/P
+
+A IES/P pode ser substituída mediante solicitação justificada, concordância da nova IES/P e da escola parceira, além da aprovação da Fapes.
+
+A nova IES/P deve atender aos requisitos estabelecidos no edital no momento do envio da proposta.
+
+## 6.2.3 Substituição do tutor
+
+O tutor do projeto pode ser substituído mediante solicitação justificada e apresentada pelo coordenador do projeto, além da aprovação da Fapes.
+
+O novo tutor deve atender aos requisitos estabelecidos no edital no momento do envio da proposta.
+
+<!-- page 44 -->
+
+## 6.2.4 Substituição da escola parceira
+
+Não é permitida a substituição da escola parceira.
+
+## 6.2.5 Proibições
+
+É proibido:
+
+- A utilizar os recursos financeiros concedidos para adquirir e/ou pagar itens não financiáveis;
+- B acumular bolsas com recursos financeiros da Fapes ou com outras bolsas de agências e entidades nacionais ou estrangeiras (exceto bolsas com cunho de inclusão social que permitam acúmulo, como Nossa Bolsa, Prouni, FIES, Assistência Estudantil, entre outras);
+- C o afastamento do coordenador da IES/P de seu vínculo durante a vigência do projeto;
+- D executar o projeto sem o acompanhamento do tutor;
+- E não implementar as bolsas de ICJr.
+
+## 6.2.6 Penalidades
+
+O descumprimento das obrigações assumidas pelo coordenador e/ou bolsista pode ocasionar as seguintes penalidades:
+
+- A suspensão do apoio financeiro;
+- B reconhecimento de irregularidade do coordenador e/ou bolsista perante a Fapes;
+
+<!-- page 45 -->
+
+- C cancelamento do apoio financeiro;
+- D determinação do dever de ressarcir a Fapes pelos valores recebidos;
+- E suspensão, por até 24 (vinte e quatro) meses, do direito de pleitear apoio da Fapes.
+
+Outras regras e consequências estão previstas na Resolução CCAF 314/2022 e suas alterações.
+
+## 6.2.6.1 Cancelamento do projeto
+
+O projeto pode ser cancelado nos casos de:
+
+- A solicitação do coordenador, apresentada de forma clara e antecipada;
+- B não atendimento aos requisitos do coordenador estabelecidos no edital;
+- C permanência de menos de 5 (cinco) bolsistas ICJr na execução do projeto, mesmo após o término dos prazos de notificação concedidos pela Fapes;
+- D ausência do tutor no projeto que persista após o vencimento dos prazos de notificação concedidos pela Fapes;
+- E desistência da escola parceira ou da IES/P em participar do projeto;
+- F descumprimento das obrigações do coordenador;
+- G prática de qualquer fraude;
+- H falecimento do coordenador.
+
+<!-- page 46 -->
+
+O coordenador deve apresentar a Prestação de Contas Final do projeto, conforme estabelecido no item 7 - Prestação de contas, exceto no caso previsto na alínea "h"
+
+## 6.2.6.2 Ressarcimento dos recursos financeiros do projeto
+
+O coordenador do projeto pode ser obrigado a ressarcir à Fapes nos casos de:
+
+- A recursos financeiros recebidos indevidamente;
+- B atraso ou irregularidade na prestação de contas que persista após o vencimento dos prazos concedidos pela Fapes;
+- C descumprimento das obrigações do coordenador;
+- D não aprovação da prestação de contas;
+- E prática de qualquer fraude.
+
+O ressarcimento dos recursos nas situações previstas nas alíneas "a" até "e" fica condicionado à deliberação da Direx.
+
+No caso de deliberação pelo ressarcimento, a Fapes notifica o coordenador, garantindo o direito à ampla defesa.
+
+## 6.3 Como citar a Fapes
+
+É obrigatório mencionar o apoio da Fapes e da Sedu, de forma clara e destacada, em todas as publicações ou divulgações de atividades, independente da etapa do projeto.
+
+<!-- page 47 -->
+
+<!-- image -->
+
+Santo - Pesquisador do Futuro
+
+"O presente trabalho foi realizado com apoio da Fundação de Amparo à Pesquisa e Inovação do Espírito Santo (Fapes) e da Secretaria da Educação (Sedu), por meio do Edital nº XX/XXXX."
+
+Atenção: a menção deve ser feita no idioma do trabalho.
+
+## 6.4 Comunicar à Fapes os resultados do projeto
+
+É obrigatória a comunicação formal à Fapes sempre que as atividades desenvolvidas no projeto resultarem, total ou parcialmente, em criações intelectuais. Também deverá ser informado à fundação o depósito ou o registro do pedido de proteção de propriedade intelectual relacionado ao projeto, em conformidade com a Resolução CCAF 331/2023 e suas alterações.
+
+A Fapes deve ser notificada sempre que os resultados do projeto forem registrados no Instituto Nacional da Propriedade Industrial (INPI) ou em outro órgão responsável pela proteção da propriedade intelectual.
+
+Com base no artigo 4º do Decreto nº 5039-R, de 17/12/2021, a Fapes abre mão dos direitos de participação e propriedade sobre pesquisas e projetos que apoia, conforme previsto no parágrafo único do art. 6º da Lei Complementar nº 978/2021.
+
+Os resultados econômicos obtidos na exploração comercial da criação protegida, inclusive na hipótese de transferência do direito de exploração a terceiros, serão partilhados com a Fapes. Isso deve ocorrer conforme a Resolução CCAF nº 331/2023 e suas alterações, por meio de contrato a ser celebrado com as Instituições Executoras dos projetos nas quais as patentes ou similares foram desenvolvidas.
+
+<!-- page 48 -->
+
+Na forma da Resolução CCAF nº 294/2021, poderá ser exigida a elaboração de vídeo apresentando os resultados do projeto.
+
+Eventual publicidade de obras, aquisições, serviços ou de quaisquer outros atos executados em função deste Edital ou que com ele tenham relação, deverá ter caráter meramente informativo, nela não podendo constar nomes, símbolos ou imagens que caracterizem promoção pessoal de autoridades ou servidores públicos em geral.
+
+## 6.5 Obrigações das partes
+
+## 6.5.1 Obrigações do coordenador
+
+- A manter seu cadastro atualizado junto à Fapes;
+- B manter-se regularizado com a Fapes;
+- C atender aos requisitos do coordenador durante a vigência do projeto;
+- D selecionar os bolsistas ICJr juntamente com o tutor e direção da escola parceira;
+- E indicar todas as bolsas do projeto por meio do Sistema de Gestão da Fapes;
+- F orientar e acompanhar os bolsistas do projeto no cumprimento integral das tarefas previstas no Formulário de Atividades;
+- G arquivar todos os documentos da seleção dos bolsistas por 5 (cinco) anos, pois podem ser solicitados pela Fapes;
+
+<!-- page 49 -->
+
+- H informar à Fapes sobre quaisquer alterações ou descontinuidades na execução do projeto e nas atividades dos bolsistas a ele vinculados;
+- I encaminhar a Prestação de Contas Técnica e Financeira Final no prazo previsto;
+- J participar de seminários para apresentação dos resultados do projeto sempre que convocado pela Fapes;
+- K fazer referência ao apoio da Fapes e da Sedu nas publicações ou outra forma de divulgação de atividades resultantes do projeto;
+- L devolver à Fapes eventuais valores recebidos indevidamente;
+- M prestar qualquer informação solicitada pela Fapes;
+- N estar ciente de todos os termos da Resolução CCAF 170/2017 - Boas Práticas Científicas na Fapes.
+
+## 6.5.2 Obrigações do tutor
+
+- A manter cadastro atualizado junto à Fapes;
+- B atender aos requisitos do tutor durante a vigência do projeto;
+- C auxiliar na seleção dos bolsistas ICJr junto ao coordenador;
+- D orientar e acompanhar os bolsistas vinculados ao projeto no cumprimento integral das tarefas previstas no Formulário de Atividades;
+- E participar de seminários para apresentação dos resultados do projeto sempre que convocado pela Fapes;
+- F prestar qualquer informação solicitada pela Fapes;
+
+<!-- page 50 -->
+
+- G fazer referência ao apoio da Fapes nas publicações ou outra forma de divulgação de atividades resultantes do projeto;
+- H estar ciente de todos os termos da Resolução CCAF 170/2017 - Boas Práticas Científicas na Fapes.
+
+## 6.5.3 Obrigações do bolsista
+
+- A manter cadastro atualizado junto à Fapes;
+- B manter-se regularizado com a Fapes;
+- C atender aos requisitos do bolsista durante a vigência do projeto;
+- D cumprir integralmente as tarefas previstas no Formulário de Atividades durante a vigência da bolsa;
+- E comunicar imediatamente ao coordenador/tutor qualquer alteração relativa à descontinuidade do Formulário de Atividades da própria bolsa;
+- F se BTU ou ICT, elaborar o Relatório Técnico da bolsa e encaminhar ao coordenador no prazo previsto;
+- G participar de seminários para apresentação dos resultados do projeto sempre que convocado pela Fapes;
+- H fazer referência ao apoio da Fapes nas publicações ou outra forma de divulgação de atividades resultantes do projeto
+- I devolver à Fapes eventuais valores recebidos indevidamente;
+- J prestar qualquer informação solicitada pela Fapes;
+- K estar ciente de todos os termos da Resolução CCAF 170/2017 - Boas Práticas Científicas na Fapes.
+
+<!-- page 51 -->
+
+## 6.5.4 Obrigações da IES/P
+
+- A fornecer condições de infraestrutura necessária para a execução do projeto de pesquisa das atividades relacionadas;
+- B prestar qualquer informação sempre que solicitada pela Fapes.
+
+## 6.5.5 Obrigações da escola parceira
+
+- A fornecer condições de infraestrutura necessária para a execução do projeto de pesquisa das atividades relacionadas;
+- B auxiliar na seleção dos bolsistas ICJr junto ao coordenador;
+- C realizar seminários para apresentação dos resultados do projeto, se solicitado pela Fapes;
+- D prestar qualquer informação sempre que solicitada pela Fapes.
+
+## 6.5.6 Obrigações da Fapes
+
+- A repassar ao coordenador e aos bolsistas os recursos financeiros previstos para o projeto;
+- B acompanhar se os objetivos do projeto estão sendo cumpridos, por meio da análise das prestações de contas técnica e financeira, apresentadas pelo coordenador;
+- C organizar a avaliação final de acompanhamento da execução do projeto.
+
+<!-- page 52 -->
+
+<!-- image -->
+
+## 7 Prestação de contas
+
+O coordenador do projeto deve prestar contas à Fapes em até 30 (trinta) dias após o término da vigência do TO, por meio do Sistema de Gestão da Fapes, conforme as seguintes Resoluções CCAF e suas alterações:
+
+- A 308/2022 - Prestação de contas simplificada;
+- B 309/2022 - Regulamenta os itens financiáveis e não financiáveis;
+- C 313/2022 - Manual de utilização de recursos financeiros e elaboração de prestação de contas da Fapes/Funcitec.
+
+A prestação de contas é composta pelos seguintes relatórios:
+
+- A Relatório Técnico do Projeto de Pesquisa;
+- B Relatório Técnico dos Bolsistas ICT e BTU, quando no projeto houver bolsistas nessas modalidades;
+- C Relatório Financeiro Simplificado (Formulário para Auxílios Financeiros de CTI);
+- D Proposta Pedagógica, obrigatória para projetos das Faixas A e B (Anexo III), sob responsabilidade exclusiva da Sedu.
+
+<!-- image -->
+
+Atenção: Para os projetos realizados nas Faixas A e B, a Proposta Pedagógica deve descrever a prática desenvolvida no projeto, conforme os critérios definidos pela Sedu (Anexo III).
+
+Os tutoriais para realização da prestação de contas estão disponíveis no site da Fapes, em: Fapes - Tutoriais e Tutoriais de Prestação de Contas.
+
+<!-- page 53 -->
+
+O não cumprimento do prazo estabelecido pode ocasionar na inadimplência do coordenador junto à Fapes e, quando aplicável, dos bolsistas ICT e BTU.
+
+Se a inadimplência continuar após os prazos definidos na Resolução CCAF 313/2022 e suas alterações, o coordenador pode ser penalizado pela Fapes. Nesse caso, será garantido o direito ao devido processo legal, com ampla defesa.
+
+Se a prestação de contas não for aprovada, o coordenador deve devolver à Fapes os recursos financeiros recebidos, conforme a mesma resolução. Também será garantido o direito à ampla defesa.
+
+## 7.1 Relatório técnico do projeto
+
+O Relatório Técnico do Projeto deve ser preenchido e enviado por meio do Sistema de Gestão da Fapes, no prazo de até 30 (trinta) dias após o término da vigência do TO.
+
+Se o relatório não for entregue dentro do prazo, o coordenador é considerado inadimplente junto à Fapes.
+
+A critério da Direx, os relatórios técnicos podem ser analisados por avaliadores ad hoc ou por membros da Câmara de Assessoramento da área de conhecimento do projeto.
+
+## 7.2 Relatório técnico dos bolsistas
+
+Somente os bolsistas ICT e BTU devem realizar a prestação de contas final da bolsa.
+
+<!-- page 54 -->
+
+e Inovação do Espírito Santo
+
+O Relatório Técnico dos Bolsistas deve ser preenchido e enviado ao coordenador por meio do Sistema de Gestão da Fapes, acompanhado dos documentos que comprovam a execução técnica, em até 30 (trinta) dias após o término da vigência da bolsa.
+
+Exemplos de documentos que comprovam a execução técnica: textos e publicações, além da participação em eventos, que mencionem a Fapes e a Sedu.
+
+O coordenador é o responsável pela avaliação e envio à Fapes dos relatórios dos bolsistas por meio do Sistema de Gestão da Fapes.
+
+O não envio dos relatórios no prazo especificado gera inadimplência do bolsista e do coordenador, conforme as Resoluções do CCAF 313/2022 e 248/2019 e suas alterações.
+
+## 7.3 Relatório financeiro simplificado
+
+O relatório financeiro simplificado consiste na entrega do Formulário para Auxílios Financeiros de CTI disponível em Fapes - Formulários, que deve ser anexado e apresentado junto ao Relatório Técnico do Projeto.
+
+## 7.4 Avaliação final
+
+A Fapes e a Sedu podem organizar seminários de avaliação final dos projetos, sendo obrigatória a participação dos membros do projeto. Nesses seminários, devem ser apresentados os resultados alcançados. As apresentações podem ser analisadas por avaliadores ad hoc.
+
+<!-- page 55 -->
+
+Se autorizado pela Direx, os seminários podem ser substituídos pelo envio de vídeos curtos com os resultados da pesquisa. Os vídeos devem ser produzidos pelos bolsistas, sob a orientação do coordenador e do tutor. As orientações sobre o formato desses vídeos são definidas pela Fapes.
+
+A ausência nos seminários sem justificativa aceita pela Fapes, ou o não envio do vídeo no prazo estabelecido, torna o coordenador inadimplente.
+
+## 8 Legislações aplicáveis
+
+As normas estabelecidas neste edital obedecem às seguintes disposições legais e regulamentares.
+
+## 8.1 Leis e Decretos
+
+- A Lei Complementar nº 978, de 4 de outubro de 2021 - Estrutura Organizacional da Fapes;
+- B Decreto nº 5039-R, de 17 de dezembro de 2021- Regulamenta a Lei Complementar nº 978;
+- C Decreto 4410-R/2019 - Uso do meio eletrônico e não presencial para a interação do cidadão com o Estado e a realização de processo administrativo no âmbito dos órgãos e das entidades do Poder Executivo Estadual;
+- D Lei Complementar Estadual nº 642/2012 - Medidas de incentivos à inovação e à pesquisa científica e tecnológica, em ambientes produtivos e dá outras providências;
+- E Lei Complementar Estadual nº 964/2021 - Reestrutura o Fundo Estadual de Ciência e Tecnologia - FUNCITEC;
+
+<!-- page 56 -->
+
+- F Lei nº 12.619/2025 - Política Estadual de Linguagem Simples.
+
+## 8.2 Resoluções do CCAF/Fapes
+
+- A 57/2012 - Bolsas de Iniciação Científica e Tecnológica;
+- B 122/2014 - Normas Gerais de Projetos e Auxílios;
+- C 170/2017 - Boas Práticas Científicas na Fapes;
+- D 248/2019 - Programa de Iniciação Científica Júnior do Espírito Santo - Pesquisador do Futuro;
+- E 251/2019 - Licença em Razão de Advento de Prole;
+- F 294/2021 - Autoriza a inclusão, nos editais da Fapes, quando couber, de exigência de elaboração de Vídeo dos resultados do projeto sob responsabilidade do Outorgado;
+- G 308/2022 - Auxílio para organização de eventos de ciência, tecnologia e inovação e para projetos de pesquisa, desenvolvimento e inovação;
+- H 309/2022 - Itens financiáveis e não financiáveis com recursos financeiros da Fapes e do Funcitec;
+- I 313/2022 - Manual de Utilização de Recursos Financeiros e Elaboração de Prestação de Contas da Fapes/Funcitec;
+- J 314/2022 - Redefine as regras e consequências por descumprimento de deveres assumidos por beneficiário da Fapes;
+- K 331/2023 - Propriedade Intelectual e da Criação Protegida;
+- L 337/2024 - Recursos Administrativos;
+
+<!-- page 57 -->
+
+- M 355/2025 - Tabela de Valores de Bolsas e Auxílios;
+- N Instrução de Serviço da Fapes nº 080/2025 (procedimento de seleção de avaliadores ad hoc para análise das propostas submetidas e projetos financiados);
+- O Instrução de Serviço da Fapes nº 082/2025 (contratação de projetos financiados pela Fapes).
+
+Também são consideradas as alterações ou normas que substituam as atuais, além dos critérios e condições específicas deste edital.
+
+Todas as legislações da Fapes citadas no presente edital estão disponíveis no site da Fapes: Fapes - Resoluções.
+
+<!-- image -->
+
+## 9 Impugnação do edital
+
+Qualquer pessoa pode solicitar a impugnação deste edital ou contestar seus termos. O pedido deve ser apresentado em até 5 (cinco) dias úteis anteriores ao encerramento do prazo do envio das propostas, conforme item 1.5 - Cronograma. Após este prazo, não haverá mais possibilidade de impugnar o edital.
+
+## 9.1 Procedimentos para impugnação
+
+O pedido deve ser enviado no E-Flow por meio do Formulário de Impugnação de Edital, disponível em Fapes - Formulários.
+
+No formulário, o requerente deve:
+
+- A identificar os dados do edital;
+- B informar o motivo da impugnação;
+
+<!-- page 58 -->
+
+- C indicar o item ou subitem que será objeto de sua impugnação;
+- D apresentar os fundamentos que justificam o pedido;
+- E opcionalmente, incluir documentos que comprovem ou reforcem os argumentos apresentados.
+
+A tramitação e validação da impugnação segue o mesmo fluxo do recurso administrativo.
+
+## 9.2 Análise e deliberação
+
+A Assessoria Técnica da Fapes analisa o recurso, emite parecer e o encaminha para análise e julgamento da Direx.
+
+## 10 Disposições finais
+
+- A O edital pode ser revogado ou anulado, total ou parcialmente, por interesse público ou exigência legal, sem gerar direito a indenização ou qualquer tipo de reclamação por parte dos proponentes.
+- B A Fapes pode revisar ou anular seus próprios atos se identificar erros ou irregularidades. Também pode revogá-los por conveniência ou oportunidade, desde que respeite os direitos já adquiridos, conforme o princípio da autotutela administrativa.
+- C O coordenador é responsável pela obtenção de licenças e permissões necessárias para realizar esta pesquisa.
+- D A Fapes pode solicitar, a qualquer momento, documentação complementar a todos os envolvidos na execução dos projetos.
+
+<!-- page 59 -->
+
+e Inovação do Espírito Santo Santo - Pesquisador do Futuro
+
+- E O TO pode ser encerrado a qualquer momento, em caso de descumprimento de alguma exigência ou de falecimento. Também pode ser encerrado por acordo entre as partes, desde que haja uma comunicação formal por escrito. Em qualquer uma dessas situações, as obrigações assumidas devem estar cumpridas, sob risco de aplicação das penalidades previstas no TO, quando cabíveis.
+- F Os casos omissos ou excepcionais do presente edital serão tratados pela Direx, em conformidade com a legislação vigente.
+
+<!-- image -->
+
+## 11 Glossário
+
+## Análise de mérito
+
+Etapa que consiste na avaliação técnica das propostas e em sua classificação conforme as notas atribuídas, com base nos critérios estabelecidos no edital.
+
+## Áreas de conhecimento do CNPq
+
+Classificação oficial que identifica a área científica à qual o projeto pertence, conforme tabela definida pelo Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq).
+
+## Avaliadores ad hoc
+
+Especialistas convidados pela Fapes, de forma independente e temporária, para analisar tecnicamente as propostas submetidas aos editais. Não integram os quadros permanentes da Fundação e são selecionados com base em sua experiência e conhecimento na área do projeto.
+
+<!-- page 60 -->
+
+e Inovação do Espírito Santo
+
+## Beneficiário
+
+Pessoa física que recebe o apoio da Fapes em forma de projeto, programa, auxílio ou bolsa, ainda que não tenha sido quem assinou o Termo de Outorga.
+
+## Câmara de Assessoramento
+
+Grupo consultivo formado por especialistas de diversas áreas, que apoia a Fapes na avaliação e acompanhamento técnico dos programas de fomento.
+
+## CCAF
+
+Conselho Científico-Administrativo da Fapes, órgão colegiado composto por representantes de instituições de ensino e pesquisa, sociedade civil e membros da própria Fundação. Atua no apoio à formulação, acompanhamento e avaliação das políticas de fomento.
+
+## Direx
+
+Diretoria Executiva da Fapes - Responsável pela gestão estratégica e tomada de decisões institucionais da Fundação.
+
+## Ditec
+
+Diretoria Setorial Técnico-Científica da Fapes - Coordena as análises técnicas e científicas dos projetos submetidos.
+
+## E-Docs
+
+Sistema de gestão eletrônica de documentos e processos administrativos do Governo do Estado. Permite o envio, tramitação e arquivamento de documentos e processos oficiais.
+
+## E-Flow
+
+Sistema do Governo do Estado utilizado para construção e preenchimento de formulários dinâmicos integrados aos sistemas corporativos.
+
+<!-- page 61 -->
+
+## Formulário de atividades
+
+Documento que detalha as ações planejadas a serem realizadas pelos estudantes e tutores no decorrer do projeto.
+
+## Funcitec
+
+Fundo Estadual de Ciência e Tecnologia - Fonte de financiamento dos projetos apoiados pela Fapes.
+
+## Habilitação
+
+Etapa em que a Fapes verifica se todos os requisitos e documentos obrigatórios foram enviados corretamente e estão de acordo com as exigências do edital.
+
+## Implementação do projeto
+
+Início das atividades do projeto após a liberação dos recursos financeiros e cumprimento das condições previstas no edital.
+
+## Itens financiáveis
+
+Tipos de despesas que podem ser custeadas com os recursos financeiros do projeto, conforme os limites e condições definidos no edital.
+
+## Outorgado
+
+Coordenador responsável pelo acompanhamento da execução do projeto, movimentação dos recursos financeiros e cumprimento das obrigações estabelecidas no Termo de Outorga.
+
+## Outorgante
+
+Fapes, fundação que concede os recursos financeiros para execução do projeto.
+
+## Práticas pedagógicas
+
+Estratégias, métodos e ações desenvolvidas pelos professores para promover a aprendizagem dos estudantes.
+
+<!-- page 62 -->
+
+## Projeto
+
+Esforço temporário e único que visa atingir objetivos específicos, com prazo, escopo e recursos financeiros definidos.
+
+## Proposta de projeto
+
+Conjunto de informações enviadas pelo coordenador que reúne a descrição detalhada do projeto, incluindo informações gerais, objetivos, metodologia, cronograma e resultados esperados.
+
+## Proponente
+
+Pessoa ou instituição responsável pelo envio da proposta de projeto para análise da Fapes.
+
+## Programa Estado Presente
+
+Iniciativa do Governo do Estado que busca reduzir desigualdades e promover inclusão social, com foco em territórios prioritários.
+
+## Relatório técnico final
+
+Documento que deve ser entregue ao final do projeto, contendo a descrição das atividades realizadas, dos resultados alcançados e da aplicação dos recursos financeiros.
+
+## Resoluções
+
+Normas internas da Fapes que definem procedimentos, critérios e regras para a execução dos programas e contratos.
+
+## Secti
+
+Secretaria da Ciência, Tecnologia, Inovação e Educação Profissional do Espírito Santo - Responsável pela formulação e execução das políticas públicas voltadas à ciência, tecnologia e inovação no estado.
+
+## Sedu
+
+Secretaria da Educação do Espírito Santo - Responsável por formular e executar políticas públicas de educação no estado.
+
+<!-- page 63 -->
+
+e Inovação do Espírito Santo
+
+## Seminários
+
+Encontros realizados ao longo do projeto com o objetivo de apresentar resultados, compartilhar experiências e promover a integração entre os participantes.
+
+## Termo de Confissão de Dívida e Parcelamento de Débito
+
+Documento firmado pelo coordenador quando houver necessidade de devolução dos recursos financeiros recebidos, com possibilidade de parcelamento do valor devido.
+
+## Termo de Outorga (TO)
+
+Documento formal que estabelece o compromisso entre a Fapes e o coordenador do projeto, autorizando o recebimento e a utilização dos recursos financeiros.
+
+## Vínculo estatutário
+
+Relação de trabalho de servidores públicos que ocupam cargos regidos por leis específicas da administração pública.
+
+## Vínculo celetista
+
+Relação de trabalho regida pela Consolidação das Leis do Trabalho (CLT) e que se aplica a empregados com contrato de trabalho comum por tempo indeterminado.
+
+## 12
+
+<!-- image -->
+
+## Dúvidas e informações
+
+Eventuais dúvidas sobre este edital devem ser enviadas exclusivamente para o e-mail: bolsas.duvidas@fapes.es.gov.br.
+
+<!-- page 64 -->
+
+## 13
+
+<!-- image -->
+
+<!-- image -->
+
+## Lista de Anexos
+
+Atenção: Os anexos do edital estão disponíveis no site da Fapes, junto ao arquivo do edital, no endereço: Fapes - Editais Abertos. Os documentos destinados ao preenchimento estão disponibilizados em formato Word, para facilitar a edição pelos proponentes.
+
+Abaixo os nomes de cada anexo:
+
+- A Anexo I Formulário de Submissão - Proposta de Projeto de Iniciação Científica Júnior - Pesquisador do Futuro (PICJr 2027)
+- B Anexo II Áreas de atuação do Programa Estado Presente do Governo do Espírito Santo
+
+## C Anexo III
+
+Orientações para elaboração da prática pedagógica
+
+## D Anexo IV
+
+Termo de Outorga e Aceitação de Projeto de Pesquisa
+
+Vitória, 31 de julho de 2026 Rodrigo Varejão Andreão Diretor Geral
+
+Fundação de Amparo à Pesquisa e Inovação do Espírito Santo
+
+<!-- page 65 -->
+
+## Anexo I Formulário de Submissão Fapes
+
+Proposta do Projeto de Iniciação Científica Júnior Pesquisador do Futuro (PICJr 2027)
+
+## 1. Dados do proponente
+
+## Nome
+
+Clique ou toque aqui para inserir o texto.
+
+Tipo de vínculo com a instituição responsável pelo projeto Escolher um item.
+
+## Caso tenha selecionado "Outro", especifique
+
+Clique ou toque aqui para inserir o texto.
+
+## Cargo atual na IES/P
+
+Clique ou toque aqui para inserir o texto.
+
+Se estrangeiro, possui autorização de residência por prazo indeterminado no país? Escolher um item.
+
+Tem parentesco com o diretor da escola parceira e com o professor tutor do projeto?
+
+Escolher um item.
+
+## 1.1 Declaração do proponente
+
+Declaro que:
+
+- tenho conhecimento de como a Fapes analisa as solicitações feitas neste edital;
+
+<!-- page 66 -->
+
+- autorizo que minha solicitação seja analisada conforme essa sistemática, inclusive por pesquisadores escolhidos pela Fapes, mesmo que suas identidades sejam mantidas em sigilo;
+- sei que é minha responsabilidade conseguir todas as licenças e permissões necessárias para realizar esta pesquisa;
+- revisei as informações desta proposta, assim como as do meu cadastro no Sistema de Gestão da Fapes e no Currículo Lattes, e confirmo que estão corretas;
+- estou ciente de que a Fapes pode solicitar, a qualquer momento, documentos que comprovem as informações enviadas ou esclarecimentos adicionais;
+- estou ciente de que informações incorretas podem prejudicar a análise e até impedir a aprovação da minha solicitação.
+
+## 2. Dados da Instituição Executora
+
+<!-- image -->
+
+Atenção: O Responsável ou Representante Legal da IES/P precisa estar cadastrado como tal no Sistema de Gestão da Fapes. Sem esse cadastro, a proposta não pode ser liberada para submissão no sistema.
+
+## Nome da IES/P
+
+Clique ou toque aqui para inserir o texto.
+
+## CNPJ da IES/P
+
+Clique ou toque aqui para inserir o texto.
+
+## Nome do responsável ou representante legal da IES/P
+
+Clique ou toque aqui para inserir o texto.
+
+Informe o nome completo da pessoa cadastrada como responsável ou representante legal da instituição. Se essa pessoa não estiver respondendo no momento, envie junto com o formulário a portaria que nomeia o responsável atual.
+
+## E-mail
+
+Clique ou toque aqui para inserir o texto.
+
+## Cargo do responsável ou representante legal da IES/P
+
+Clique ou toque aqui para inserir o texto.
+
+<!-- page 67 -->
+
+O responsável está registrado como gestor institucional da instituição no Sistema de Gestão da Fapes?
+
+Escolher um item.
+
+## 2.1 Declaração da instituição executora
+
+## Declaro que:
+
+- tenho conhecimento das necessidades de infraestrutura exigidas para a realização do projeto submetido neste edital;
+- pesquisador proponente possui vínculo permanente (estatutário ou celetista por tempo indeterminado) com esta instituição e contará com apoio institucional para desenvolver o projeto, incluindo:
+- o espaço físico;
+- o laboratórios;
+- o rede de computadores;
+- o bases de dados;
+- o contrapartida de recursos materiais e humanos;
+- o acesso a serviços da instituição que sejam relevantes para a execução do projeto;
+- revisei as informações desta proposta e as que constam no meu perfil do Sistema de Gestão da Fapes, e confirmo que estão corretas;
+- estou ciente de que a Fapes pode solicitar, a qualquer momento, documentos que comprovem as informações ou esclarecimentos adicionais;
+- sei que informações incorretas podem prejudicar a análise e até impedir a concessão da solicitação.
+
+## 3. Dados do Tutor
+
+## Nome
+
+Clique ou toque aqui para inserir o texto.
+
+## Nome da escola onde o tutor trabalha
+
+Clique ou toque aqui para inserir o texto.
+
+Tipo de vínculo do tutor com a escola de vínculo citada Escolher um item.
+
+<!-- page 68 -->
+
+## Caso tenha selecionado "Outro", especifique aqui
+
+Clique ou toque aqui para inserir o texto.
+
+## Nome do cargo que o tutor ocupa na escola
+
+Clique ou toque aqui para inserir o texto.
+
+Atuo como professor (docente) em sala de aula na escola de vínculo citada? Escolher um item.
+
+## 3.1 Declaração do Tutor
+
+## Declaro que:
+
+- atuo como professor em sala de aula na escola onde o projeto será desenvolvido;
+- não tenho parentesco por laços de sangue ou afinidade com o diretor da escola, com o coordenador do projeto ou com qualquer bolsista que será indicado;
+- revisei todas as informações desta proposta e as que constam no meu Currículo Lattes, e confirmo que estão corretas;
+- estou ciente de que a Fapes pode solicitar, a qualquer momento, documentos complementares;
+- sei que informações incorretas podem prejudicar a análise e até impedir a aprovação desta solicitação.
+
+## 4. Dados da escola parceira
+
+## Nome da escola
+
+Clique ou toque aqui para inserir o texto.
+
+## CNPJ da escola
+
+Clique ou toque aqui para inserir o texto.
+
+## Endereço da escola
+
+Clique ou toque aqui para inserir o texto.
+
+## Bairro da escola
+
+Clique ou toque aqui para inserir o texto.
+
+<!-- page 69 -->
+
+## Fapes
+
+Fundação de Amparo à Pesquisa e Inovação do Espírito Santo
+
+## CEP da escola
+
+Clique ou toque aqui para inserir o texto.
+
+## Município
+
+Clique ou toque aqui para inserir o texto.
+
+## Estado
+
+Clique ou toque aqui para inserir o texto.
+
+## Telefone
+
+Clique ou toque aqui para inserir o texto.
+
+## E-mail
+
+Clique ou toque aqui para inserir o texto.
+
+## Nome do diretor da escola
+
+Clique ou toque aqui para inserir o texto.
+
+## E-mail da direção da escola
+
+Clique ou toque aqui para inserir o texto.
+
+## Tipo de escola
+
+Escolher um item.
+
+## Caso tenha selecionado "Outro", especifique aqui
+
+Clique ou toque aqui para inserir o texto.
+
+Tipo de educação oferecida pela escola (conforme lei de diretrizes e bases da educação brasileira):
+
+Escolher um item.
+
+## Caso tenha selecionado "Outro", especifique aqui
+
+Clique ou toque aqui para inserir o texto.
+
+## 4.1 Declaração da escola parceira
+
+Declaro que:
+
+## PICJr 2027
+
+Programa de Iniciação Científica Júnior do Espírito Santo - Pesquisador do Futuro
+
+<!-- page 70 -->
+
+- tenho conhecimento das necessidades de infraestrutura exigidas para a execução do projeto submetido neste edital;
+- o tutor indicado é professor efetivo ou contratado por designação temporária e atua em sala de aula nesta escola;
+- o pesquisador proponente contará com o apoio institucional necessário para desenvolver o projeto, incluindo:
+- o espaço físico;
+- o laboratórios;
+- o rede de computadores;
+- o bases de dados;
+- o recursos materiais e humanos;
+- o acesso a serviços da instituição importantes para a execução do projeto;
+- estou ciente de que a Fapes pode, a qualquer momento, solicitar documentos que comprovem as informações ou esclarecimentos adicionais;
+- sei que informações incorretas podem prejudicar a análise e até impedir a aprovação desta solicitação.
+
+## 5. Proposta de Projeto de Pesquisa
+
+## 5.1 Dados gerais
+
+## Título do projeto
+
+Clique ou toque aqui para inserir o texto.
+
+## Área de conhecimento do CNPq
+
+Escolher um item.
+
+## Selecione a faixa do seu projeto
+
+As faixas indicam o tipo de escola parceira e o foco do seu projeto.
+
+Antes de escolher, verifique:
+
+- o tipo de escola parceira (Estadual, Municipal ou Federal);
+- o bairro onde a escola está localizada (se faz parte do Programa Estado Presente ou não);
+- o tema principal do projeto (por exemplo, Educação Ambiental ou Laboratório de Ciências).
+
+<!-- page 71 -->
+
+## Fapes
+
+Fundação de Amparo à Pesquisa e Inovação do Espírito Santo
+
+## PICJr 2027
+
+Programa de Iniciação Científica Júnior do Espírito Santo - Pesquisador do Futuro
+
+## Escolha apenas uma faixa:
+
+- [ ] ☐Faixa A
+
+Projetos em parceria com escolas da rede estadual de educação básica, com foco em temas de Educação Ambiental Formal. Exemplos: mudanças climáticas, energias renováveis, água, floresta, biodiversidade e sustentabilidade.
+
+- [ ] ☐Faixa B
+
+Projetos em parceria com escolas da rede estadual, com foco em práticas de Laboratório de Ciências da Natureza e Matemática. O projeto deve envolver atividades práticas, experiências e investigações em Biologia, Física, Química ou Matemática, realizadas em ambiente com recursos específicos.
+
+- [ ] ☐Faixa C
+
+Projetos em parceria com escolas da rede estadual ou municipal, localizadas em bairros atendidos pelo Programa Estado Presente (Anexo II).
+
+- [ ] ☐Faixa D
+
+Projetos em parceria com escolas públicas (federais, estaduais ou municipais), localizadas em qualquer região do Espírito Santo fora do Programa Estado Presente.
+
+## 5.2 Sobre o que é o projeto?
+
+Apresente um resumo claro e objetivo do projeto, que destaque o problema que será abordado, os objetivos principais, a metodologia e os resultados esperados. O texto deve ser direto, facilitando o entendimento geral da proposta.
+
+Clique ou toque aqui para inserir o texto.
+
+## 5.3 Sobre a escola parceira e a comunidade local
+
+Descreva a escola e a comunidade onde ela está localizada, considerando os aspectos econômicos, sociais, ambientais e culturais. Inclua também informações sobre o público que será atendido pelo projeto, especialmente os estudantes que poderão ser bolsistas do ICJr.
+
+Clique ou toque aqui para inserir o texto.
+
+## 5.4 Qual é o problema que o projeto quer resolver?
+
+<!-- page 72 -->
+
+Descreva qual é o problema científico ou tecnológico que será abordado no projeto. Explique como esse problema está relacionado com a realidade da comunidade em que a escola parceira está inserida - considere os aspectos sociais, econômicos, ambientais e culturais. Apresente também uma contextualização com base em estudos e referências científicas atualizadas (estado da arte).
+
+Clique ou toque aqui para inserir o texto.
+
+## 5.5 Qual o objetivo principal do projeto?
+
+Descreva, de forma clara e direta, qual é o principal objetivo da pesquisa. Explique o que o projeto pretende alcançar como resultado geral com as atividades propostas.
+
+Clique ou toque aqui para inserir o texto.
+
+## 5.5.1 Quais são os objetivos específicos do projeto?
+
+Liste os objetivos específicos do projeto, ou seja, as etapas ou metas menores que, juntas, vão ajudar a alcançar o objetivo principal. Cada objetivo deve ser claro e indicar ações que possam ser realizadas e avaliadas.
+
+Clique ou toque aqui para inserir o texto.
+
+## 5.6. Qual metodologia será usada no projeto?
+
+Explique como o projeto será desenvolvido para atingir os objetivos propostos. Descreva as estratégias, os métodos, os recursos e as etapas que serão utilizados ao longo da pesquisa. Inclua também a forma de acompanhamento e avaliação, se houver.
+
+Clique ou toque aqui para inserir o texto.
+
+## 5.6.1. Como os bolsistas ICJr vão participar do projeto?
+
+<!-- page 73 -->
+
+Descreva quais serão as atividades dos estudantes bolsistas ICJr dentro do projeto. Explique como eles irão contribuir nas ações de pesquisa, desenvolvimento ou inovação, além do que se espera que aprendam com essa participação.
+
+Clique ou toque aqui para inserir o texto.
+
+## 5.6.2 Atividades e cronograma do projeto
+
+Liste abaixo as principais atividades previstas no projeto e indique, com um "X" ou outra marca, em quais meses cada atividade será realizada. Inclua etapas como planejamento, execução, participação dos bolsistas ICJr, acompanhamento e conclusão.
+
+ATENÇÃO: As atividades e o cronograma do projeto devem ser elaborados dentro do Sistema de Gestão da Fapes, durante a submissão da proposta.
+
+## 5.7 Quais os resultados esperados do projeto?
+
+Descreva o que o projeto pretende alcançar como resultado. Pode ser um produto, material, ação, melhoria ou qualquer entrega que represente o sucesso das atividades previstas.
+
+Clique ou toque aqui para inserir o texto.
+
+## 5.8 De que forma o projeto pode impactar os estudantes e a sociedade?
+
+Explique quais impactos o projeto pode gerar para os estudantes bolsistas ICJr e para a comunidade. Considere os aspectos científicos, sociais, culturais, econômicos, tecnológicos e ambientais, levando em conta a realidade local da escola parceira.
+
+Clique ou toque aqui para inserir o texto.
+
+## 5.9 Como o projeto vai popularizar o conhecimento científico?
+
+<!-- page 74 -->
+
+Santo - Pesquisador do Futuro
+
+Descreva as ações que serão feitas para tornar o conhecimento produzido no projeto acessível ao público em geral. Exemplos: oficinas, feiras, vídeos, cartilhas, rodas de conversa, redes sociais, entre outros.
+
+Clique ou toque aqui para inserir o texto.
+
+## 5.10. Quais fontes foram usadas na construção do projeto?
+
+Liste autores, livros, artigos ou materiais que foram utilizados para embasar teoricamente o projeto. Inclua preferencialmente fontes científicas atualizadas e relevantes para o tema.
+
+Clique ou toque aqui para inserir o texto.
+
+## 6. Ineditismo da proposta apresentada
+
+Esta seção busca verificar se o projeto proposto é inédito ou se possui similaridades com outros já contratados pela Fapes. Caso haja semelhanças, é obrigatório explicar claramente o que há de inovador na proposta.
+
+O projeto proposto é inédito?
+
+Escolher um item.
+
+O projeto proposto tem alto grau de similaridade com algum projeto já contratado pela Fapes?
+
+Escolher um item.
+
+Se o projeto tiver similaridade com outro já apoiado, o que o torna inovador?
+
+(Obrigatório somente se a resposta anterior for "Sim")
+
+Clique ou toque aqui para inserir o texto.
+
+Explique com clareza quais aspectos tornam este projeto diferente dos que já foram apoiados pela Fapes.
+
+Clique ou toque aqui para inserir o texto.
+
+Mostre os elementos de inovação e ineditismo, como novas abordagens, melhorias, mudanças de contexto, novos públicos, métodos diferentes ou outras características que realmente diferenciem esta proposta.
+
+Clique ou toque aqui para inserir o texto.
+
+<!-- page 75 -->
+
+<!-- image -->
+
+Atenção: É essencial apresentar os pontos de inovação de forma clara e objetiva. A ausência de justificativas consistentes pode comprometer a análise da proposta.
+
+## 7. Assinaturas
+
+Todos os envolvidos devem assinar preferencialmente por meio do sistema E-Docs.
+
+O uso do E-Docs é uma solicitação institucional que assegura a autenticidade, validade jurídica e rastreabilidade das assinaturas.
+
+As orientações para uso do E-Docs estão disponíveis em: https://fapes.es.gov.br/tutoriais.
+
+Não são aceitas assinaturas coladas como imagem, escaneadas ou feitas em outras plataformas.
+
+Devem assinar o formulário:
+
+- Proponente
+- Professor tutor
+- Diretor da escola parceira
+- Responsável legal pela IES/P executora
+
+A assinatura do Diretor da escola parceira deve conter a identificação do cargo. Caso seja assinada manualmente, deve conter carimbo ou anotação formal do cargo.
+
+<!-- page 76 -->
+
+## Anexo II Áreas de Atuação do Programa Estado Presente do Governo do Espírito Santo
+
+A seguir estão listados os bairros atendidos pelo Programa Estado Presente, organizados por município:
+
+## Município: Aracruz
+
+- Barra do Riacho;
+- Bela Vista;
+- Fátima;
+- Guaraná;
+- Jacupemba;
+- São Clemente;
+- Segato;
+- Vila do Riacho.
+
+## Município: Cachoeiro de Itapemirim
+
+- Alto Novo Parque;
+- Gilson Carone;
+- Monte Cristo;
+- Novo Parque;
+- Village da Luz;
+- Zumbi.
+
+## Município: Cariacica
+
+- Alzira Ramos;
+
+<!-- page 77 -->
+
+## Fapes
+
+Fundação de Amparo à Pesquisa e Inovação do Espírito Santo
+
+- Bandeirantes;
+- Castelo Branco;
+- Flexal I;
+- Flexal II;
+- Ipiranga;
+- Jardim de Alah;
+- Loteamento Cordovil;
+- Maracanã;
+- Nova Esperança;
+- Nova Rosa da Penha;
+- Nova Rosa da Penha II;
+- Padre Gabriel;
+- Parque Residencial Maracanã;
+- Rio Marinho;
+- São Bernado;
+- São Rafael;
+- Vale do Marinho;
+- Vila Isabel;
+- Vista Mar.
+
+## Município: Colatina
+
+- Alto São Vicente;
+- Ayrton Senna;
+- Bela Vista;
+- Jardim Planalto;
+- Operário;
+- Pôr do Sol;
+- Santa Cecília;
+- Santo Antônio;
+- São Judas Tadeu;
+- São Pedro;
+
+## PICJr 2027
+
+Programa de Iniciação Científica Júnior do Espírito Santo - Pesquisador do Futuro
+
+<!-- page 78 -->
+
+## Fapes
+
+Fundação de Amparo à Pesquisa e Inovação do Espírito Santo
+
+- São Vicente;
+- Vicente Suella.
+
+## Município: Guarapari
+
+- Adalberto Simão Nader;
+- Coroado;
+- Jabaraí;
+- Kubitschek.
+
+## Município: Linhares
+
+- Aviso;
+- Interlagos;
+- Jocafé I;
+- Jocafé II;
+- Nova Esperança;
+- Planalto;
+- Santa Cruz.
+
+## Município: São Mateus
+
+- Bom Sucesso;
+- Cacique;
+- Guriri;
+- Litorâneo;
+- Vila Nova;
+- Vitória.
+
+## Município: Serra
+
+- André Carloni;
+- Bairro das Laranjeiras;
+- Campinho da Serra I;
+- Campinho da Serra II;
+
+## PICJr 2027
+
+Programa de Iniciação Científica Júnior do Espírito Santo - Pesquisador do Futuro
+
+<!-- page 79 -->
+
+## Fapes
+
+Fundação de Amparo à Pesquisa e Inovação do Espírito Santo
+
+- Carapina;
+- Carapina Grande;
+- Central Carapina;
+- Conjunto Feu Rosa;
+- Costa Dourada;
+- Enseada de Jacaraípe;
+- Estância Monazítica;
+- Jardim Atlântico;
+- Jardim Carapina;
+- Novo Horizonte;
+- Parque Jacaraípe;
+- Planalto Serra;
+- Residencial Jacaraípe;
+- São Francisco;
+- São Patrício;
+- Sítio Esmeralda (Ourimar);
+- Vila Nova de Colares.
+
+## Município: Vila Velha
+
+- 23 de Maio;
+- Alecrim;
+- Argolas;
+- Barramares;
+- Boa Vista I;
+- Boa Vista II;
+- Chácara do Conde;
+- Cidade da Barra;
+- Cobi de Baixo;
+- Cobi de Cima;
+- Cristóvão Colombo;
+- Divino Espírito Santo;
+
+## PICJr 2027
+
+Programa de Iniciação Científica Júnior do Espírito Santo - Pesquisador do Futuro
+
+<!-- page 80 -->
+
+## Fapes
+
+Fundação de Amparo à Pesquisa e Inovação do Espírito Santo
+
+- Ilha da Conceição;
+- Ilha dos Aires;
+- João Goulart;
+- Morada da Barra;
+- Normília da Cunha;
+- Pedra dos Búzios;
+- Primeiro de Maio;
+- Residencial Jabaeté;
+- Riviera da Barra;
+- Sagrada Família;
+- Santa Rita;
+- São Conrado;
+- São Torquato;
+- Soteco;
+- Terra Vermelha;
+- Ulisses Guimarães;
+- Vista da Penha;
+- Vila Garrido;
+- Zumbi dos Palmares.
+
+## Município: Vitória
+
+- Bairro da Penha;
+- Bela Vista;
+- Bonfim;
+- Capixaba;
+- Condusa;
+- Conquista;
+- Consolação;
+- Fonte Grande;
+- Gurigica;
+- Ilha das Caieiras;
+
+## PICJr 2027
+
+Programa de Iniciação Científica Júnior do Espírito Santo - Pesquisador do Futuro
+
+<!-- page 81 -->
+
+## Fapes
+
+Fundação de Amparo à Pesquisa e Inovação do Espírito Santo
+
+- Ilha do Príncipe;
+- Inhanguetá;
+- Itararé;
+- Morro de São Benedito;
+- Moscoso;
+- Nova Palestina;
+- Piedade;
+- Redenção;
+- Resistência;
+- Santo André;
+- Santo Antônio;
+- Santos Reis;
+- São José;
+- São Pedro;
+- Vila Rubim.
+
+## PICJr 2027
+
+Programa de Iniciação Científica Júnior do Espírito Santo - Pesquisador do Futuro
+
+<!-- page 82 -->
+
+## Anexo III Orientações para Elaboração da Prática Pedagógica
+
+## Específico para projetos contemplados nas Faixas A e B
+
+A prática pedagógica deve ser organizada conforme os tópicos indicados neste modelo. As instruções apresentadas têm como finalidade auxiliar na melhor estruturação da proposta e devem ser apagadas da versão final.
+
+Para garantir a padronização da formatação, orientamos que todo o conteúdo seja redigido com a fonte Times New Roman, tamanho 12 e espaçamento simples (1,0).
+
+- 1 Título: O título deve ser claro, relevante e atraente, refletindo o tema e os objetivos da prática pedagógica.
+- 2 Autores: Incluir todos os nomes dos autores (coordenadores, tutores e bolsistas) que participaram da elaboração da prática pedagógica.
+
+## 3 Etapa/Modalidade/Série:
+
+- I identifique a etapa (Educação Infantil; Ensino Fundamental I ou II; Ensino Médio);
+- II modalidade (Educação de Jovens e Adultos; Educação Profissional e Tecnológica; Educação Especial; Educação Escolar Quilombola e outros);
+- III série/ano para qual a prática foi elaborada.
+
+<!-- image -->
+
+<!-- page 83 -->
+
+- 4 Área(s) do conhecimento abrangida(s): Definir as áreas do conhecimento envolvidas no projeto.
+- 5 Componentes curriculares: Listar os componentes curriculares específicos envolvidos na prática pedagógica, garantindo uma abordagem interdisciplinar.
+- 6 Competências gerais da Base Nacional Comum Curricular (BNCC): Demonstrar como a prática pedagógica desenvolve as competências gerais estabelecidas pelo Currículo do Espírito Santo (Currículo do Espírito Santo - Sedu).
+- 7 Competências socioemocionais: Presentes na Matriz de Saberes, as competências socioemocionais referem-se à capacidade de mobilizar, articular e colocar em ação conhecimentos, valores, habilidades, atitudes e emoções para resolver problemas cotidianos de ordem pessoal ou social (Competências Socioemocionais).
+- 8 Temas integradores: Os temas integradores no Currículo do Espírito Santo são projetados que abordam questões contemporâneas que impactam a vida humana em escala local, regional e global. Eles promovem uma educação integral ao articular diversas áreas do conhecimento e componentes curriculares (Tema Integrador).
+- 9 Objetos de conhecimento: Os Objetos de Conhecimento são elementos que especificam os conteúdos e temas a serem abordados em cada componente curricular. (Currículo do Espírito Santo - Sedu e Orientações Curriculares 2025 - Currículo do Espírito Santo).
+
+<!-- image -->
+
+<!-- page 84 -->
+
+- 10 Habilidades curriculares: As habilidades curriculares são capacidades específicas e práticas que os estudantes devem desenvolver ao longo de seu percurso educacional. Identifique todas as habilidades que dizem respeito a proposta e elabore ações em relação às habilidades citadas. Habilidades de outras áreas de conhecimento podem ser adicionadas no contexto da interdisciplinaridade. (Currículo do Espírito Santo - Sedu e Orientações Curriculares 2025 - Currículo do Espírito Santo).
+- 11 Objetivo geral: O objetivo geral descreve a finalidade maior da intervenção pedagógica e orienta o desenvolvimento das atividades e servindo como guia para o planejamento.
+- 12 Objetivos específicos: Os objetivos específicos são metas detalhadas e precisas que contribuem para a realização do objetivo geral.
+- 13 Contextualização: A contextualização é o texto introdutório da prática pedagógica. Orientamos que esse texto tenha uma página.
+- 14 Descrição da atividade: A primeira etapa na construção de uma proposta pedagógica é a descrição detalhada da atividade que será desenvolvida.
+- 15 Metodologia: Na metodologia, escolha o tipo de aula que será conduzida. Escolha a metodologia que melhor se adapte aos objetivos da atividade e ao perfil dos alunos.
+- 16 Materiais: Liste todos os materiais necessários para a realização da atividade e quaisquer outros materiais que serão utilizados durante a aula.
+
+<!-- image -->
+
+<!-- page 85 -->
+
+- 17 Tempo previsto para execução: Determine o tempo necessário para a execução da atividade, especificando quantas aulas serão dedicadas a ela.
+- 18 Desenvolvimento: O desenvolvimento da atividade deve ser descrito em um passo a passo detalhado e organizado em etapas e aulas.
+- 19 Avaliação: A avaliação é uma parte importante da prática pedagógica, pois permite verificar se os objetivos de aprendizagem foram alcançados. Estabeleça critérios claros e objetivos para avaliar o desempenho dos alunos.
+- 20 Referências: Referenciar seguindo as Normas ABNT apenas o que foi citado no texto da sua proposta. (Normas ABNT).
+
+## 21 Observações gerais:
+
+- I Em relação aos itens gráficos: O coordenador pode utilizar figuras, tabelas e quadros para ilustrar a apresentação do conteúdo. Estes itens devem estar indicados no texto de maneira apropriada e seguirem as orientações a seguir:
+- i Imagens: Utilize imagens com licença de uso livre ou geradas por IA. Certifique-se de indicar a fonte (origem) das imagens.
+- ii Links: Sempre inclua a data de acesso dos links utilizados.
+- iii Quadros e Tabelas: Devem obedecer à Norma da ABNT.
+
+<!-- image -->
+
+<!-- page 86 -->
+
+- II Quanto ao uso de materiais de apoio e/ou complementares: Na seleção de materiais de apoio, é importante escolher recursos diretamente relacionados ao conteúdo, como livros, artigos, vídeos e slides. Esses materiais devem estar disponíveis em formatos digitais, garantindo acessibilidade para todos os alunos por meio de links. Além disso, é crucial verificar as licenças de uso dos materiais para assegurar a conformidade com os direitos autorais.
+
+Quanto às sugestões de materiais complementares, os professores devem identificar recursos adicionais que possam enriquecer o aprendizado dos alunos. Isso inclui leituras adicionais, cursos online e acesso a bibliotecas digitais.
+
+<!-- image -->
+
+<!-- page 87 -->
+
+## Anexo IV Termo de Outorga e Aceitação de Projeto de Pesquisa
+
+TERMO DE OUTORGA Nº \_\_\_/ 2027
+
+## EDITAL FAPES Nº XX/2026
+
+## PROGRAMA DE INICIAÇÃO CIENTÍFICA JÚNIOR - PESQUISADOR DO FUTURO - PICJr 2027
+
+PROCESSO Nº \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_/\_\_\_\_\_\_\_\_
+
+## PARTICIPAM DESTE CONTRATO
+
+OUTORGANTE: A FUNDAÇÃO DE AMPARO À PESQUISA E INOVAÇÃO DO ESPÍRITO SANTO, reorganizada pela Lei Complementar nº 978/2021, adiante designada simplesmente Fapes, com sede na Avenida Fernando Ferrari, nº 1080, Ed. América Centro Empresarial, Torre Norte, 7º andar, Mata da Praia, Vitória/ES, inscrita no CNPJ sob o nº 07.296.722/0001-84, na qualidade de gestora do Fundo Estadual de Ciência e Tecnologia - FUNCITEC, neste ato representada por seu Diretor-Geral, RODRIGO VAREJÃO ANDREÃO, nomeado pelo Governador do Estado por meio do Decreto Nº 048-S, DE 12.01.2024,e por sua Diretora Setorial, LUCIA APARECIDA DE QUEIROZ ARAÚJO, nomeada pelo Governador do Estado do Espírito Santo, por meio do Decreto nº 278-S, publicado no DIO/ES em 01.01.2019;
+
+OUTORGADO: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_, coordenador(a) do Projeto, portador(a) da RG nº \_\_\_\_\_\_ e inscrito(a) no CPF sob o nº \_\_\_\_\_\_\_\_\_\_\_, residente na \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_, vinculado(a) à INSTITUIÇÃO DE EXECUÇÃO DO PROJETO \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_, inscrita no CNPJ sob o nº \_\_\_\_\_\_\_\_\_\_\_\_\_\_, localizada na \_\_\_\_\_\_\_\_\_, ES.
+
+<!-- image -->
+
+<!-- page 88 -->
+
+Formalizam este Termo de Outorga que obedecem às cláusulas indicadas abaixo, as previsões do Edital e, no que couber, às seguintes normas e suas alterações: Lei Complementar Estadual nº 978/2021 - Lei de Regência da Fapes; Decreto Estadual nº 5039-R/2021 - Regulamenta a Lei de Regência da Fapes; Resolução CCAF nº 57/2012 - Bolsas de Iniciação Científica e Tecnológica; Resolução CCAF nº 331/2023 - Propriedade Intelectual e da Criação Protegida; Resolução CCAF nº 122/2014 - Normas Gerais de Projetos e Auxílios; Resolução CCAF nº 170/2017 - Boas Práticas Científicas na Fapes; Resolução CCAF nº 248/2019 - Programa de Iniciação Científica Júnior do Espírito Santo - Pesquisador do Futuro; Resolução CCAF nº 251/2019 - Licença em Razão de Advento de Prole; Resolução CCAF nº 308/2022 - Auxílio para organização de eventos de ciência, tecnologia e inovação e para projetos de pesquisa, desenvolvimento e inovação; Resolução CCAF nº 309/2022 - Itens financiáveis e não financiáveis com recursos financeiros da FAPES e do FUNCITEC; Resolução CCAF nº 313/2022 (Manual de Utilização de Recursos Financeiros e Elaboração de Prestação de Contas da Fapes/Funcitec; Resolução CCAF nº 314/2022 - Redefine as regras e consequências por descumprimento de deveres assumidos por beneficiário da Fapes; Resolução CCAF nº 337/2024 - Recursos Administrativos; Resolução CCAF nº 341/2024 - Aprovação do reajuste no valor de Bolsas e Resolução CCAF nº 355/2025 -Tabela de Valores de Bolsas e Auxílios
+
+CLÁUSULA PRIMEIRA - OBJETO: O objeto deste Termo de Outorga é o apoio financeiro ao Projeto de Pesquisa e Desenvolvimento aprovado na forma do Edital Fapes nº XX/202X - Programa de Iniciação Científica Júnior no Estado do Espírito Santo - Pesquisador do Futuro (PICJr 202X).
+
+Parágrafo primeiro. O projeto será feito sob a responsabilidade e coordenação do Outorgado.
+
+Parágrafo segundo. O projeto de pesquisa aprovado pela Fapes integra este Termo de Outorga.
+
+<!-- image -->
+
+<!-- page 89 -->
+
+CLÁUSULA SEGUNDA - ORIGEM DOS RECURSOS/DOTAÇÃO ORÇAMENTÁRIA: Os recursos financeiros usados para o pagamento do projeto e das bolsas a ele vinculadas são provenientes do Fundo Estadual de Ciência e Tecnologia do Espírito Santo - Funcitec, sob a Fonte: 1759, Atividade: 19.571.0017.2232 e Elemento de Despesa: 339020 e 449020. INSCRIÇÃO GENÉRICA: ED260000175 Bolsa - ED260000176 Pesquisa.
+
+CLÁUSULA TERCEIRA - LIBERAÇÃO E MOVIMENTAÇÃO DOS RECURSOS FINANCEIROS DO PROJETO: A Fapes se compromete a repassar ao Outorgado o valor global aprovado, observando-se o seguinte:
+
+- a) Os recursos financeiros correspondentes ao projeto serão repassados em parcela única à conta corrente do Banco do Estado do Espírito Santo S/A - Banestes aberta em nome do Outorgado;
+- b) Os recursos financeiros destinados ao pagamento das bolsas do projeto serão repassados pela Fapes diretamente ao bolsista, conforme as regras de contratação estabelecidas no Edital e nas Resoluções de cada modalidade de bolsa;
+
+Parágrafo primeiro. O Outorgado deverá informar à Fapes, em até 30 (trinta) dias após o início da vigência deste Termo de Outorga, o número da agência bancária e da conta corrente aberta no Banestes para receber os recursos financeiros do projeto;
+
+Parágrafo segundo. Os recursos financeiros indicados na alínea "a" serão liberados em até 5 (cinco) dias úteis após a informação dos dados de abertura da conta bancária prevista no Parágrafo anterior;
+
+Parágrafo terceiro. A Fapes só implementará as bolsas do projeto após a solicitação do Outorgado, que deve vir acompanhada do plano de trabalho de cada bolsista. As exigências e os critérios de contratação estabelecidos pelo Edital para cada modalidade de bolsa devem ser seguidos.
+
+Parágrafo quarto. O valor mensal das bolsas do projeto encontra-se vinculado a Tabela de Valores de Bolsas e Auxílios da Fapes, disponível em: www.fapes.es.gov.br.
+
+<!-- image -->
+
+<!-- page 90 -->
+
+Parágrafo quinto. O bolsista deverá ter executado as atividades previstas no Plano de Atividades por, no mínimo, 16 (dezesseis) dias no respectivo mês, para receber a mensalidade da bolsa.
+
+Parágrafo sexto. Os recursos financeiros deverão, obrigatoriamente, ser mantidos na respectiva conta corrente até a sua efetiva utilização.
+
+CLÁUSULA QUARTA - MOVIMENTAÇÃO DOS RECURSOS FINANCEIROS DO PROJETO: A movimentação dos recursos financeiros do projeto deve observar a legislação pertinente e a Resolução CCAF nº 313/2022.
+
+Parágrafo primeiro. O Outorgado e o bolsista deverão manter a movimentação dos recursos financeiros na conta corrente do Banestes (Faixa - 321) informada no cadastro. É proibida a portabilidade para recebimento da bolsa em outros bancos.
+
+Parágrafo segundo. O Outorgado deve usar a conta bancária informada para receber e movimentar os recursos aprovados pela Fapes. É preciso seguir a legislação vigente, a Resolução CCAF nº 313/2022 e suas atualizações. É proibido usar o recurso para outros fins que não os do projeto, mesmo que de forma temporária.
+
+## CLÁUSULA QUINTA - OBRIGAÇÕES DO OUTORGADO: são obrigações do Outorgado:
+
+- a) cumprir todas as atividades previstas no projeto aprovado durante a sua vigência;
+- b) movimentar os recursos financeiros do projeto de acordo com o Resolução CCAF nº 313/2022 e suas alterações;
+- c) atender aos requisitos do coordenador do projeto previsto no edital;
+- d) assumir todas as obrigações legais relativas a contratações necessárias para executar o projeto. Essas contratações são de responsabilidade do Outorgado e não têm vínculo com a Fapes.
+- e) informar à Fapes sobre quaisquer alterações ou descontinuidades na execução do projeto e nas atividades dos bolsistas a ele vinculados;
+- f) informar de imediato à Fapes quaisquer intercorrências relacionadas à gestão das bolsas do projeto contratado;
+
+<!-- image -->
+
+Sumário
+
+<!-- page 91 -->
+
+- g) solicitar autorização à Fapes para realizar modificações no projeto, apresentando justificativa;
+- h) não se afastar da Instituição Executora para a realização de capacitação, doutorado, pós-doutorado ou por qualquer outro motivo durante a vigência do projeto;
+- i) elaborar e entregar as prestações de contas na forma e nos prazos estabelecidos neste Termo de Outorga;
+- j) participar de seminário ou apresentar vídeo de curta duração para apresentar os resultados do projeto, sempre que convocado ou solicitado pela Fapes;
+- k) citar, obrigatoriamente, a Fapes em todas as publicações e produções que resultem do apoio financeiro concedido no âmbito do projeto aprovado;
+- l) cooperar com a Fapes e suas instituições parceiras sempre que solicitado;
+- m) atuar obrigatoriamente na função de consultor ad hoc da Fapes e suas instituições parceiras sempre que solicitado, durante o prazo de vigência do Termo, acrescido de 12 meses;
+- n) devolver à Fapes valores pagos indevidamente e/ou não utilizados, inclusive os rendimentos financeiros;
+- o) devolver à Fapes os recursos financeiros recebidos, no caso de não execução do projeto;
+- p) permitir e facilitar à Fapes o acesso aos locais de execução do projeto, o exame da documentação produzida e a vistoria dos bens adquiridos;
+- q) comunicar oficialmente à Fapes o depósito ou registro de pedido de proteção intelectual decorrente de resultados do projeto;
+- r) manter-se adimplente com a Fapes e em situação regular junto às fazendas públicas Federal, Estadual e Municipal (do domicílio), e com a Justiça Trabalhista, durante a vigência deste Termo de Outorga;
+- s) estar ciente de todos os termos da Resolução CCAF nº 170/2017 (Boas Práticas Científicas na Fapes).
+- t) manter cadastro atualizado junto à Fapes;
+- u) apresentar à Fapes esclarecimentos ou documentos adicionais referentes ao desenvolvimento ou à conclusão do projeto aprovado sempre que solicitado;
+- v) não transferir a terceiros as obrigações assumidas;
+
+<!-- image -->
+
+<!-- page 92 -->
+
+- w) cumprir as obrigações deste Termo de Outorga durante toda a vigência do projeto.
+- x) selecionar os bolsistas ICJr juntamente com o tutor e direção da escola parceira;
+- y) orientar e acompanhar os bolsistas vinculados ao projeto no cumprimento integral das tarefas previstas no Formulário de Atividades;
+- z) arquivar todos os documentos da seleção dos bolsistas por 5 (cinco) anos, pois podem ser solicitados pela Fapes.
+
+## CLÁUSULA SEXTA - OBRIGAÇÕES DA INSTITUIÇÃO EXECUTORA DO PROJETO: são obrigações da Instituição Executora:
+
+- a) garantir condições necessárias para a realização do projeto;
+- b) garantir a utilização dos bens adquiridos na execução do projeto;
+- c) manter o cadastro do Gestor/Representante Legal atualizado junto à Fapes;
+- d) comunicar à Fapes o depósito ou registro de pedido de proteção intelectual decorrente de resultados do projeto, quando for o caso.
+- e) providenciar, em conjunto com o Outorgado, a incorporação dos bens adquiridos ao patrimônio da Instituição;
+- f) prestar qualquer informação sempre que solicitada pela Fapes.
+
+## CLÁUSULA SÉTIMA - OBRIGAÇÕES DA FAPES: são obrigações da Fapes:
+
+- a) repassar ao Outorgado e bolsistas os recursos financeiros previstos para o projeto;
+- b) acompanhar se os objetivos do projeto e deste Termo de Outorga estão sendo cumpridos pelo Outorgado, por meio da análise das Prestações de Contas Técnica e Financeira;
+- c) organizar o seminário final de acompanhamento de execução do projeto, caso necessário.
+- d) realizar a análise da prestação de contas Técnica e Financeira final de projetos, programas, auxílios e bolsas, a qual deverá ser concluída no prazo de até um ano, prorrogável por igual período, justificadamente. Quando a complementação de dados se fizer necessária, o prazo poderá ser suspenso.
+
+## CLÁUSULA OITAVA - PROIBIÇÕES: é proibido ao Outorgado:
+
+<!-- image -->
+
+<!-- page 93 -->
+
+- a) utilizar os recursos financeiros recebidos para realizar aquisições e/ou pagamentos de itens não financiáveis;
+- b) permitir que haja acúmulo de bolsas oriundas da Fapes com quaisquer outras bolsas de agências ou entidades nacionais ou estrangeiras, exceto bolsas com cunho de inclusão social que permitam acúmulo, como Nossa Bolsa, Prouni, FIES, Assistência Estudantil, entre outras.;
+- c) utilizar os recursos financeiros do projeto fora do período de vigência do Termo de Outorga.
+
+CLÁUSULA NONA - DOCUMENTOS INTEGRANTES: os seguintes documentos integram o Termo de Outorga:
+
+- a) o Projeto e o Orçamento, na forma aprovada pela FAPES;
+- b) o Formulário de Atividades dos bolsistas a serem vinculados aos projetos;
+- c) a Resolução 313/2022 - Manual de Utilização de Recursos Financeiros e Prestação de Contas da FAPES e do FUNCITEC;
+- d) a Resolução nº 314/2022 - Consequências por descumprimento de deveres assumidos por beneficiário da Fapes;
+- e) a Resolução nº 170/2017 - Boas Práticas Científicas;
+- f) as demais Resoluções citadas no presente ajuste e suas alterações.
+
+CLÁUSULA DÉCIMA - MATERIAL PERMANENTE: O Outorgado é responsável pela aquisição de bens e materiais permanentes vinculados ao projeto. Essa aquisição deve seguir a legislação vigente e respeitar os princípios da legalidade, moralidade e economicidade, buscando sempre a proposta mais vantajosa.
+
+Parágrafo primeiro. Todos os bens patrimoniais adquiridos ou produzidos com apoio financeiro recebido passam a integrar o patrimônio da Instituição Executora do projeto.
+
+Parágrafo segundo. Em relação aos bens adquiridos durante a duração do Termo de Outorga, a Instituição Executora deve:
+
+- a) arcar com todas as despesas referentes ao transporte dos bens;
+- b) em caso de furto ou de roubo, registrar um Boletim de Ocorrência junto à autoridade policial competente, mediante protocolo;
+
+<!-- image -->
+
+<!-- page 94 -->
+
+- c) somente movimentar os bens dentro da área inicialmente destinada à sua instalação ou utilização.
+
+Parágrafo terceiro. O Outorgado e a Instituição Executora do projeto devem encaminhar à Fapes, na Prestação de Contas Financeira, a relação de bens adquiridos, desenvolvidos ou produzidos, quando houver.
+
+CLÁUSULA DÉCIMA PRIMEIRA - PUBLICAÇÃO E DIVULGAÇÃO DA PESQUISA: O Outorgado deve mencionar o apoio da Fapes em todos os trabalhos publicados, apresentados em eventos e divulgados por qualquer meio ou forma de comunicação.
+
+Parágrafo primieiro. A logomarca da Fapes deve estar presente em todos os trabalhos e atividades relacionadas ao projeto, em impressos e publicidades. Ela deve estar em lugar visível, de fácil identificação, em escala e tamanho proporcional à área de leitura do material.
+
+Parágrafo segundo. Eventual publicidade de obras, aquisições, serviços ou de quaisquer outros atos executados em função deste Edital ou que com ele tenham relação, deverá ter caráter meramente informativo, nela não podendo constar nomes, símbolos ou imagens que caracterizem promoção pessoal de autoridades ou servidores públicos em geral.
+
+CLÁUSULA DÉCIMA SEGUNDA - PRESTAÇÃO DE CONTAS FINAL: O Outorgado deverá encaminhar à Fapes eletronicamente a Prestação de Contas simplificada composta pelos seguintes documentos:
+
+- a) Relatório Técnico Final do Apoio contendo, em anexo, a reprodução do que foi realizado no projeto;
+- b) Relatório Técnico Final de Bolsista nas modalidades Iniciação Científica e Tecnológica (ICT) e Tutor (BTU), quando no projeto houver bolsistas nas citadas modalidades;
+- c) Formulário para Auxílios Financeiros de Ciência, Tecnologia e Inovação (CTI);
+- d) Relação de bens adquiridos, desenvolvidos ou produzidos, quando houver.
+
+<!-- image -->
+
+<!-- page 95 -->
+
+Parágrafo primeiro. Os relatórios devem ser enviados pelo Sistema de Gestão da Fapes, em até 30 (trinta) dias após o fim da vigência deste Termo de Outorga. Eles devem ser preenchidos nos formulários específicos da Fapes e acompanhados dos documentos exigidos.
+
+Parágrafo segundo. O Relatório Técnico Final será analisado pela Equipe Técnica da Fapes, e caso necessário e a critério da Diretoria Executiva da Fapes (Direx), o Relatório Técnico Final do Apoio poderá ser submetido à análise por membros da Câmara de Assessoramento da Fapes ou por avaliadores ad hoc da área de conhecimento do apoio.
+
+Parágrafo terceiro. Poderá ser realizado seminários de avaliação final, organizado pela equipe da Fapes e/ou pela escola parceira. Nele serão apresentados os resultados dos projetos. É obrigatória a participação do Outorgado, do tutor e dos bolsistas do projeto. Podem participar também avaliadores ad hoc.
+
+Parágrafo quarto. Os seminários de avaliação final poderão ser substituídos, a critério da Fapes, pelo envio de vídeos de curta duração, produzidos pelos bolsistas, que apresentem os resultados da pesquisa. As regras do vídeo serão definidas pela Fapes.
+
+Parágrafo quinto. O Outorgado será considerado inadimplente junto à Fapes se ocorrer qualquer uma das situações abaixo:
+
+- a) atraso na entrega da Prestação de Contas;
+- b) não resolução de pendências na Prestação de Contas após os prazos definidos na Resolução CCAF nº 313/2022 e suas alterações;
+- c) ausência não justificada, ou com justificativa não aceita pela Fapes, nos seminários de avaliação final;
+- d) não envio do vídeo de curta duração no prazo estabelecido pela Fapes, quando houver;
+- e) não aprovação da Prestação de Contas.
+
+Parágrafo sexto. Se o Outorgado tiver justificativa para contestar o resultado da análise da Prestação de Contas, poderá apresentar recurso administrativo, conforme a Resolução CCAF/FAPES nº 337/2024 e suas alterações.
+
+<!-- image -->
+
+<!-- page 96 -->
+
+CLÁUSULA DÉCIMA TERCEIRA - GESTÃO DE BOLSAS: A responsabilidade de acompanhar e administrar os bolsistas do projeto é somente do Outorgado.
+
+Parágrafo primeiro. A indicação dos bolsistas deve ser feita pelo sistema SigFapes, com todos os documentos exigidos, respeitando os prazos deste contrato, o cronograma da Fapes e os critérios definidos em edital.
+
+Parágrafo segundo. A Fapes vai analisar cada indicação. Se o candidato não atender aos requisitos do edital, a bolsa não será concedida.
+
+Parágrafo terceiro. A bolsa só pode ser solicitada se for para um período igual ou maior que 3 (três) meses.
+
+Parágrafo quarto. A Fapes pagará as bolsas todo mês, diretamente na conta corrente do Banestes, no nome do próprio bolsista.
+
+Parágrafo quinto. O bolsista ou o Outorgado tem até o dia 15 (décimo quinto) do mês em que a bolsa começou para enviar os dados bancários à Fapes.
+
+Parágrafo sexto. O Outorgado deve informar à Fapes se houver afastamento, suspensão ou cancelamento da bolsa, ou qualquer mudança nas atividades dos bolsistas.
+
+Parágrafo sétimo. Se o bolsista não cumprir as regras ou obrigações, a bolsa poderá ser suspensa ou cancelada. Além disso, pode ser necessário devolver os valores recebidos.
+
+Parágrafo oitavo. Se acontecer algum problema que gere penalidade, o bolsista e o Outorgado serão notificados e terão o direito de se defender.
+
+CLÁUSULA DÉCIMA QUARTA - SUBSTITUIÇÕES: É possível trocar o Outorgado, a Instituição Executora, o tutor ou os bolsistas, desde que o Outorgado justifique e a Fapes aprove.
+
+Parágrafo primeiro. O novo coordenador, instituição, tutor ou bolsista deve cumprir os requisitos do Edital Fapes nº xx/202x - PICJr 202x.
+
+Parágrafo segundo. Se for trocar o Outorgado, é preciso enviar a documentação do novo coordenador, além das cartas de aprovação da Instituição Executora e da escola parceira.
+
+<!-- image -->
+
+<!-- page 97 -->
+
+Parágrafo terceiro. Para trocar a Instituição Executora, devem ser enviadas as cartas de aprovação da nova instituição e da escola parceira.
+
+Parágrafo quarto. Para substituir o tutor, é necessário comprovar que ele atua como professor na escola parceira, enviar a carta de aprovação da escola e uma declaração de que ele não é parente nem tem vínculo conjugal com o diretor da escola ou com o Outorgado.
+
+Parágrafo quinto. Caso haja troca de Outorgado, Instituição Executora ou tutor, o projeto deve continuar sendo executado da forma contratada, respeitando o prazo de vigência.
+
+Parágrafo sexto. Todos os substitutos devem atender às exigências do edital.
+
+CLÁUSULA DÉCIMA QUINTA - CANCELAMENTO DO PROJETO: O projeto será cancelado nas seguintes situações:
+
+- a) se o Outorgado pedir o cancelamento com justificativa;
+- b) se o coordenador não atender aos requisitos do edital;
+- c) se o número de bolsistas ICJr for menor que 5 e isso não for resolvido após aviso da Fapes;
+- d) se o Outorgado se afastar para capacitação ou atividade similar durante o projeto;
+- e) se o projeto ficar sem tutor e isso não for resolvido após aviso da Fapes;
+- f) se a escola parceira desistir do projeto;
+- g) se a Instituição Executora desistir do projeto e não for substituída;
+- h) se o Outorgado descumprir as obrigações estabelecidas neste instrumento e no edital.
+- i) se houver fraude que tenha influenciado a concessão do projeto;
+- j) se o Outorgado falecer.
+
+Parágrafo primeiro. Nos casos de "a" até "h", o Outorgado deve apresentar a prestação de contas final.
+
+Parágrafo segundo. Se o cancelamento gerar penalidades, o Outorgado será notificado e poderá se defender.
+
+<!-- image -->
+
+<!-- page 98 -->
+
+Parágrafo terceiro. Caso queira contestar o cancelamento, o Outorgado pode apresentar recurso, conforme a Resolução CCAF/FAPES nº 337/2024.
+
+CLÁUSULA DÉCIMA SEXTA - RESSARCIMENTO: O Outorgado ou o bolsista do projeto deverão devolver à Fapes os valores recebidos se:
+
+- a) receberem recursos indevidamente, ou seja, receberem recursos sem ter direito a eles;
+- b) atrasarem ou não enviarem a Prestação de Contas corretamente e dentro do prazo previsto na Resolução CCAF nº 313/2022;
+- c) não cumprirem os critérios exigidos no Edital FAPES nº xx/202x - PICJr 202x;
+- d) não cumprirem as obrigações descritas neste Termo de Outorga.
+- e) a Fapes reprovar a Prestação de Contas;
+- f) cometerem qualquer tipo de fraude que possa impedir a concessão do recurso.
+
+Parágrafo primeiro. Caso o Outorgado não forneça à Fapes as informações do bolsista, ele responderá juntamente com o bolsista pela irregularidade, devendo devolver os valores pagos indevidamente.
+
+Parágrafo segundo. A aplicação de qualquer penalidade será realizada conforme o processo legal, com garantia de defesa e direito ao contraditório. Caso discordem da penalidade, o Outorgado ou o bolsista poderão apresentar recurso administrativo contestando o ressarcimento. O recurso deve seguir as regras da Resolução CCAF/FAPES nº 337/2024.
+
+Parágrafo quarto. O Outorgado ou o bolsista deverá devolver o recurso financeiro imediatamente após a decisão de penalidade emitida pela Diretoria Executiva da Fapes.
+
+Parágrafo quinto. No caso de devolução da bolsa, o valor a ser devolvido será corrigido com base na Tabela de Valores de Bolsas e Auxílios da Fapes vigente (Resolução CCAF nº 324/2023 e suas alterações). Entretanto, se a bolsa ainda estiver ativa no projeto, a Fapes poderá descontar os valores devidos nas próximas parcelas.
+
+<!-- image -->
+
+<!-- page 99 -->
+
+Parágrafo sexto. No caso de ressarcimento da parcela da bolsa, o bolsista ou o Outorgado poderão pedir parcelamento da devolução. Cada parcela deve ser, no mínimo, 20% do valor atual da bolsa (Resoluções CCAF nº 324/2023 e suas alterações), convertido em unidades de Valor de Referência do Tesouro Estadual (VRTE), na data da aprovação do parcelamento.
+
+Parágrafo sétimo. Se a devolução for relacionada ao projeto, o responsável também poderá pedir o parcelamento da dívida, que será convertida em unidades do Valor de Referência do Tesouro Estadual (VRTE), na data da aprovação do parcelamento.
+
+Parágrafo oitavo. Em relação aos parágrafos sexto e sétimo, para validação do parcelamento da dívida, é obrigatória a aprovação da Diretoria Setorial AdministrativoFinanceira da Fapes e a formalização do Termo de Confissão de Dívida e Parcelamento de Débito.
+
+Parágrafo nono. Em caso de não cumprimento das cláusulas deste termo, o Outorgado deverá devolver os recursos financeiros recebidos, até o 15º (décimo quinto) dia após o prazo de vigência deste Termo de Outorga. A devolução deverá ser feita no Banestes, na conta corrente nº 12380606, agência nº 104, em nome do Banco de Desenvolvimento do Espírito Santo S/A - Bandes. O Outorgado também deve:
+
+- a) comunicar e comprovar ao setor de Prestação de Contas da Fapes a devolução dos recursos imediatamente após o prazo estipulado para o depósito com a identificação do número do processo;
+- b) apresentar o comprovante da devolução na entrega da Prestação de Contas Financeira final.
+
+CLÁUSULA DÉCIMA SÉTIMA - DA PROPRIEDADE INTELECTUAL E DA CRIAÇÃO PROTEGIDA: No caso das atividades do Outorgado originarem criações intelectuais passíveis de proteção, as partes obedecerão as determinações da Lei Federal nº 10.973/2004, regulamentada pelo Decreto nº 5.563/2005, da Lei Complementar Estadual nº 978/2021 e da Resolução CCAF nº 331/2023, e as demais disposições legais vigentes.
+
+<!-- image -->
+
+<!-- page 100 -->
+
+Parágrafo único. Os resultados econômicos auferidos na exploração comercial da criação protegida, inclusive na hipótese de transferência do direito de exploração a terceiros, serão partilhados com a Fapes, conforme Resolução CCAF nº 331/2023, por meio de contrato a ser celebrado com as Instituições Executoras de projetos nas quais as patentes ou similares foram desenvolvidas.
+
+CLÁUSULA DÉCIMA OITAVA - DA PROTEÇÃO DE DADOS PESSOAIS - Proteção de dados, coleta e tratamento. Sempre que tiverem acesso ou realizarem qualquer tipo de tratamento de dados pessoais, as partes comprometem-se a envidar todos os esforços para resguardar e proteger a intimidade, vida privada, honra e imagem dos respectivos titulares, observando as normas e políticas internas relacionadas a coleta, guarda, tratamento, transmissão e eliminação de dados pessoais, especialmente as previstas na Lei Federal nº 13.709/2018 ("Lei Geral de Proteção de Dados Pessoais"), no Decreto Estadual nº 4922-R, de 09 de julho de 2021, e demais normas legais e regulamentares aplicáveis.
+
+Parágrafo primeiro. Caso o objeto envolva o tratamento de dados pessoais com fundamento no consentimento do titular, o Outorgado deverá observar, ao longo de toda a vigência do Contrato, todas as obrigações legais e regulamentares específicas vinculadas a essa hipótese legal de tratamento.
+
+Parágrafo segundo. Ao receber o requerimento de um titular de dados, na forma prevista nos artigos 16 e 18 da Lei Federal nº 13.709/2018, o Outorgado deverá:
+
+I - Notificar imediatamente a Fapes;
+
+II - Auxiliá-la, quando for o caso, na elaboração da resposta ao requerimento; e
+
+III - Eliminar todos os dados pessoais tratados com base no consentimento em até 30 (trinta) dias corridos, contados a partir do requerimento do titular.
+
+Parágrafo terceiro. As partes armazenarão dados pessoais apenas pelo período necessário ao cumprimento da finalidade para a qual foram originalmente coletados e em conformidade com as hipóteses legais que autorizam o tratamento.
+
+<!-- image -->
+
+<!-- page 101 -->
+
+Parágrafo quarto. As partes devem assegurar que o acesso a dados pessoais seja limitado aos empregados, prepostos ou colaboradores e eventuais subcontratados que necessitem acessar os dados pertinentes, na medida em que sejam estritamente necessários para o cumprimento deste Contrato e da legislação aplicável, assegurando que todos esses indivíduos estejam sujeitos a obrigações de sigilo e confidencialidade.
+
+Parágrafo quinto. O Outorgado deve, enquanto operadora de dados pessoais, implementar medidas técnicas e organizacionais apropriadas para o cumprimento das obrigações da Fapes previstas na Lei Federal nº 13.709/2018.
+
+Parágrafo sexto. Proteção de dados e incidentes de segurança. Considerando as características específicas do tratamento de dados pessoais e o estado atual da tecnologia, o Outorgado deverá adotar medidas de segurança, técnicas e administrativas aptas a proteger os dados e informações de acessos não autorizados e de situações acidentais ou ilícitas de destruição, perda, alteração, comunicação ou qualquer forma de tratamento inadequado ou ilícito.
+
+Parágrafo sétimo. O Outorgado deverá notificar a Fapes imediatamente sobre a ocorrência de incidentes de segurança relacionados a dados pessoais, fornecendo informações suficientes para que a Fapes cumpra quaisquer deveres de comunicação, dirigidos à Autoridade Nacional de Proteção de Dados e/ou aos titulares dos dados, acerca do incidente de segurança.
+
+Parágrafo oitavo. As partes deverão adotar as medidas cabíveis para auxiliar na investigação e na mitigação das consequências de cada incidente de segurança.
+
+Parágrafo nono. Transferência internacional. É vedada a transferência de dados pessoais pelo Outorgado para fora do território do Brasil sem o prévio consentimento, por escrito, da Fapes, e demonstração da observância da adequada proteção desses dados, cabendo à Outorgado a responsabilidade pelo cumprimento da legislação de proteção de dados ou de privacidade de outro(s) país(es) que for aplicável.
+
+<!-- image -->
+
+<!-- page 102 -->
+
+Parágrafo décimo. Responsabilidade. O Outorgado responderá por quaisquer danos, perdas ou prejuízos causados a Fapes ou a terceiros decorrentes do descumprimento da Lei Federal nº 13.709/2018, do Decreto Estadual nº 4922-R, de 09 de julho de 2021 e outras normas legais ou regulamentares relacionadas a este Contrato, não excluindo ou reduzindo essa responsabilidade a fiscalização da Fapes em seu acompanhamento.
+
+Parágrafo décimo primeiro. Eventual subcontratação, mesmo quando autorizada pela Fapes, não exime o Outorgado das obrigações decorrentes deste Contrato, permanecendo integralmente responsável perante a Fapes mesmo na hipótese de descumprimento dessas obrigações por subcontratada.
+
+Parágrafo décimo segundo. O Outorgado deve colocar à disposição da Fapes, quando solicitado, toda informação necessária para demonstrar o cumprimento do disposto nestas cláusulas, permitindo a realização de auditorias e inspeções, diretamente pela Fapes ou por terceiros por ela indicados, com relação ao tratamento de dados pessoais.
+
+Parágrafo décimo terceiro. O Outorgado deve auxiliar a Fapes na elaboração de relatórios de impacto à proteção de dados pessoais, observado o disposto no artigo 38 da Lei Federal nº 13.709/2018, relativo ao objeto deste Contrato.
+
+Parágrafo décimo quarto. Se a Fapes constatar que dados pessoais foram utilizados pelo Outorgado para fins ilegais, ilícitos, contrários à moralidade ou mesmo para fins diversos daqueles necessários ao cumprimento deste Contrato, o Outorgado será notificada para promover a cessação imediata desse uso, sem prejuízo da rescisão do Contrato e de sua responsabilização pela integralidade dos danos causados.
+
+Parágrafo décimo quinto. Extinto o Termo de Outorga, independentemente do motivo, o Outorgado deverá em, até 10 (dez) dias úteis, contados da data de seu encerramento, devolver todos os dados pessoais a Fapes ou eliminá-los, inclusive eventuais cópias, certificando a Fapes, por escrito, do cumprimento desta obrigação.
+
+CLÁUSULA DÉCIMA NONA - ALTERAÇÕES: O Termo de Outorga poderá ser alterado durante sua vigência. Para isso, é necessário enviar à Fapes um termo aditivo assinado, solicitando a mudança com pelo menos 30 (trinta) dias de antecedência.
+
+<!-- image -->
+
+<!-- page 103 -->
+
+Parágrafo primeiro. Não é permitida a alteração do objeto do Termo de Outorga nem aumento do número de parcelas de bolsa.
+
+Parágrafo segundo. Qualquer alteração do Termo de Outorga, exceto as que prorrogam o prazo de vigência, devem ser encaminhadas para análise da Procuradoria Geral do Estado.
+
+Parágrafo terceiro. O aditivo do Termo de Outorga será obrigatório quando a modificação envolver valores, metas, prazos ou uso do saldo restante de recursos.
+
+Parágrafo quarto. As alterações no Plano de Trabalho que envolvam a adequação do cronograma ou de valores, sem a alteração de metas, poderá ser registrada por simples apostila, dispensada a assinatura de um novo aditivo.
+
+CLÁUSULA VIGÉSIMA - VIGÊNCIA: Este Termo tem duração de 10 (dez) meses e começa em x de xxx de 202x.
+
+CLÁUSULA VIGÉSIMA PRIMEIRA - RESCISÃO: Este Termo será automaticamente cancelado se o responsável descumprir alguma das regras estabelecidas, sem prejuízo da aplicação de outras penalidades cabíveis.
+
+Parágrafo único. Este Termo de Outorga poderá ser rescindido por acordo entre as partes, desde que haja comunicação prévia e expressa, formalizada por escrito. A rescisão será precedida de análise da Procuradoria Geral do Estado, respeitadas as obrigações assumidas com terceiros e desde que estejam encerradas as obrigações previstas neste Termo.
+
+CLÁUSULA VIGÉSIMA SEGUNDA - PUBLICAÇÃO: Este Termo (ou suas alterações) só passará a ter eficácia após a publicação de seu extrato no Diário Oficial do Estado. A publicação deve ser feita pela administração pública estadual até o quinto dia útil do mês seguinte à assinatura, e no máximo em 20 (vinte) dias após a assinatura.
+
+<!-- image -->
+
+<!-- page 104 -->
+
+CLÁUSULA VIGÉSIMA TERCEIRA - FORO Fica eleito pelas partes o foro do Juízo de Vitória - Comarca Capital do Estado do Espírito Santo, para dirimir quaisquer questões decorrentes, direta ou indiretamente, do presente ajuste, que não puderem ser resolvidas pelas vias administrativas.
+
+Parágrafo único. Antes de qualquer providência jurisdicional visando solucionar dúvida quanto à interpretação do presente instrumento, as partes deverão buscar solução administrativa, com a participação da Procuradoria Geral do Estado, por intermédio de um ou mais meios de solução consensual de conflitos previstos na Lei Complementar Estadual n° 1.011/2022.
+
+E assim, por estarem justas e acordadas, assinam eletronicamente o presente Termo em 01 (uma) única via, ficando disponível para as partes no portal Acesso Cidadão (https://acessocidadao.es.gov.br), para que produza os efeitos de direito.
+
+| Rodrigo Varejão Andreão Diretor Geral/FAPES   | Lucia Aparecida de Queiroz Araujo Diretora Administrativo- financeira/FAPES   |
+|-----------------------------------------------|-------------------------------------------------------------------------------|
+| Nome do Proponente Outorgado                  | Nome do Representante Legal Instituição de Vínculo do Proponente              |
+
+<!-- image -->
+
+<!-- page 105 -->
+
+<!-- image -->
+
+## RODRIGO VAREJÃO ANDREÃO
+
+DIRETOR-GERAL
+
+FAPES - FAPES - GOVES assinado em 03/09/2026 17:06:36 -03:00
+
+## INFORMAÇÕES DO DOCUMENTO
+
+Documento capturado em 03/09/2026 17:06:36 (HORÁRIO DE BRASÍLIA - UTC-3) por JHENNYFER KELLY VIEIRA DA CUNHA (ASSESSOR ADJUNTO - GAB - FAPES - GOVES) Valor Legal: ORIGINAL | Natureza: DOCUMENTO NATO-DIGITAL
+
+A disponibilidade do documento pode ser conferida pelo link: https://e-docs.es.gov.br/d/2026-7D03X0
