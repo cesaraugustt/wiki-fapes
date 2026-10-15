@@ -7,3 +7,4 @@ raw/*
 !raw/_manifest.csv
 raw-text/
 .obsidian/
+.index/
