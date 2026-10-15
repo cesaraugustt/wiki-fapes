@@ -2,6 +2,10 @@
 
 ## 2026-10-15
 
+- **Update**: [wiki/entidades/avaliador.md](/entidades/avaliador.md) reavaliado integralmente a partir de mineração profunda nos 580 arquivos de `raw-md/`, expandindo a tipologia de 10 para 16 modalidades funcionais com mapeamento exato de competências, requisitos de titulação, territorialidade, dinâmica de notas e correspondência com as tipologias de editais da FAPES.
+- **Creation**: `tools/instituicoes_unidades.json` e `tools/build_unified_institutions_json.py` consolidando 46 instituições (ICTs públicas, IES privadas, fundações de apoio, secretarias/autarquias estaduais e ambientes de inovação) com hierarquia de unidades organizacionais, papéis de projeto e fontes rastreáveis no acervo.
+- **Update**: [wiki/entidades/instituicoes-atendidas.md](/entidades/instituicoes-atendidas.md) reavaliado integralmente a partir da mineração contextual em 580 arquivos de `raw-md/`, incorporando 18 IES privadas participantes do Nossa Bolsa/PROCAP, NITs apoiados pela Resolução 283/2021, hubs setoriais (FINDESLAB e Sincades Tech) e expurgando vazamentos interinstitucionais de unidades.
+- **Creation**: `tools/evaluate_institutions_raw_md.py` minerador contextual por limites de bloco, tabela e parágrafo em documentos markdown Docling, gerando base auditada em `tools/institutions_raw_md_evaluated.json`.
 - **Update**: `tools/convert_docling.py` atualizado com migração de OCR para EasyOCR (`EasyOcrOptions`), fallback automático para PDFs com saída vazia ou anômala, calibração da razão alfanumérica para 80%, suporte a páginas com carimbos digitais (Docusign/DIO) ou vetores gráficos e nova flag `--retry-failed` com consolidação do manifesto.
 - **Update**: [docs/decisoes/docling-eval.md](/docs/decisoes/docling-eval.md) Seção 7 adicionada com diagnóstico da conversão de 653 arquivos e resolução de falhas para execução na máquina com GPU.
 
