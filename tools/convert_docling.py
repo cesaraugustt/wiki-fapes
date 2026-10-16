@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # /// script
 # requires-python = ">=3.10"
-# dependencies = ["docling", "pymupdf", "pyyaml", "easyocr"]
+# dependencies = ["docling", "pymupdf", "pyyaml", "easyocr", "onnxruntime"]
 # ///
 """Converte raw/ -> raw-md/ com Docling (GPU), espelhando a estrutura de pastas.
 
@@ -38,7 +38,7 @@ RAW_MD = ROOT / "raw-md"
 MANIFEST_FILE = RAW / "_manifest.csv"
 
 EXTS = {".pdf", ".docx", ".html", ".htm", ".xlsx", ".pptx"}
-RESTART_EVERY = 30          # recria worker a cada N arquivos para purgar VRAM/RAM
+RESTART_EVERY = 15          # recria cada worker a cada N arquivos para purgar VRAM/RAM
 OCR_MIN_ALNUM_RATIO = 0.80  # proporção mínima Docling / PyMuPDF get_text (calibrado para descartes de cabeçalho/rodapé repetido)
 
 FIELDS = ["rel", "sha256", "status", "pages", "ocr_forced", "ocr_pages", "seconds", "detail"]
@@ -109,10 +109,7 @@ def build_converter(force_ocr: bool, device: str):
     opts = PdfPipelineOptions()
     opts.do_ocr = force_ocr
     opts.do_table_structure = True
-    ocr_options = EasyOcrOptions(
-        lang=["pt", "en"],
-        use_gpu=(device == "cuda"),
-    )
+    ocr_options = EasyOcrOptions(lang=["pt", "en"])
     if force_ocr:
         ocr_options.mode = OcrMode.FULL_PAGE
     opts.ocr_options = ocr_options
@@ -122,7 +119,13 @@ def build_converter(force_ocr: bool, device: str):
         ),
         num_threads=4,
     )
-    return DocumentConverter(format_options={InputFormat.PDF: PdfFormatOption(pipeline_options=opts)})
+    from docling.backend.pypdfium2_backend import PyPdfiumDocumentBackend
+
+    pdf_format_kwargs = {"pipeline_options": opts}
+    if force_ocr:
+        pdf_format_kwargs["backend"] = PyPdfiumDocumentBackend
+
+    return DocumentConverter(format_options={InputFormat.PDF: PdfFormatOption(**pdf_format_kwargs)})
 
 
 def alnum_count(s: str) -> int:
@@ -241,10 +244,13 @@ def convert_one(job: dict, cache: dict, device: str) -> dict:
     }
 
 
-def worker_main(conn, device):
+def worker_main(conn, device: str, worker_id: int = 0):
     cache = {}
     while True:
-        job = conn.recv()
+        try:
+            job = conn.recv()
+        except (EOFError, KeyboardInterrupt):
+            break
         if job is None:
             break
         try:
@@ -258,11 +264,61 @@ def worker_main(conn, device):
                 "ocr_forced": "",
                 "ocr_pages": "",
                 "seconds": "",
-                "detail": f"{type(e).__name__}: {e}"[:300] + " | " + traceback.format_exc()[-200:].replace("\n", " "),
+                "detail": f"[w{worker_id}] {type(e).__name__}: {e}"[:300] + " | " + traceback.format_exc()[-200:].replace("\n", " "),
             })
 
 
 # --------------------------------------------------------------------------- Main --
+class WorkerSlot:
+    def __init__(self, slot_id: int, ctx, device: str):
+        self.slot_id = slot_id
+        self.ctx = ctx
+        self.device = device
+        self.proc = None
+        self.conn = None
+        self.active_job = None
+        self.t_start = 0.0
+        self.jobs_done = 0
+        self.spawn()
+
+    def spawn(self):
+        self.stop(graceful=False)
+        parent, child = self.ctx.Pipe()
+        self.proc = self.ctx.Process(
+            target=worker_main,
+            args=(child, self.device, self.slot_id),
+            daemon=True,
+        )
+        self.proc.start()
+        self.conn = parent
+        self.active_job = None
+        self.t_start = 0.0
+
+    def stop(self, graceful=True):
+        if self.conn is not None:
+            if graceful:
+                try:
+                    self.conn.send(None)
+                except Exception:
+                    pass
+        if self.proc is not None:
+            if graceful:
+                self.proc.join(timeout=3)
+            if self.proc.is_alive():
+                self.proc.terminate()
+                self.proc.join(timeout=2)
+            if self.proc.is_alive():
+                self.proc.kill()
+                self.proc.join(timeout=1)
+            self.proc = None
+        if self.conn is not None:
+            try:
+                self.conn.close()
+            except Exception:
+                pass
+            self.conn = None
+
+
 def sha256_of(path: Path) -> str:
     h = hashlib.sha256()
     with path.open("rb") as f:
@@ -297,7 +353,8 @@ def main():
     ap.add_argument("--raw", default="raw", help="pasta de origem (padrão: raw)")
     ap.add_argument("--out", default="raw-md", help="pasta de saída (padrão: raw-md)")
     ap.add_argument("--device", default="cuda", choices=["cuda", "cpu", "auto"])
-    ap.add_argument("--timeout", type=int, default=300, help="segundos por arquivo (padrão: 300s)")
+    ap.add_argument("--workers", type=int, default=2, help="número de workers paralelos (padrão: 2; máx recomendado: 2 em GPU 8GB)")
+    ap.add_argument("--timeout", type=int, default=600, help="segundos por arquivo (padrão: 600s)")
     ap.add_argument("--limit", type=int, default=0, help="processa no máximo N arquivos")
     ap.add_argument("--only", default="", help="só caminhos que contenham este texto")
     ap.add_argument("--missing-only", action="store_true", help="processa só os arquivos que não existem em raw-text/")
@@ -334,96 +391,144 @@ def main():
     if args.only:
         files = [p for p in files if args.only in str(p)]
 
-    print(f"Total de arquivos elegíveis para conversão: {len(files)}")
+    # Prepara lista de jobs pendentes
+    jobs = []
+    for src in files:
+        rel = src.relative_to(raw).as_posix()
+        dst = (out / rel).with_suffix(".md")
+        meta = raw_manifest.get(rel, {})
+        sha = meta.get("sha256") or sha256_of(src)
+
+        prev = done.get(rel)
+        if not args.retry_failed and prev and prev["sha256"] == sha and prev["status"] == "ok" and dst.exists():
+            continue
+
+        jobs.append({
+            "src": str(src),
+            "dst": str(dst),
+            "rel": rel,
+            "sha256": sha,
+            "meta": meta,
+        })
+        if args.limit and len(jobs) >= args.limit:
+            break
+
+    total_jobs = len(jobs)
+    num_workers = max(1, args.workers)
+    print(f"Total de arquivos elegíveis para conversão: {total_jobs} | Workers: {num_workers} ({args.device})")
+
+    if total_jobs == 0:
+        return 0
 
     ctx = mp.get_context("spawn")
-
-    def spawn():
-        parent, child = ctx.Pipe()
-        proc = ctx.Process(target=worker_main, args=(child, args.device), daemon=True)
-        proc.start()
-        return proc, parent
-
-    def stop(proc, conn, graceful=True):
-        if graceful:
-            try:
-                conn.send(None)
-                proc.join(10)
-            except Exception:
-                pass
-        if proc.is_alive():
-            proc.terminate()
-            proc.join(3)
-        if proc.is_alive():
-            proc.kill()
-
     new_file = not manifest_path.exists()
     mf = manifest_path.open("a", newline="", encoding="utf-8")
     writer = csv.DictWriter(mf, fieldnames=FIELDS)
     if new_file:
         writer.writeheader()
 
-    proc, conn = spawn()
+    slots = [WorkerSlot(i, ctx, args.device) for i in range(num_workers)]
+    job_idx = 0
     processed = 0
-    total = len(files)
 
     try:
-        for i, src in enumerate(files, 1):
-            rel = src.relative_to(raw).as_posix()
-            dst = (out / rel).with_suffix(".md")
+        while processed < total_jobs:
+            # 1. Aloca jobs para slots livres
+            for slot in slots:
+                if slot.active_job is None and job_idx < total_jobs:
+                    if slot.jobs_done >= RESTART_EVERY:
+                        slot.spawn()
+                        slot.jobs_done = 0
+                    job = jobs[job_idx]
+                    job_idx += 1
+                    slot.active_job = job
+                    slot.t_start = time.time()
+                    try:
+                        slot.conn.send(job)
+                    except Exception:
+                        slot.spawn()
+                        slot.conn.send(job)
 
-            meta = raw_manifest.get(rel, {})
-            sha = meta.get("sha256") or sha256_of(src)
+            # 2. Monitora slots ativos
+            any_busy = False
+            for slot in slots:
+                if slot.active_job is None:
+                    continue
+                any_busy = True
+                rel = slot.active_job["rel"]
+                sha = slot.active_job["sha256"]
 
-            prev = done.get(rel)
-            if not args.retry_failed and prev and prev["sha256"] == sha and prev["status"] == "ok" and dst.exists():
-                continue
-
-            if args.limit and processed >= args.limit:
-                break
-
-            if processed and processed % RESTART_EVERY == 0:
-                stop(proc, conn)
-                proc, conn = spawn()
-
-            job_payload = {
-                "src": str(src),
-                "dst": str(dst),
-                "rel": rel,
-                "sha256": sha,
-                "meta": meta,
-            }
-
-            conn.send(job_payload)
-            if conn.poll(args.timeout):
+                data_ready = False
                 try:
-                    row = conn.recv()
-                except EOFError:
-                    row = None
-            else:
-                row = None
+                    data_ready = slot.conn.poll(0.05)
+                except Exception:
+                    data_ready = False
 
-            if row is None:
-                alive = proc.is_alive()
-                stop(proc, conn, graceful=False)
-                row = {
-                    "rel": rel,
-                    "sha256": sha,
-                    "status": "timeout" if alive else "erro",
-                    "pages": "",
-                    "ocr_forced": "",
-                    "ocr_pages": "",
-                    "seconds": args.timeout,
-                    "detail": "timeout" if alive else "worker encerrou inesperadamente",
-                }
-                proc, conn = spawn()
+                if data_ready:
+                    try:
+                        row = slot.conn.recv()
+                    except EOFError:
+                        row = None
 
-            writer.writerow(row)
-            mf.flush()
-            processed += 1
-            print(f"[{i}/{total}] {row['status']:<8} {rel} ({row['seconds']}s) {row['detail']}", flush=True)
+                    if row is None:
+                        alive = slot.proc.is_alive() if slot.proc else False
+                        slot.stop(graceful=False)
+                        row = {
+                            "rel": rel,
+                            "sha256": sha,
+                            "status": "erro",
+                            "pages": "",
+                            "ocr_forced": "",
+                            "ocr_pages": "",
+                            "seconds": round(time.time() - slot.t_start, 1),
+                            "detail": f"[w{slot.slot_id}] worker encerrou inesperadamente (alive={alive})",
+                        }
+                        slot.spawn()
+                        slot.jobs_done = 0
+                    else:
+                        slot.jobs_done += 1
+
+                    slot.active_job = None
+                    writer.writerow(row)
+                    mf.flush()
+                    processed += 1
+                    w_tag = f"[w{slot.slot_id}]" if num_workers > 1 else ""
+                    print(
+                        f"[{processed}/{total_jobs}] {row['status']:<8} {rel} ({row['seconds']}s) {w_tag} {row['detail']}".strip(),
+                        flush=True,
+                    )
+
+                elif time.time() - slot.t_start > args.timeout:
+                    alive = slot.proc.is_alive() if slot.proc else False
+                    slot.stop(graceful=False)
+                    row = {
+                        "rel": rel,
+                        "sha256": sha,
+                        "status": "timeout" if alive else "erro",
+                        "pages": "",
+                        "ocr_forced": "",
+                        "ocr_pages": "",
+                        "seconds": args.timeout,
+                        "detail": f"[w{slot.slot_id}] timeout após {args.timeout}s",
+                    }
+                    slot.spawn()
+                    slot.jobs_done = 0
+                    slot.active_job = None
+                    writer.writerow(row)
+                    mf.flush()
+                    processed += 1
+                    w_tag = f"[w{slot.slot_id}]" if num_workers > 1 else ""
+                    print(
+                        f"[{processed}/{total_jobs}] {row['status']:<8} {rel} ({row['seconds']}s) {w_tag} {row['detail']}".strip(),
+                        flush=True,
+                    )
+
+            if not any_busy and job_idx >= total_jobs:
+                break
+            time.sleep(0.02)
     finally:
-        stop(proc, conn)
+        for slot in slots:
+            slot.stop(graceful=True)
         mf.close()
 
     # Quarentena e consolidação do manifesto sem duplicatas
@@ -445,6 +550,7 @@ def main():
     for r in latest.values():
         by_status[r["status"]] = by_status.get(r["status"], 0) + 1
     print(f"\nResumo consolidado: {by_status} | Quarentena: {len(bad)} -> {quarentena_path}")
+    return 0
 
 
 if __name__ == "__main__":

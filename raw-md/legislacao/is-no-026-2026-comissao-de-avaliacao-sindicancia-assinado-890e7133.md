@@ -5,10 +5,10 @@ status: draft
 pages: 2
 ocr_forced: false
 ocr_pages: []
-conversion_status: suspeito
+conversion_status: ok
 generated:
   by: docling-gpu
-  at: 2026-10-15T11:39:22Z
+  at: 2026-10-16T11:39:01Z
 sources:
   - id: "is-no-026-2026-comissao-de-avaliacao-sindicancia-assinado-890e7133"
     resource: "https://fapes.es.gov.br/media/InstruçãoServiço/IS nº 026.2026 - Comissão  de Avaliação - Sindicância - Assinado.pdf"

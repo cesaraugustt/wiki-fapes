@@ -3,12 +3,12 @@ type: Fonte
 title: "tutorial-e-docs-assinatura-to-tc-c670125e"
 status: draft
 pages: 4
-ocr_forced: false
-ocr_pages: []
-conversion_status: suspeito
+ocr_forced: true
+ocr_pages: [1, 2, 3, 4]
+conversion_status: ok
 generated:
   by: docling-gpu
-  at: 2026-10-15T11:40:22Z
+  at: 2026-10-16T11:44:45Z
 sources:
   - id: "tutorial-e-docs-assinatura-to-tc-c670125e"
     resource: "https://fapes.es.gov.br/media/Importacao/tutorial-e-docs-assinatura-to-tc.pdf"
@@ -30,15 +30,13 @@ TUTORIAL EDOCS
 
 <!-- page 2 -->
 
-## ASSINATURA DE TERMO DE OUTORGA E TERMO DE CONCESSÃO
-
 <!-- image -->
 
-- 1) O Representante Instituição e o Beneficiário deverão acessar o sistema EDOCS(cada um com o seu acesso "individualmente"):
-- 2) Na página inicial, clique na opção "Documentos".
-- 3) Na página Documentos, clique na opção "PARA ASSINAR".
+- 1) 0 Representante Instituição e 0 Beneficiário deverão acessar 0 sistema EDOCS(cada um com 0 seu acesso "individualmente"):
+- 2) Na página inicial, clique na opção "Documentos"
+- 3) Na página Documentos, clique na opção "PARA ASSINAR" .
 
-Acesse o sistema através o link: http://e-docs.es.gov.br/
+Acesse 0 sistema através 0 link: http:Lle-docs es gov brL
 
 <!-- image -->
 
@@ -48,7 +46,7 @@ Acesse o sistema através o link: http://e-docs.es.gov.br/
 
 <!-- image -->
 
-- 4) Na página Documentos, identifique o documento e clique no mesmo.
+- 4) Na página Documentos, identifique 0 documento e clique no mesmo.
 - 4) Verifique se seu nome aparece no campo "Ainda Não Assinaram" e clique em "ASSINAR".
 
 <!-- image -->
@@ -59,7 +57,7 @@ Acesse o sistema através o link: http://e-docs.es.gov.br/
 
 <!-- image -->
 
-- 6) Verifique se seu nome aparece no campo "Assinaram o Documento", caso esteja, a solicitação de assinatura foi concluída.
+- 6) Verifique se seu nome aparece no campo "Assinaram 0 Documento" caso esteja, a solicitação de assinatura foi concluída.
 
 <!-- image -->
 

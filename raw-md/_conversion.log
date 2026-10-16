@@ -27034,3 +27034,10 @@ ImportError: onnxruntime is not installed.
 [653/653] erro     editais/fapes-20-anos-2024-ebook-maior-vers-o-aprovada-09-09-3f36968d.pdf (s) ConversionError: Conversion failed for: fapes-20-anos-2024-ebook-maior-vers-o-aprovada-09-09-3f36968d.pdf with status: failure. Errors: onnxruntime is not installed.; onnxruntime is not installed.; onnxruntime is not installed.; onnxruntime is not installed.; onnxruntime is not installed.; onnxrunti | ot installed.; onnxruntime is not installed.; onnxruntime is not installed.; onnxruntime is not installed.; onnxruntime is not installed.; onnxruntime is not installed.; onnxruntime is not installed. 
 
 Resumo: {'ok': 567, 'erro': 73, 'suspeito': 13} | Quarentena: 86 -> raw-md/_quarentena.csv
+Total de arquivos elegíveis para conversão: 82
+/home/user/.cache/uv/environments-v2/convert-docling-6642496acc9f9ae6/lib/python3.12/site-packages/docling/models/stages/ocr/easyocr_model.py:207: UserWarning: Deprecated field. Better to set the `accelerator_options.device` in `pipeline_options`. When `use_gpu and accelerator_options.device == AcceleratorDevice.CUDA` the GPU is used to run EasyOCR. Otherwise, EasyOCR runs in CPU.
+  warnings.warn(
+Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights:  42%|████▏     | 322/770 [00:00<00:00, 3207.29it/s]Loading weights:  84%|████████▎ | 643/770 [00:00<00:00, 2579.93it/s]Loading weights: 100%|██████████| 770/770 [00:00<00:00, 2776.30it/s]
+[1/82] ok       institucional/instrucao-de-ser-073-de-21-07-2022-ueci-ffdc627f.pdf (17.8s) 
+[2/82] ok       institucional/instrucao-servico-028-2018-publicacao-normas-procedimentos-001-002-003-2018-d3c36d88.pdf (15.9s) 
+[3/82] ok       institucional/norma-procedimento-fapes-no-018-1-caff33b8.pdf (37.9s) 

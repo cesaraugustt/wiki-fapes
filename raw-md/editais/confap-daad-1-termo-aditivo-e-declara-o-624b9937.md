@@ -3,12 +3,12 @@ type: Fonte
 title: "confap-daad-1-termo-aditivo-e-declara-o-624b9937"
 status: draft
 pages: 11
-ocr_forced: false
-ocr_pages: []
-conversion_status: suspeito
+ocr_forced: true
+ocr_pages: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+conversion_status: ok
 generated:
   by: docling-gpu
-  at: 2026-10-15T11:53:28Z
+  at: 2026-10-16T13:31:02Z
 sources:
   - id: "confap-daad-1-termo-aditivo-e-declara-o-624b9937"
     resource: "https://fapes.es.gov.br/media/Editais/CONFAP-DAAD_1º_Termo_Aditivo_e_Declaração.pdf"
@@ -20,17 +20,63 @@ sources:
 
 <!-- image -->
 
+PRIMEIRO ADENDO AO ACORDO DE COOPERAÇÃO DE 13/08/2019 e 21/08/2019 ENTRE 0 CONSELHO NACIONAL DAS FUNDAÇÕES ESTADUAIS DE AMPARO Á PESQUISA (CONFAP) E 0 DEUTSCHER AKADEMINSCHER AUSTAUSCHDIENST E.V. (DAAD)
+
 <!-- image -->
+
+ERSTES ADDENDUM ZUM KOOPERATIONSABKOMMEN VOM 13/08/2019 BZW. 21/08/2019 ZWISCHEN DEM CONSELHO NACIONAL DAS FUNDAÇÕES ESTADUAIS DE AMPARO Á PESQUISA (CONFAP) UND DEM DEUTSCHEN AKADEMISCHEN AUSTAUSCHDIEST (DAAD)
+
+BOLSAS DE CURTA PESQUISA FINANCIADAS EM CONJUNTO PARA ESTUDANTES DE DOUTORADO AUXÍLIO
+
+0 Conselho Nacional das   Fundações Estaduais de Amparo à Pesquisa, doravante denominado  CONFAP" com CNPJ 08.263.930/0001-40, com sede no Centro Empresarial Norte, Setor de Rádio e TV Norte, Quadra 70, Conj C, Ala B, Sala Asa   Norte,   Brasília; Distrito Federal, Brasil, representada neste ato por seu Presidente, Prof: Odir Antônio Dellagostin, Deutscher Akademischer Austauschdienst e. doravante denominado "DAAD" com sede em Kennedyallee 50, D-53175, Bonn;   Alemanha, representada neste ato seu Secretário Geral, Dr. Kai Sicks; decide   publicar 0 primeiro adendo ao acordo de cooperação entre 0 Conselho Nacional das Fundações Estaduais de Amparo à Pesquisa (CONFAP) 0 Deuscher Akademischer Austauschdienst e.V. (DAAD), assinado em 13 de agosto de 2019 e 21 de agosto de 2019. (*Acordo de Cooperação"), nos termos dos artigos e condições abaixo definidos: 213, V., pelo
+
+## GEMEINSAM FINANZIERTE FORSCHUNGSKURZSTIPENDIEN FÜR DOKTORANDEN AUXÍLIO
+
+Der Conselho Nacional das Fundações Estaduais de Amparo à Pesquisa, Steuernummer (CNPJ) 08.263.930/0001 - 40, mit Sitz im Centro Empresarial Norte, Setor de Rádio e TV Norte, Quadra 70, Conj C, Ala B, Sala  213, Norte, Brasília, Distrito Federal, in diesem Akt durch seinen Prüsidenten, Prof. Odir Antônio   Dellagostin;   vertreten, und der Deutsche Akademische Austauschdienst e. V nachstehend DAAD' genannt, mit Sitz in der Kennedyallee 50, D-53175, Bonn Deutschland, in diesem Akt vertreten durch seinen Generalsekretar, Dr. Kai Sicks, beschlieBen hiermit das erste Addendum zum Kooperationsabkommen zwischen dem Nationalen Rat für die staatlichen   Fürderagenturen   (CONFAP) und dem Deutschen Akademischen Austauschdienst e.V. (DAAD); unterschrieben am 13/08/2019 bzw. Asa
 
 <!-- page 2 -->
 
 <!-- image -->
 
-<!-- image -->
+## 1: Artigo
+
+0 prazo do acordo de cooperação será prorrogado até 19 de   agosto de 2029 Restando convalidados os atos praticados até a assinatura do presente instrumento
+
+## 2: Artigo
+
+As disposições do acordo de cooperação permanecem   inalteradas;, a menos que sejam alteradas por este primeiro adendo.
+
+0 anexo 1 deste adendo   faz   parte do contrato e substitui 0 anexo II do acordo de cooperação.
+
+Acordado entre 0 CONFAP eo DAAD em português e alemão, em duas vias originais cada uma assinada pelos representantes das partes.
 
 <!-- image -->
 
+unter den nachstehend aufgefuhrten Artikeln und Bedingungen:
+
+## Artikel 1:
+
+Die Laufzeit des Kooperationsabkommens wird bis zum 19. August 2029 verlüngert. Alle bis zur Unterzeichnung dieses Schreibens vorgenommenen Handlungen behalten ihre Gültigkeit.
+
+## Artikel 2:
+
+Die Regelungen des Kooperationsabkommens gelten unverandert soweit diese nicht durch dieses erste Addendum geündert werden; fort,
+
+Die   Anlage 1 zu  diesem  Addendum ist Vertragsbestandteil und ersetzt die Anhang II der Durchführungsvereinbarung.
+
+Vereinbart zwischen CONFAP und dem DAAD in portugiesischer und deutscher Sprache, in zwei   Originalanfertigungen unterzeichnet von den Vertreterinnen und Vertretern der Parteien.
+
+Odir Antônio Dellagostion Presidente/Prüsident CONFAP
+
 <!-- image -->
+
+Dr. Kai Sicks Secretário Geral/Generalsekretar DAAD
+
+<!-- image -->
+
+Data/Datum:   08
+
+2024
 
 <!-- page 3 -->
 
@@ -56,13 +102,9 @@ sources:
 
 <!-- image -->
 
-18/02/2025
-
-24/02/2025
-
 <!-- image -->
 
-09/01/2025
+<!-- image -->
 
 <!-- page 6 -->
 
@@ -74,9 +116,9 @@ sources:
 
 <!-- image -->
 
-22/01/2025
+<!-- image -->
 
-15/01/2025
+<!-- image -->
 
 <!-- page 7 -->
 
@@ -88,17 +130,7 @@ sources:
 
 <!-- image -->
 
-04/07/2025
-
-10/01/2025
-
 <!-- image -->
-
-<!-- image -->
-
-09/01/2025
-
-03/07/2025
 
 <!-- page 8 -->
 
@@ -106,17 +138,9 @@ sources:
 
 <!-- image -->
 
-11/06/2025
-
-<!-- image -->
-
-31/03/2025
-
 <!-- image -->
 
 <!-- image -->
-
-03/07/2025
 
 <!-- page 9 -->
 
@@ -128,40 +152,10 @@ sources:
 
 <!-- image -->
 
-## DECLARAÇÃO SOBRE O TERMO ADITIVO ENTRE O CONSELHO NACIONAL DAS FUNDAÇÕES ESTADUAIS DE AMPARO À PESQUISA E O SERVIÇO ALEMÃO DE INTERCÂMBIO ACADÊMICO
-
-CONSIDERANDO o Primeiro Termo Aditivo entre o Conselho Nacional das Fundações Estaduais de Amparo à Pesquisa (doravante denominada como "CONFAP") e o Serviço Alemão de Intercâmbio Acadêmico (denominada como "DAAD") foi celebrado em 08 de novembro de 2024 com o objetivo do de estender a vigência do Acordo de Cooperação até 19 de agosto de 2029.
-
-Devido a mudança na Presidência da Fundação Carlos Chagas Filho de Amparo à Pesquisa do Estado do Rio de Janeiro (doravante denominada como "FAPERJ)", este documento possui o intuito de atualizar o nome da Presidente atual para assinatura e confirmação da participação na parceria.
-
 <!-- image -->
-
-## ERKLÄRUNG ZUM ADDENDUM ZWISCHEN DEM CONSELHO NACIONAL DAS FUNDAÇÕES ESTADUAIS DE AMPARO À PESQUISA UND DEM DEUTSCHEN AKADEMISCHEN AUSTAUSCHDIENST
-
-Das Erste Addendum zwischen dem Conselho Nacional das Fundações Estaduais de Amparo à Pesquisa (im Folgenden "CONFAP" genannt) und dem Deutschen Akademischen Austauschdienst (im Folgenden "DAAD" genannt) wurde am 08. November 2024 unterzeichnet, um die Laufzeit des Kooperationsabkommens bis zum 19. August 2029 zu verlängern.
-
-Aufgrund des Wechsels in der Präsidentschaft der Fundação Carlos Chagas Filho de Amparo à Pesquisa do Estado do Rio de Janeiro (im Folgenden "FAPERJ" genannt) soll mit diesem Dokument der Name der derzeitigen Präsidentin zur Unterzeichnung und Por último, este documento possui um teor informativo e é parte integrante do Primeiro Termo Aditivo entre o CONFAP e o DAAD.
 
 <!-- page 11 -->
 
 <!-- image -->
 
-Brasília, 09 de janeiro de 2025.
-
 <!-- image -->
-
-Bestätigung der Teilnahme an der Partnerschaft aktualisiert werden.
-
-Abschließend besitzt dieses Dokument einen informativen Inhalt und ist Teil des Ersten Addendums zum Kooperationsabkommen zwischen der CONFAP und des DAADs.
-
-Brasília, 09 Januar 2025.
-
-Fundação Carlos Chagas Filho de Amparo à Pesquisa do Estado Rio De Janeiro (FAPERJ)
-
-Forschungsförderungsstiftung des Bundesstaates Rio de Janeiro (FAPERJ)
-
-Caroline Alves da Costa
-
-Presidente/Präsident
-
-Assinatura/Unterschrift\_\_\_\_\_\_\_\_\_\_\_\_\_\_ Data/Datum\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_

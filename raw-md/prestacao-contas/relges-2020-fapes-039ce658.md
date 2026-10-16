@@ -5,10 +5,10 @@ status: draft
 pages: 26
 ocr_forced: false
 ocr_pages: []
-conversion_status: suspeito
+conversion_status: ok
 generated:
   by: docling-gpu
-  at: 2026-10-15T11:43:52Z
+  at: 2026-10-16T12:10:24Z
 sources:
   - id: "relges-2020-fapes-039ce658"
     resource: "https://fapes.es.gov.br/media/Relatorio Ordenador de Despesas/relatorio-ordenador-fapes/RELGES_2020_Fapes.pdf"
