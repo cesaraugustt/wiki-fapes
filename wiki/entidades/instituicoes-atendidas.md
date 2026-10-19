@@ -4,7 +4,7 @@ title: Instituições Atendidas e Unidades Organizacionais
 description: Catálogo das instituições de ensino, pesquisa, órgãos públicos e empresas atendidas pela FAPES, com suas unidades administrativas e acadêmicas mapeadas no acervo.
 tags: [entidades, instituicoes, executora, proponente, gestora, unidades, cnpjs, conectafapes]
 status: draft
-generated: { by: "gemini/antigravity", at: 2026-10-15T13:25:00Z }
+generated: { by: "gemini/antigravity", at: 2026-10-19T17:55:00Z }
 sources:
   - id: resolucao-283-2020-nits
     resource: https://fapes.es.gov.br/media/Importacao/Arquivos/Resolução 283-2020 - Apoio aos NITs-1.pdf
@@ -26,6 +26,21 @@ sources:
     local_path: raw/prestacao-contas/relges-funcitec-2023-pronto-alterado-74296d0e.pdf
     sha256: 74296d0eae663425b640fc82bce063a47ce332febcccd6e97ef8eddcbd58dd25
     title: Relatório de Gestão FUNCITEC 2023
+  - id: relges-funcitec-2025
+    resource: https://fapes.es.gov.br/media/Relatorio Ordenador de Despesas/RELGES FUNCITEC_2025.pdf
+    local_path: raw/prestacao-contas/relges-funcitec-2025-f3554dde.pdf
+    sha256: f3554dde4dabd0a74b1ac20b49b18fc47d71d5adf272e3ac93feb93bdf5c9093
+    title: Relatório de Gestão FUNCITEC 2025
+  - id: relges-funcitec-2021
+    resource: https://fapes.es.gov.br/media/Relatorio Ordenador de Despesas/relatorio-ordenador-fapes/relatorio-ordenador-funcitec/RELGES FUNCITEC 2021.pdf
+    local_path: raw/prestacao-contas/relges-funcitec-2021-f5c77761.pdf
+    sha256: f5c777610d3854416047f836ec7feaa9003bc4af5342bc001cbaf2e1395c6641
+    title: Relatório de Gestão FUNCITEC 2021
+  - id: relges-funcitec-2020
+    resource: https://fapes.es.gov.br/media/Relatorio Ordenador de Despesas/relatorio-ordenador-fapes/relatorio-ordenador-funcitec/Relges 2020 Funcitec - pronto.pdf
+    local_path: raw/prestacao-contas/relges-2020-funcitec-120129b0.pdf
+    sha256: 120129b05c5be3e3e07d7211bf7ca145d7a6e138a37e5bf55efec824c3dcfdbe
+    title: Relatório de Gestão FUNCITEC 2020
   - id: lec-978-2021
     resource: https://fapes.es.gov.br/media/Lista de Arquivos/LEC9782021.pdf
     local_path: raw/legislacao/lec9782021-02bf71f0.pdf
@@ -36,6 +51,11 @@ sources:
     local_path: raw/legislacao/resolucao-no-18-adesao-ies-alterada-pela-resolucao-23-2023-6971d9b7.pdf
     sha256: 6971d9b7c9d4db31bb298449e9a91d1ce46c223c0c64850767fbeda7d065d1ea
     title: Resolução CCAF nº 018/2019 — Procedimentos para Adesão de Mantenedoras de IES ao Programa Nossa Bolsa
+  - id: resolucao-168-2017
+    resource: https://fapes.es.gov.br/media/Importacao/resolucacao-169-2017-empreendedorismo-inovador-alt-res-260-2020.pdf
+    local_path: raw/legislacao/resolucacao-169-2017-empreendedorismo-inovador-alt-res-260-2020-a14965d7.pdf
+    sha256: a14965d7ba504b8d0227ad5a7b43efc1427db356acdf8f61f2acf31a9f1406a7
+    title: Resolução CCAF nº 168/2017 (alterada pela Resolução 260/2020) — Cadastro de Representantes das Instituições e Unidades
   - id: resolucao-296-2021-banda-escolas
     resource: https://fapes.es.gov.br/media/GESTAO DE DOCUMENTOS/Resoluções/Resolução 296-2021 Projeto Banda nas Escolas SEDH_FAMES_CCAF 30.11.2021.pdf
     local_path: raw/legislacao/resolucao-296-2021-projeto-banda-nas-escolas-sedh-fames-ccaf-30-11-2021-6c0e9ab9.pdf
@@ -76,6 +96,21 @@ sources:
     local_path: raw/editais/edital-18-2025-centelha-iii-4-alteracao-16-03-26-assinado-007d5069.pdf
     sha256: 007d5069736c4b693e506e75a9e3a6a9b4fe24778393e155bc6f23f6630f9a26
     title: Edital FAPES nº 18/2025 — Programa Centelha III
+  - id: edital-procap-2027
+    resource: https://fapes.es.gov.br/media/Editais/procap-2027-doutorado.pdf
+    local_path: raw/editais/procap-2027-doutorado-1c7a5ac2.pdf
+    sha256: 1c7a5ac292cc5169b2f2c56dfe15cd1f76fc2488a3fcd0ec699ec82d6f72fb8d
+    title: Edital FAPES nº 27/2026 — PROCAP 2027 Doutorado
+  - id: tutorial-sigfapes-usuario
+    resource: https://fapes.es.gov.br/media/Importacao/Cadastro de usuário - Tutorial.pdf
+    local_path: raw/formularios/cadastro-de-usuario-tutorial-ac370bdb.pdf
+    sha256: ac370bdbfc30baca6a5ed1cdf09c651ca8fdcfd28e7cf13b24c4a8b4f5330db6
+    title: Tutorial de Cadastro de Usuário no SIGFAPES
+  - id: norma-procedimento-018
+    resource: https://fapes.es.gov.br/media/Importacao/NORMA_PROCEDIMENTO_FAPES_Nº 018-1.pdf
+    local_path: raw/institucional/norma-procedimento-fapes-no-018-1-caff33b8.pdf
+    sha256: caff33b8a6e10a821d8e490d356c17d40feae71e4d84abb447dc37a2033c3cde
+    title: Norma de Procedimento FAPES nº 018/2018 — Parcerias e Convênios
 ---
 
 # Instituições Atendidas e Unidades Organizacionais
@@ -147,65 +182,95 @@ Fundações de direito privado sem fins lucrativos credenciadas para administrar
 
 ---
 
-## 4. Órgãos da Administração Pública Estadual (Demandantes e Coinvestidores)
+## 4. Órgãos da Administração Pública Estadual e Parceiros Governamentais (Demandantes e Coinvestidores)
 
-Secretarias e autarquias que firmam parcerias técnicas e financeiras com a FAPES para orientar pesquisas em temas de interesse da administração estadual:[^relges-funcitec-2023]
+Secretarias, autarquias e entidades públicas que firmam parcerias técnicas e financeiras com a FAPES para orientar pesquisas em temas de interesse da administração estadual:[^relges-funcitec-2023] [^relges-funcitec-2025]
 
 | Sigla | Órgão ou Entidade Governamental | Natureza | Projetos e Áreas de Cooperação |
 | :--- | :--- | :--- | :--- |
-| **SECTI** | Secretaria de Estado da Ciência, Tecnologia, Inovação e Educação Profissional | Administração Direta (Órgão Vinculador) | Formula a política de CTI do Estado, gerencia o FUNCITEC, apoia o Centro Técnico Criativo (CTC) e coedita programas de aceleração como SEEDES e Centelha. |
-| **BANDES** | Banco de Desenvolvimento do Espírito Santo | Instituição Financeira Oficial | Administra a conta de recursos do FUNCITEC, opera fundos de inovação e apoia investimentos de risco. |
+| **SECTI** | Secretaria de Estado da Ciência, Tecnologia, Inovação e Educação Profissional | Administração Direta (Órgão Vinculador) | Formula a política de CTI do Estado, gerencia o FUNCITEC, apoia o Centro Técnico Criativo (CTC), Redetec nos CEETs e coedita chamadas estratégicas.[^relges-funcitec-2025] |
+| **BANDES** | Banco de Desenvolvimento do Espírito Santo | Instituição Financeira Oficial | Administra a conta de recursos do FUNCITEC, opera fundos de inovação e apoia investimentos de risco.[^relges-funcitec-2025] |
 | **PRODEST** | Instituto de Tecnologia da Informação e Comunicação do ES | Empresa Pública | Mantém a infraestrutura de rede estadual, opera o sistema E-Docs e sustenta sistemas corporativos do governo. |
-| **SEDU** | Secretaria de Estado da Educação | Administração Direta | Programa Letramento Científico, Iniciação Científica Júnior (PIC Jr) e projetos musicais com a FAMES.[^resolucao-297-2021-corais] |
-| **SEGER** | Secretaria de Estado de Gestão e Recursos Humanos | Administração Direta | Programa Talentos Globais para servidores em mestrados internacionais, residência em gestão e projetos com o LAB.ges.[^edital-talentos-globais-2026] |
-| **SEAG** | Secretaria de Estado da Agricultura, Abastecimento, Aquicultura e Pesca | Administração Direta | Programa InovAgro, com pesquisas em cafeicultura, mecanização agrícola e manejo de água.[^edital-inovagro-2024] |
-| **SESA** | Secretaria de Estado da Saúde | Administração Direta | Chamadas do PPSUS em parceria com o Ministério da Saúde e o CNPq, e apoio a laboratórios de diagnóstico.[^edital-ppsus-2024] |
-| **SECULT** | Secretaria de Estado da Cultura | Administração Direta | Pesquisas em patrimônio histórico, documentação de acervos e bolsas para servidores da área cultural.[^funcitec-2013] |
-| **AGERH** | Agência Estadual de Recursos Hídricos | Autarquia | Termo de cooperação sobre uso sustentável da água e implantação do Sistema Estadual de Informações sobre Recursos Hídricos. |
-| **IDAF** | Instituto de Defesa Agropecuária e Florestal do ES | Autarquia | Atividades técnicas integradas ao programa InovAgro nas áreas de sanidade e certificação vegetal e animal.[^edital-inovagro-2024] |
-| **IEMA** | Instituto Estadual de Meio Ambiente e Recursos Hídricos | Autarquia | Apoio a Centros de Educação Ambiental (CEAs) e estudos sobre conservação florestal e áreas protegidas. |
-| **IJSN** | Instituto Jones dos Santos Neves | Autarquia de Pesquisa | Produção de estatísticas e mapas de vulnerabilidade social que orientam os Centros de Referência das Juventudes (CRJs). |
-| **SEFAZ / PCIES** | Secretaria da Fazenda / Polícia Científica | Administração Direta | Concessão de bolsas de mestrado e doutorado para qualificação de quadros técnicos estaduais.[^funcitec-2013] |
+| **SEDU** | Secretaria de Estado da Educação | Administração Direta | Programa PIPEI, Programa Letramento Científico, Iniciação Científica Júnior (PIC Jr), ProEduca, SerONU e projetos musicais com a FAMES.[^resolucao-297-2021-corais] [^relges-funcitec-2025] |
+| **SEGER** | Secretaria de Estado de Gestão e Recursos Humanos | Administração Direta | Programa Inova Seger (SmartGovES, Edifício Fábio Ruschi Sustentável), Talentos Globais para servidores em mestrados internacionais, Prêmio Inoves e LAB.ges.[^edital-talentos-globais-2026] [^relges-funcitec-2025] |
+| **SEAMA** | Secretaria de Estado do Meio Ambiente e Recursos Hídricos | Administração Direta | Programa Pró-Sustentável, Sistema de Monitoramento Ambiental, Inventário de Emissões de GEE da Administração Pública e Selo de Circularidade da Indústria Moveleira.[^relges-funcitec-2025] |
+| **ADERES** | Agência de Desenvolvimento das Micro e Pequenas Empresas e do Empreendedorismo | Autarquia Estadual | Programa Comunidades Empreendedoras, Capacitar para Empreender 2.0, Inova Mercado e diagnóstico econômico-turístico em Barra Nova.[^relges-funcitec-2025] [^relges-funcitec-2021] |
+| **ARSP** | Agência de Regulação de Serviços Públicos do ES | Autarquia Estadual | Projeto de análise e diagnóstico dos serviços de limpeza urbana e manejo de resíduos sólidos nos municípios conveniados.[^relges-funcitec-2025] |
+| **ALES** | Assembleia Legislativa do Estado do Espírito Santo | Poder Legislativo Estadual | Projeto Memória Legislativa Capixaba (digitalização e conservação do acervo documental histórico de 1828 a 1930).[^relges-funcitec-2025] |
+| **SEAG** | Secretaria de Estado da Agricultura, Abastecimento, Aquicultura e Pesca | Administração Direta | Programa InovAgro (cafeicultura, mecanização agrícola, manejo de água) e combate conjunto à Febre Oropouche.[^edital-inovagro-2024] [^relges-funcitec-2025] |
+| **SESA** | Secretaria de Estado da Saúde | Administração Direta | Chamadas do PPSUS (em conjunto com Ministério da Saúde/Decit e CNPq), ICEPi e investigação genômica/vetorial da Febre Oropouche.[^edital-ppsus-2024] [^relges-funcitec-2025] |
+| **SECULT** | Secretaria de Estado da Cultura | Administração Direta | Programa Pensar Cultura, gestão do Funcultura, patrimônio histórico, documentação de acervos e bolsas para servidores da área cultural.[^funcitec-2013] [^relges-funcitec-2025] |
+| **AGERH** | Agência Estadual de Recursos Hídricos | Autarquia Estadual | Projeto Integrado Água: Usos, Cuidados e Impactos no ES e Sistema Estadual de Informações sobre Recursos Hídricos.[^relges-funcitec-2025] |
+| **IDAF** | Instituto de Defesa Agropecuária e Florestal do ES | Autarquia Estadual | Monitoramento e Avaliação do Programa IDAF 4.0, IntegraCAR (Cadastro Ambiental Rural) e sanidade vegetal/animal no InovAgro.[^edital-inovagro-2024] [^relges-funcitec-2025] |
+| **IEMA** | Instituto Estadual de Meio Ambiente e Recursos Hídricos | Autarquia Estadual | Apoio a Centros de Educação Ambiental (CEAs), conservação florestal e áreas protegidas.[^relges-funcitec-2021] |
+| **IJSN** | Instituto Jones dos Santos Neves | Autarquia Estadual de Pesquisa | Produção estatística, SiMAPP (Sistema de Monitoramento e Avaliação de Políticas Públicas) e indicadores socioeconômicos.[^relges-funcitec-2025] |
+| **DER-ES** | Departamento de Edificações e de Rodovias do ES | Autarquia Estadual | Descentralizações orçamentárias para pesquisa em engenharia rodoviária e infraestrutura de transportes.[^relges-funcitec-2021] |
+| **SEJUS / SETADES / SEDH** | Secretarias de Justiça, Trabalho/Assitência e Direitos Humanos | Administração Direta | Programas de gestão prisional, qualificação cidadã, segurança cidadã e direitos humanos apoiados pelo FUNCITEC.[^relges-funcitec-2021] |
+| **SEFAZ / PCIES** | Secretaria da Fazenda / Polícia Científica e Civil | Administração Direta | Concessão de bolsas de pós-graduação e perícia científica para quadros técnicos estaduais.[^funcitec-2013] [^relges-funcitec-2021] |
+| **SETUR / SEDURB** | Secretarias de Turismo e Saneamento/Habitação | Administração Direta | Estudos setoriais de ordenamento urbano, saneamento e desenvolvimento turístico regional.[^relges-funcitec-2020] |
+| **Parceria Federal: RFB / ALF-VIT / SERPRO** | Receita Federal do Brasil / Alfândega de Vitória / SERPRO | Administração Federal | Solução tecnológica do IFES para monitoramento remoto de cargas do projeto e-Trânsito Aduaneiro.[^relges-funcitec-2025] |
 
 ---
 
 ## 5. Ambientes de Inovação e Parcerias Industriais
 
-A FAPES financia espaços compartilhados de inovação e mantém editais com indústrias instaladas no Espírito Santo:[^resolucao-246-2019-findeslab]
+A FAPES financia espaços compartilhados de inovação, concede subvenção a pequenas empresas e formaliza termos de cooperação com indústrias e polos produtivos instalados no Estado:[^resolucao-246-2019-findeslab] [^relges-funcitec-2025]
 
 | Entidade / Ambiente | Natureza Jurídica | Forma de Atuação |
 | :--- | :--- | :--- |
-| **FINDESLAB** (FINDES) | Privada / Sistema S | Hub de inovação que recebeu recursos do FUNCITEC/MCI para conduzir o Programa de Empreendedorismo Industrial, acelerando startups e projetos com indústrias.[^resolucao-246-2019-findeslab] |
-| **SINCADES TECH** | Privada / Entidade Sindical | Hub voltado ao comércio atacadista capixaba, com apoio da FAPES para acelerar soluções de logística e cadeia de suprimentos.[^resolucao-300-2022-sincades] |
-| **ArcelorMittal Brasil / Tubarão** | Privada (Siderurgia) | Cofinancia chamadas de bolsas de pós-graduação e projetos em temas de siderurgia, meio ambiente e reaproveitamento de resíduos.[^relges-funcitec-2023] |
-| **Vale S.A.** | Privada (Mineração e Logística) | Termos de cooperação em dispersão atmosférica de poeira e engenharia ferroviária. |
-| **Petrobras / ES GÁS** | Mista / Privada | Investimentos em laboratórios de caracterização química e distribuição de gás canalizado. |
-| **Startups e Pequenas Empresas** | Privada (Micro e Pequenas Empresas) | Recebem subvenção econômica e bolsas por meio dos editais Centelha, Tecnova, SEEDES e Negócios de Impacto Socioambiental.[^edital-centelha-iii] |
+| **FINDESLAB** (FINDES) | Privada / Sistema S | Hub de inovação apoiado pelo FUNCITEC/MCI para conduzir o Programa de Empreendedorismo Industrial, acelerando startups e conectando grandes indústrias a soluções de mercado.[^resolucao-246-2019-findeslab] |
+| **SINCADES TECH** | Privada / Entidade Sindical | Hub de inovação do setor atacadista e distribuidor capixaba apoiado pela FAPES para acelerar soluções de logística e cadeia de suprimentos.[^resolucao-300-2022-sincades] |
+| **ArcelorMittal Brasil / Tubarão** | Privada (Siderurgia) | Termos de cooperação técnica e cofinanciamento de bolsas de pós-graduação e projetos em siderurgia, meio ambiente e economia circular.[^relges-funcitec-2023] |
+| **Vale S.A. / ITV** | Privada / Instituto de Pesquisa | Cooperação em dispersão atmosférica de poeira, engenharia de minas e pesquisas em transporte ferroviário.[^relges-funcitec-2020] |
+| **Estaleiro Jurong Aracruz** | Privada (Naval / Offshore) | Parcerias em tecnologia marítima e qualificação de fornecedores industriais locais.[^relges-funcitec-2020] |
+| **Petrobras / ES GÁS** | Mista / Privada | Investimentos em laboratórios de caracterização físico-química de combustíveis e distribuição de gás canalizado. |
+| **Lume Robotics** | Privada (Startup de Robótica) | Parceria direta com a FAPES na Demanda Induzida DI 011/2025 para desenvolvimento de algoritmos de percepção para veículos autônomos industriais e de mineração.[^relges-funcitec-2025] |
+| **Instituto Sustentabilidade Brasil (ISB)** | Privada sem fins lucrativos (OSC) | Termo de Fomento (DI 014/2025) para execução das ações do Programa Inova Pop.[^relges-funcitec-2025] |
+| **Startups e Pequenas Empresas** | Privada (Micro e Pequenas Empresas) | Subvenção econômica e bolsas por meio dos editais Centelha, Tecnova, SEEDES e Negócios de Impacto Socioambiental.[^edital-centelha-iii] |
 
 ---
 
 ## 6. Requisitos para o Modelo de Dados do ConectaFapes
 
-Para refletir a estrutura das entidades atendidas pela FAPES, o cadastro do novo sistema precisa atender a quatro pontos:
+Com base nas normas vigentes, no histórico do SigFapes e nas exigências dos novos editais, o modelo de dados de instituições e unidades organizacionais do ConectaFapes deve atender aos seguintes pilares:
 
-1. **Instituição como entidade base flexível**:
-   - Campos mínimos: identificador, razão social, nome fantasia, sigla, CNPJ raiz (com suporte a matriz e filiais), esfera (federal, estadual, municipal ou privada), natureza jurídica e categoria institucional.
-   - Controle de regularidade para o Programa Nossa Bolsa, vinculando a mantenedora legal ao termo aditivo vigente e às certidões fiscais apresentadas.[^resolucao-18-2019-nossa-bolsa]
+1. **Instituição Mãe como Entidade Base Flexível**:
+   - Campos essenciais: identificador único, razão social, nome fantasia, sigla, CNPJ matriz (raiz), esfera governamental (federal, estadual, municipal, privada), natureza jurídica oficial e categoria (ICT pública, IES privada, fundação de apoio, órgão governamental, empresa/startup).
+   - Validação automatizada de regularidade fiscal e de credenciamento: para o Programa Nossa Bolsa, controle de regularidade das mantenedoras legais vinculando o termo aditivo vigente às certidões apresentadas;[^resolucao-18-2019-nossa-bolsa] para fundações de apoio, validação do credenciamento pelo CCAF conforme marco de CT&I.[^lec-978-2021]
 
-2. **Estrutura hierárquica de unidades organizacionais**:
-   - Relação pai-filho autorreferenciada (`parent_id`) para registrar caminhos reais de subordinação:
-     `Instituição (ex.: UFES)` ➔ `Centro (ex.: Centro Tecnológico)` ➔ `Departamento (ex.: Informática)` ➔ `Laboratório ou Núcleo (ex.: LabTel)`.
-   - Classificação por tipo de unidade: administrativa (reitorias e pró-reitorias), acadêmica (centros e faculdades), campus regional, programa de pós-graduação (PPG), núcleo de inovação (NIT), fazenda experimental ou laboratório.
+2. **Estrutura Hierárquica de Unidades Organizacionais**:
+   - Relação autorreferenciada (`parent_id`) para suportar árvores institucionais profundas sem vazamento interinstitucional:
+     `Instituição (ex.: UFES)` ➔ `Centro Acadêmico (ex.: Centro Tecnológico)` ➔ `Departamento (ex.: Informática)` ➔ `Laboratório ou Núcleo (ex.: LabTel)`.
+   - Cadastro detalhado da unidade conforme a Resolução CCAF nº 168/2017: nome da unidade, sigla, endereço completo, e-mail institucional e **CNPJ da unidade** (quando a unidade constituir filial com CNPJ próprio diferente da matriz).[^resolucao-168-2017]
+   - Tipificação da unidade: administrativa (reitorias e pró-reitorias), acadêmica (centros e faculdades), campus regional (polos municipais), programa de pós-graduação (PPG avaliado pela CAPES), núcleo de inovação tecnológica (NIT), fazenda experimental ou laboratório multiusuário.
 
-3. **Papéis institucionais por projeto**:
-   - Um mesmo projeto de pesquisa deve permitir indicar entidades distintas em cada função:
-     - Uma instituição proponente (vínculo formal do pesquisador);
-     - Uma executora (onde os ensaios e atividades acontecem);
-     - Uma fundação de apoio como gestora financeira interveniente (obrigatória para ICTs públicas);[^lec-978-2021]
-     - Órgãos demandantes ou empresas parceiras coinvestidoras.
+3. **Representação Legal com Escopo e Vigência de Mandato**:
+   - A normativa da FAPES distingue o **Dirigente Máximo** da instituição dos seus **Representantes Legais Designados**:[^resolucao-168-2017]
+     - O dirigente máximo pode designar procuradores ou gestores para responder pela **Instituição como um todo** OU exclusivamente por uma **Unidade específica** (ex.: diretor de centro ou diretor de campus).
+     - O sistema deve registrar a validade temporal do mandato (data de início e término) e armazenar o documento comprobatório obrigatório: ato de nomeação/designação para IES públicas ou procuração/contrato social para entidades privadas.[^resolucao-168-2017]
 
-4. **Múltiplos vínculos por pesquisador**:
-   - Um mesmo usuário pode ter vínculos diferentes ao mesmo tempo (como docente em universidade pública, colaborador voluntário em instituto de pesquisa e sócio em empresa de base tecnológica). O sistema deve permitir selecionar e comprovar o vínculo exigido pelas regras de cada chamada.[^edital-inovagro-2024]
+4. **Hierarquia Acadêmica e Gestão Institucional de Bolsas (Pós-Graduação)**:
+   - Para chamadas institucionais de pós-graduação (como o PROCAP), a cadeia de responsabilidade deve refletir o fluxo formal:[^edital-procap-2027]
+     `IES/P Executora` ➔ `Anuência do Gestor Institucional (Dirigente Máximo)` ➔ `Programa de Pós-Graduação (PPG com código e conceito CAPES)` ➔ `Coordenador de PPG (proponente do lote de bolsas)` ➔ `Docentes Permanentes Credenciados` ➔ `Discentes / Bolsistas Contemplados`.
+
+5. **Fila de Homologação e Fim do Gargalo de Cadastro de Instituições**:
+   - No legado (SigFapes), quando o usuário não localiza sua instituição de vínculo, ele cadastra os dados no sistema e é forçado a solicitar a homologação manualmente via e-mail para o suporte da FAPES.[^tutorial-sigfapes-usuario]
+   - No ConectaFapes, esse processo deve ser integrado a um fluxo interno de triagem cadastral com integração à API da Receita Federal (CNPJ), verificação automática de duplicidade de razão social/sigla e workflow de aprovação por analista da FAPES, evitando dados órfãos ou cadastros duplicados.
+
+6. **Mapeamento das Unidades Internas da Própria FAPES no Workflow**:
+   - O sistema deve modelar a governança administrativa e técnica interna da Fundação para despacho de processos e celebração de instrumentos:[^norma-procedimento-018] [^relges-funcitec-2025]
+     - **CCAF**: Conselho Científico-Administrativo (deliberações normativas, aprovação de chamadas e tabelas de bolsas).
+     - **DIREX / DIPRE**: Diretoria Executiva e Presidência (assinatura de termos e homologações).
+     - **DITEC**: Diretoria Técnico-Científica e de Inovação.
+     - **DIRAF**: Diretoria Administrativo-Financeira.
+     - **Gerências Técnicas (GETEC)**: GECAP (Capacitação e Bolsas), GEPED (Pesquisa e Difusão), GEINOV (Inovação e Startups).
+     - **GEPOF**: Gerência de Gestão Orçamentária e Financeira (empenhos, pagamentos e prestações de contas financeiras).
+     - **Núcleos Estratégicos**: NUPAR (Parcerias Interinstitucionais e Demandas Induzidas), NUPEX (Programas Estratégicos e Extensão).
+     - **Órgãos de Suporte e Controle**: UECI (Unidade Executora de Controle Interno), ASJUR (Assessoria Jurídica) e Câmaras de Assessoramento.
+
+7. **Multi-institucionalidade e Múltiplos Vínculos por Pesquisador**:
+   - Um projeto pode articular múltiplos papéis institucionais simultâneos (proponente, executora, fundação gestora interveniente, demandante parceiro e empresas cofinanciadoras).[^edital-fapes-21-2026-redes]
+   - O pesquisador deve poder cadastrar múltiplos vínculos (docente em universidade pública, colaborador voluntário em instituto e sócio em startup), selecionando e comprovando o vínculo exigido em cada chamada.[^edital-inovagro-2024]
 
 ---
 
@@ -213,8 +278,12 @@ Para refletir a estrutura das entidades atendidas pela FAPES, o cadastro do novo
 [^edital-nossa-bolsa-2026]: Edital FAPES nº 26/2025 (2ª Retificação), Anexo I, p. 1-25, relação nominal de municípios, IES participantes, campi e cursos de graduação ofertados.
 [^funcitec-2013]: Relatório de Gestão e Prestação de Contas FUNCITEC 2013, p. 11-14, demonstrativo nominal de instituições beneficiadas por editais de bolsas de graduação, mestrado, doutorado e servidores.
 [^relges-funcitec-2023]: Relatório de Gestão FUNCITEC 2023, p. 15-41, execução orçamentária por instituição, contas vinculadas no BANDES e parcerias interinstitucionais.
+[^relges-funcitec-2025]: Relatório de Gestão FUNCITEC 2025, p. 2, 26-42, demonstrativo de editais, chamadas internacionais, estrutura organizacional da FAPES e relação detalhada das 30 Demandas Induzidas (DIs) com órgãos parceiros, secretarias e empresas.
+[^relges-funcitec-2021]: Relatório de Gestão FUNCITEC 2021, p. 8-12, detalhamento das descentralizações orçamentárias recebidas de órgãos estaduais (SEGER, SEDU, DER, IEMA, PCES, SEJUS, SETADES, SEDH, ADERES).
+[^relges-funcitec-2020]: Relatório de Gestão FUNCITEC 2020, p. 6-8, glossário de instituições conveniadas e parceiras industriais (ITV, Vale, Jurong, SETUR, SEDURB, SEAMA).
 [^lec-978-2021]: Lei Complementar Estadual nº 978/2021 (Marco Legal de CT&I do ES), Arts. 14 a 22 (credenciamento e gestão financeira descentralizada via fundações de apoio).
 [^resolucao-18-2019-nossa-bolsa]: Resolução CCAF nº 018/2019, Arts. 1º a 5º, disciplinando os procedimentos para adesão de mantenedoras de IES ao Programa Nossa Bolsa.
+[^resolucao-168-2017]: Resolução CCAF nº 168/2017 (alterada pela Resolução 260/2020), Anexo II, p. 6-7, disciplinando o cadastro cadastral segregado de Instituição, Unidade (com CNPJ filial próprio) e Representantes Legais designados com mandatos vigentes.
 [^resolucao-296-2021-banda-escolas]: Resolução CCAF nº 296/2021, Art. 1º, p. 1, aprovando o Projeto Banda nas Escolas executado pela FAMES.
 [^resolucao-297-2021-corais]: Resolução CCAF nº 297/2021, Art. 1º, p. 1, aprovando o Projeto Corais executado pela FAMES em parceria com a SEDU.
 [^resolucao-246-2019-findeslab]: Resolução CCAF nº 246/2019, Art. 1º, p. 1, autorizando apoio financeiro ao Programa de Empreendedorismo Industrial (FINDESLAB).
@@ -223,3 +292,7 @@ Para refletir a estrutura das entidades atendidas pela FAPES, o cadastro do novo
 [^edital-ppsus-2024]: Edital FAPES/CNPq/Decit-MS/SESA nº 17/2024 (PPSUS), item 1, p. 1, cooperação técnica com o ICEPi e laboratórios em saúde pública.
 [^edital-talentos-globais-2026]: Edital FAPES/SEGER nº 14/2026, item 1, p. 1-2, requisitos de concessão de bolsas de mestrado internacional a servidores do Poder Executivo Estadual.
 [^edital-centelha-iii]: Edital FAPES nº 18/2025 (Centelha III), item 2, p. 2, exigência de constituição jurídica formal de empresa inovadora no Espírito Santo para contratação da subvenção.
+[^edital-procap-2027]: Edital FAPES nº 27/2026 (PROCAP 2027 Doutorado), itens 1.2, 2.4 e Glossário, p. 7, 13, 53-56, regulamentando os papéis da IES/P, PPG credenciado CAPES, Coordenador de PPG e Gestor Institucional.
+[^edital-fapes-21-2026-redes]: Edital FAPES nº 21/2026 (Redes de PD&I em Setores Estratégicos), itens 1.3 e 1.4, p. 6-9, estabelecendo os requisitos de vínculo com a Instituição Executora e formação de redes multi-institucionais com IES/P e órgãos públicos.
+[^tutorial-sigfapes-usuario]: Formulários/SigFapes: Tutorial de Cadastro de Usuário no SigFapes, p. 4, documentando o procedimento legado de solicitação de validação de instituição via e-mail ao suporte da FAPES.
+[^norma-procedimento-018]: Norma de Procedimento FAPES nº 018/2018 (Procedimentos para Gestão de Parcerias e Convênios), itens 4 e 5, p. 2-3, detalhando as unidades funcionais envolvidas (CCAF, DIREX, DIPRE, DITEC, DIRAF, GETEC, GEPOF, NUPAR, ASJUR, PGE).

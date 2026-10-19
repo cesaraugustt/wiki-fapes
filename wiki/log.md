@@ -3,6 +3,7 @@
 ## 2026-10-19
 
 - **Update**: [wiki/entidades/avaliador.md](/entidades/avaliador.md) atualizado e humanizado com base nas novas fontes normativas e editais incorporados ao acervo: expansão de 16 para 22 modalidades avaliativas, inclusão das regras de convocação e prioridade algorítmica da IS FAPES nº 080/2025, tabela oficial de remuneração em VRTE e regime de gratuidade compulsória da IS FAPES nº 048/2026, comitês de governança interinstitucional (Inova SEGER e Comunidades Empreendedoras), comitês multilaterais transnacionais (RAMP/PILAR e SBEP), atuação da Comissão Interna de Diversidade e especificação de novos requisitos para o ConectaFapes.
+- **Update**: [wiki/entidades/instituicoes-atendidas.md](/entidades/instituicoes-atendidas.md) atualizado com mineração das 646 fontes de `raw-md/`: incorporadas novas entidades parceiras e demandantes do Relatório de Gestão FUNCITEC 2025/2026 (SEAMA, ADERES, ARSP, ALES, DER-ES, SEJUS, SETADES, SEDH, SETUR, SEDURB e parceria federal RFB/ALF-VIT/SERPRO), mapeamento de ambientes e indústrias (Jurong, ITV, Lume Robotics na DI 011/2025, Instituto Sustentabilidade Brasil), modelo normativo de representação da Resolução CCAF nº 168/2017 (Instituição, Unidade com CNPJ filial e Representante Legal por unidade ou global com mandato vigente), eliminação do gargalo legado de cadastro manual via e-mail do SigFapes, hierarquia acadêmica de bolsas de pós-graduação do PROCAP 2027 e governança interna das unidades funcionais da FAPES (CCAF, DIREX, DITEC, DIRAF, GETEC, GEPOF, NUPAR, NUPEX, UECI e ASJUR).
 
 ## 2026-10-15
 

@@ -3,8 +3,8 @@
     "name": "Universidade Federal do Espírito Santo",
     "category": "ICT / IES Pública Federal",
     "esfera": "Federal",
-    "occurrences": 162,
-    "files_count": 29,
+    "occurrences": 357,
+    "files_count": 47,
     "sample_citations": [
       "raw-md/formularios/indicacao-bolsista-procap-dez2022-1-763bf59b.md, p. 1",
       "raw-md/formularios/indicacao-bolsista-procap-dez2022-1-763bf59b.md, p. 1",
@@ -15,6 +15,16 @@
     "units": {
       "Pós-Graduação / PPG": [
         "PPG"
+      ],
+      "Acadêmica": [
+        "Centro Integrado de Genômica e Diagnóstico Molecular da UFES"
+      ],
+      "Laboratório": [
+        "LABORATÓRIO DE SISTEMAS ELETRÔNICOS EMBARCADOS",
+        "Laboratório de Sistemas Eletrônicos Embarcados"
+      ],
+      "Campus": [
+        "CEET, CEUNES, DOCTUM, IFES, UFES"
       ]
     }
   },
@@ -22,8 +32,8 @@
     "name": "Instituto Federal de Educação, Ciência e Tecnologia do Espírito Santo",
     "category": "ICT / IES Pública Federal",
     "esfera": "Federal",
-    "occurrences": 150,
-    "files_count": 34,
+    "occurrences": 270,
+    "files_count": 49,
     "sample_citations": [
       "raw-md/editais/edital-026-2025-programa-nossa-bolsa-2026-2a-retificacao-05-01-2026-assinado-1-9664bfd1.md, p. 4",
       "raw-md/editais/edital-26-2025-nossa-bolsa-02-12-1-a7b95fb4.md, p. 6",
@@ -36,7 +46,12 @@
         "Departamento de Engenharia Mecânica e Engenharia Elétrica"
       ],
       "Campus": [
+        "CEET, CEUNES, DOCTUM, IFES, UFES",
+        "Cachoeiro de Itapemirim",
         "Campus São Mateus",
+        "Colatina/Itapina",
+        "IFES SERRA",
+        "Serra",
         "campus Vitória"
       ],
       "NIT / Inovação": [
@@ -44,6 +59,9 @@
       ],
       "Acadêmica": [
         "Ceet Vasco Coutinho"
+      ],
+      "Laboratório": [
+        "LABORATÓRIO DE SISTEMAS ELETRÔNICOS EMBARCADOS"
       ]
     }
   },
@@ -51,8 +69,8 @@
     "name": "Instituto Capixaba de Pesquisa, Assistência Técnica e Extensão Rural",
     "category": "ICT Pública Estadual",
     "esfera": "Estadual",
-    "occurrences": 50,
-    "files_count": 17,
+    "occurrences": 101,
+    "files_count": 29,
     "sample_citations": [
       "raw-md/editais/edital-fapes-seag-inovagro-no-03-2024-alterado-17junho2024-2-1-dde7eeb1.md, p. 2",
       "raw-md/editais/edital-fapes-seag-inovagro-no-03-2024-alterado-17junho2024-2-1-dde7eeb1.md, p. 4",
@@ -76,8 +94,8 @@
     "name": "Faculdade de Música do Espírito Santo",
     "category": "IES Pública Estadual",
     "esfera": "Estadual",
-    "occurrences": 28,
-    "files_count": 7,
+    "occurrences": 58,
+    "files_count": 13,
     "sample_citations": [
       "raw-md/legislacao/resolucao-296-2021-projeto-banda-nas-escolas-sedh-fames-ccaf-30-11-2021-6c0e9ab9.md, p. 1",
       "raw-md/legislacao/resolucao-296-2021-projeto-banda-nas-escolas-sedh-fames-ccaf-30-11-2021-6c0e9ab9.md, p. 1",
@@ -87,6 +105,7 @@
     ],
     "units": {
       "Acadêmica": [
+        "Faculdade de Música do Espirito Santo",
         "Faculdade de Música do Espírito Santo"
       ]
     }
@@ -113,8 +132,8 @@
     "name": "Universidade Vila Velha",
     "category": "IES Privada / Comunitária",
     "esfera": "Privada",
-    "occurrences": 138,
-    "files_count": 16,
+    "occurrences": 198,
+    "files_count": 24,
     "sample_citations": [
       "raw-md/editais/edital-026-2025-programa-nossa-bolsa-2026-2a-retificacao-05-01-2026-assinado-1-9664bfd1.md, p. 20",
       "raw-md/editais/edital-026-2025-programa-nossa-bolsa-2026-2a-retificacao-05-01-2026-assinado-1-9664bfd1.md, p. 20",
@@ -128,8 +147,8 @@
     "name": "Escola Superior de Ciências da Santa Casa de Misericórdia de Vitória",
     "category": "IES Privada / Filantrópica",
     "esfera": "Privada",
-    "occurrences": 42,
-    "files_count": 8,
+    "occurrences": 56,
+    "files_count": 12,
     "sample_citations": [
       "raw-md/editais/edital-026-2025-programa-nossa-bolsa-2026-2a-retificacao-05-01-2026-assinado-1-9664bfd1.md, p. 21",
       "raw-md/editais/edital-026-2025-programa-nossa-bolsa-2026-2a-retificacao-05-01-2026-assinado-1-9664bfd1.md, p. 21",
@@ -143,8 +162,8 @@
     "name": "Centro Universitário FAESA",
     "category": "IES Privada",
     "esfera": "Privada",
-    "occurrences": 102,
-    "files_count": 8,
+    "occurrences": 110,
+    "files_count": 11,
     "sample_citations": [
       "raw-md/editais/edital-026-2025-programa-nossa-bolsa-2026-2a-retificacao-05-01-2026-assinado-1-9664bfd1.md, p. 1",
       "raw-md/editais/edital-026-2025-programa-nossa-bolsa-2026-2a-retificacao-05-01-2026-assinado-1-9664bfd1.md, p. 21",
@@ -161,6 +180,8 @@
         "Campus Il",
         "FAESA - CAMPUS I",
         "FAESA - CAMPUS II",
+        "FAESA CAMPUS &#124",
+        "FAESA CAMPUS II",
         "UNICAPE - FAESA CAMPUS III"
       ]
     }
@@ -169,8 +190,8 @@
     "name": "FUCAPE Business School",
     "category": "IES Privada",
     "esfera": "Privada",
-    "occurrences": 45,
-    "files_count": 8,
+    "occurrences": 69,
+    "files_count": 11,
     "sample_citations": [
       "raw-md/editais/edital-026-2025-programa-nossa-bolsa-2026-2a-retificacao-05-01-2026-assinado-1-9664bfd1.md, p. 22",
       "raw-md/editais/edital-026-2025-programa-nossa-bolsa-2026-2a-retificacao-05-01-2026-assinado-1-9664bfd1.md, p. 22",
@@ -184,8 +205,8 @@
     "name": "Faculdade / Centro Universitário Multivix",
     "category": "IES Privada",
     "esfera": "Privada",
-    "occurrences": 320,
-    "files_count": 8,
+    "occurrences": 335,
+    "files_count": 10,
     "sample_citations": [
       "raw-md/editais/edital-026-2025-programa-nossa-bolsa-2026-2a-retificacao-05-01-2026-assinado-1-9664bfd1.md, p. 13",
       "raw-md/editais/edital-026-2025-programa-nossa-bolsa-2026-2a-retificacao-05-01-2026-assinado-1-9664bfd1.md, p. 13",
@@ -211,8 +232,8 @@
     "name": "Centro Universitário do Espírito Santo",
     "category": "IES Privada / Comunitária",
     "esfera": "Privada",
-    "occurrences": 41,
-    "files_count": 8,
+    "occurrences": 52,
+    "files_count": 11,
     "sample_citations": [
       "raw-md/editais/edital-026-2025-programa-nossa-bolsa-2026-2a-retificacao-05-01-2026-assinado-1-9664bfd1.md, p. 15",
       "raw-md/editais/edital-026-2025-programa-nossa-bolsa-2026-2a-retificacao-05-01-2026-assinado-1-9664bfd1.md, p. 15",
@@ -224,7 +245,9 @@
       "Campus": [
         "CAMPUS III",
         "Colatina",
-        "UNESC COLATINA"
+        "UNESC",
+        "UNESC COLATINA",
+        "UNESC SERRA"
       ]
     }
   },
@@ -232,8 +255,8 @@
     "name": "Faculdade de Direito de Vitória",
     "category": "IES Privada",
     "esfera": "Privada",
-    "occurrences": 18,
-    "files_count": 8,
+    "occurrences": 23,
+    "files_count": 10,
     "sample_citations": [
       "raw-md/editais/edital-026-2025-programa-nossa-bolsa-2026-2a-retificacao-05-01-2026-assinado-1-9664bfd1.md, p. 22",
       "raw-md/editais/edital-026-2025-programa-nossa-bolsa-2026-2a-retificacao-05-01-2026-assinado-1-9664bfd1.md, p. 22",
@@ -247,8 +270,8 @@
     "name": "Escola Superior São Francisco de Assis",
     "category": "IES Privada / Confessional",
     "esfera": "Privada",
-    "occurrences": 22,
-    "files_count": 8,
+    "occurrences": 28,
+    "files_count": 10,
     "sample_citations": [
       "raw-md/editais/edital-026-2025-programa-nossa-bolsa-2026-2a-retificacao-05-01-2026-assinado-1-9664bfd1.md, p. 16",
       "raw-md/editais/edital-026-2025-programa-nossa-bolsa-2026-2a-retificacao-05-01-2026-assinado-1-9664bfd1.md, p. 16",
@@ -262,8 +285,8 @@
     "name": "Faculdades Integradas de Aracruz",
     "category": "IES Privada / Comunitária (Fundação São João Batista)",
     "esfera": "Privada",
-    "occurrences": 42,
-    "files_count": 7,
+    "occurrences": 51,
+    "files_count": 10,
     "sample_citations": [
       "raw-md/editais/edital-026-2025-programa-nossa-bolsa-2026-2a-retificacao-05-01-2026-assinado-1-9664bfd1.md, p. 13",
       "raw-md/editais/edital-026-2025-programa-nossa-bolsa-2026-2a-retificacao-05-01-2026-assinado-1-9664bfd1.md, p. 13",
@@ -281,14 +304,14 @@
     "name": "Centro Universitário São Camilo - Espírito Santo",
     "category": "IES Privada / Confessional",
     "esfera": "Privada",
-    "occurrences": 14,
-    "files_count": 2,
+    "occurrences": 18,
+    "files_count": 5,
     "sample_citations": [
+      "raw-md/prestacao-contas/2017-d2c7c4d7.md, p. 28",
       "raw-md/prestacao-contas/funcitec2013-1-03eeea08.md, p. 11",
       "raw-md/prestacao-contas/funcitec2013-1-03eeea08.md, p. 11",
       "raw-md/prestacao-contas/funcitec2013-1-03eeea08.md, p. 12",
-      "raw-md/prestacao-contas/funcitec2013-1-03eeea08.md, p. 15",
-      "raw-md/prestacao-contas/funcitec2013-1-03eeea08.md, p. 17"
+      "raw-md/prestacao-contas/funcitec2013-1-03eeea08.md, p. 15"
     ],
     "units": {}
   },
@@ -346,8 +369,8 @@
     "name": "Faculdade Pio XII",
     "category": "IES Privada",
     "esfera": "Privada",
-    "occurrences": 34,
-    "files_count": 6,
+    "occurrences": 36,
+    "files_count": 7,
     "sample_citations": [
       "raw-md/editais/edital-026-2025-programa-nossa-bolsa-2026-2a-retificacao-05-01-2026-assinado-1-9664bfd1.md, p. 14",
       "raw-md/editais/edital-026-2025-programa-nossa-bolsa-2026-2a-retificacao-05-01-2026-assinado-1-9664bfd1.md, p. 14",
@@ -361,8 +384,8 @@
     "name": "Centro Universitário Vale do Cricaré (UNIVC)",
     "category": "IES Privada",
     "esfera": "Privada",
-    "occurrences": 47,
-    "files_count": 7,
+    "occurrences": 49,
+    "files_count": 8,
     "sample_citations": [
       "raw-md/editais/edital-026-2025-programa-nossa-bolsa-2026-2a-retificacao-05-01-2026-assinado-1-9664bfd1.md, p. 17",
       "raw-md/editais/edital-026-2025-programa-nossa-bolsa-2026-2a-retificacao-05-01-2026-assinado-1-9664bfd1.md, p. 17",
@@ -380,8 +403,8 @@
     "name": "Faculdade Venda Nova do Imigrante (FAVENI)",
     "category": "IES Privada",
     "esfera": "Privada",
-    "occurrences": 10,
-    "files_count": 2,
+    "occurrences": 14,
+    "files_count": 3,
     "sample_citations": [
       "raw-md/editais/edital-fapes-no-18-2025-nossa-bolsa-2025-1-1-43f2903f.md, p. 17",
       "raw-md/editais/edital-fapes-no-18-2025-nossa-bolsa-2025-1-1-43f2903f.md, p. 17",
@@ -413,11 +436,14 @@
     "name": "Fundação de Apoio ao Desenvolvimento da Ciência e Tecnologia",
     "category": "Fundação de Apoio (IFES)",
     "esfera": "Privada (Sem fins lucrativos)",
-    "occurrences": 2,
-    "files_count": 2,
+    "occurrences": 6,
+    "files_count": 6,
     "sample_citations": [
       "raw-md/editais/call-announcement-water4all-jtc2024-2-b281d773.md, p. 15",
-      "raw-md/editais/faq-water4all-jtc2026-20260908-7b2b8672.md, p. 9"
+      "raw-md/editais/call-announcement-water4all-jtc2026-20260908-72c4d6b4.md, p. 20",
+      "raw-md/editais/chamada-sbep-2026-announcement-13fd25b3.md, p. 34",
+      "raw-md/editais/faq-water4all-jtc2026-20260908-7b2b8672.md, p. 9",
+      "raw-md/editais/sbep-call-text-2025-aeb3f5bd.md, p. 47"
     ],
     "units": {}
   },
@@ -445,8 +471,8 @@
     "name": "Secretaria de Estado da Ciência, Tecnologia, Inovação e Educação Profissional",
     "category": "Órgão Público Estadual / Vinculador",
     "esfera": "Estadual",
-    "occurrences": 532,
-    "files_count": 189,
+    "occurrences": 669,
+    "files_count": 210,
     "sample_citations": [
       "raw-md/bolsas/calendario-de-pagamento-de-bolsas-da-fapes-ano-2026-c3aaa1d7.md, p. 1",
       "raw-md/bolsas/calendario-de-pagamento-de-bolsas-da-fapes-ano-2026-c3aaa1d7.md, p. 1",
@@ -476,8 +502,8 @@
     "name": "Secretaria de Estado da Educação",
     "category": "Órgão Público Estadual / Demandante",
     "esfera": "Estadual",
-    "occurrences": 230,
-    "files_count": 32,
+    "occurrences": 364,
+    "files_count": 40,
     "sample_citations": [
       "raw-md/editais/ed-19-2026-pic-jr-2027-1-altera-o-publicada-21790ff8.md, p. 1",
       "raw-md/editais/ed-19-2026-pic-jr-2027-1-altera-o-publicada-21790ff8.md, p. 2",
@@ -488,11 +514,15 @@
     "units": {
       "Acadêmica": [
         "Centro de Formação dos Profissionais da Educação",
+        "Centro de Pesquisa Inovação e Desenvolvimento CPID",
         "Faculdade de Música do Espírito Santo"
       ],
       "Departamento": [
         "Departamento de Imprensa Oficial do Estado do Espírito Santo - DIO/ES",
         "Departamento de Impressa Oficial do Espírito Santo - DIOES"
+      ],
+      "Pós-Graduação / PPG": [
+        "PPG stricto sensu"
       ]
     }
   },
@@ -500,8 +530,8 @@
     "name": "Secretaria de Estado da Saúde",
     "category": "Órgão Público Estadual / Demandante",
     "esfera": "Estadual",
-    "occurrences": 67,
-    "files_count": 11,
+    "occurrences": 117,
+    "files_count": 25,
     "sample_citations": [
       "raw-md/editais/edital-fapes-cnpq-decit-sectics-ms-sesa-17-2024-ppsus-2-c16d9a1e.md, p. 1",
       "raw-md/editais/edital-fapes-cnpq-decit-sectics-ms-sesa-17-2024-ppsus-2-c16d9a1e.md, p. 1",
@@ -523,8 +553,8 @@
     "name": "Secretaria de Estado de Gestão e Recursos Humanos",
     "category": "Órgão Público Estadual / Demandante",
     "esfera": "Estadual",
-    "occurrences": 139,
-    "files_count": 21,
+    "occurrences": 287,
+    "files_count": 39,
     "sample_citations": [
       "raw-md/editais/edital-servidores-es-22-05-2026-5c2df435.md, p. 1",
       "raw-md/editais/edital-servidores-es-22-05-2026-5c2df435.md, p. 1",
@@ -534,6 +564,7 @@
     ],
     "units": {
       "Laboratório": [
+        "LAB.GES",
         "LAB.ges",
         "Laboratório de Inovação na Gestão - LAB"
       ],
@@ -541,7 +572,13 @@
         "Campus São Mateus"
       ],
       "Departamento": [
-        "Departamento De Imprensa Oficial - DIO"
+        "DEPARTAMENTO DE IMPRENSA OFICIAL - DIO",
+        "DEPARTAMENTO DE IMPRENSA OFICIAL DIO",
+        "Departamento De Imprensa Oficial - DIO",
+        "Departamento de Imprensa Oficial do Espírito Santo DIO-ES"
+      ],
+      "Acadêmica": [
+        "CENTRO DE GESTÃO DE MEIOS DE PAGAMENTO LTDA"
       ]
     }
   },
@@ -549,8 +586,8 @@
     "name": "Secretaria de Estado da Agricultura, Abastecimento, Aquicultura e Pesca",
     "category": "Órgão Público Estadual / Demandante",
     "esfera": "Estadual",
-    "occurrences": 124,
-    "files_count": 19,
+    "occurrences": 238,
+    "files_count": 31,
     "sample_citations": [
       "raw-md/editais/edital-fapes-07-2025-apoio-a-projetos-em-grupo-de-economia-verde-e-azul-no-espir-ee514247.md, p. 14",
       "raw-md/editais/edital-fapes-07-2025-apoio-projetos-grupo-de-economia-verde-e-azul-no-esanto-cro-278e5fb7.md, p. 14",
@@ -558,20 +595,27 @@
       "raw-md/editais/edital-fapes-seag-inovagro-no-03-2024-alterado-17junho2024-2-1-dde7eeb1.md, p. 1",
       "raw-md/editais/edital-fapes-seag-inovagro-no-03-2024-alterado-17junho2024-2-1-dde7eeb1.md, p. 1"
     ],
-    "units": {}
+    "units": {
+      "Departamento": [
+        "DEPARTAMENTO DE ESTRADAS RODAGEM DO ESTADO DO ESPIRITO SANTO PENSOES"
+      ],
+      "Pós-Graduação / PPG": [
+        "PPG 003/2021"
+      ]
+    }
   },
   "SECULT": {
     "name": "Secretaria de Estado da Cultura",
     "category": "Órgão Público Estadual / Demandante",
     "esfera": "Estadual",
-    "occurrences": 32,
-    "files_count": 7,
+    "occurrences": 100,
+    "files_count": 14,
     "sample_citations": [
       "raw-md/legislacao/resolucao-287-2021-aprova-projeto-funcitec-mci-hub-criativo-e-qualidade-microb-d-b1e11ac5.md, p. 1",
       "raw-md/legislacao/resolucao-ccaf-no-336-2024-conexao-inovacao-alterada-pela-resolucao-ccaf-353-202-ee67cf0f.md, p. 3",
       "raw-md/legislacao/ri-funcitec-mci-2023-446ea158.md, p. 2",
-      "raw-md/prestacao-contas/funcitec2013-1-03eeea08.md, p. 13",
-      "raw-md/prestacao-contas/relatorio-de-ordenador-de-despesas-funcitec-80ecf93c.md, p. 2"
+      "raw-md/prestacao-contas/2016-296f23a4.md, p. 31",
+      "raw-md/prestacao-contas/2016-296f23a4.md, p. 31"
     ],
     "units": {}
   },
@@ -579,8 +623,8 @@
     "name": "Agência Estadual de Recursos Hídricos",
     "category": "Órgão Público Estadual / Autarquia",
     "esfera": "Estadual",
-    "occurrences": 36,
-    "files_count": 6,
+    "occurrences": 82,
+    "files_count": 13,
     "sample_citations": [
       "raw-md/legislacao/resolucao-230-2018-cooperacao-tecnica-agher-uso-racional-da-agua-ccaf-11-12-2018-5ba625ae.md, p. 1",
       "raw-md/legislacao/resolucao-230-2018-cooperacao-tecnica-agher-uso-racional-da-agua-ccaf-11-12-2018-5ba625ae.md, p. 1",
@@ -594,14 +638,14 @@
     "name": "Instituto de Defesa Agropecuária e Florestal do Espírito Santo",
     "category": "Órgão Público Estadual / Autarquia",
     "esfera": "Estadual",
-    "occurrences": 6,
-    "files_count": 5,
+    "occurrences": 22,
+    "files_count": 9,
     "sample_citations": [
       "raw-md/editais/edital-fapes-seag-inovagro-no-03-2024-alterado-17junho2024-2-1-dde7eeb1.md, p. 4",
       "raw-md/editais/edital-fapes-seag-no-03-2024-ppe-agro-inovagro-1-1-207751eb.md, p. 4",
+      "raw-md/legislacao/decreto-3408r-publicado-16102013-camaradeassessoramento-41dfd752.md, p. 1",
       "raw-md/legislacao/resolucao-no-329-fapes-seag-inovagro-d01d3e8e.md, p. 3",
-      "raw-md/prestacao-contas/relatorio-de-ordenador-de-despesas-funcitec-80ecf93c.md, p. 33",
-      "raw-md/prestacao-contas/relges-funcitec-ae61b498.md, p. 8"
+      "raw-md/prestacao-contas/relatorio-de-ordenador-de-despesas-funcitec-80ecf93c.md, p. 33"
     ],
     "units": {}
   },
@@ -609,8 +653,8 @@
     "name": "Instituto Estadual de Meio Ambiente e Recursos Hídricos",
     "category": "Órgão Público Estadual / Autarquia",
     "esfera": "Estadual",
-    "occurrences": 109,
-    "files_count": 17,
+    "occurrences": 173,
+    "files_count": 28,
     "sample_citations": [
       "raw-md/editais/edital-fapes-iema-14-2024-organizacao-de-eventos-de-difusao-e-educacao-ambiental-3952b923.md, p. 1",
       "raw-md/editais/edital-fapes-iema-14-2024-organizacao-de-eventos-de-difusao-e-educacao-ambiental-3952b923.md, p. 1",
@@ -618,14 +662,21 @@
       "raw-md/editais/edital-fapes-iema-14-2024-organizacao-de-eventos-de-difusao-e-educacao-ambiental-3952b923.md, p. 1",
       "raw-md/editais/edital-fapes-iema-14-2024-organizacao-de-eventos-de-difusao-e-educacao-ambiental-3952b923.md, p. 1"
     ],
-    "units": {}
+    "units": {
+      "Acadêmica": [
+        "CENTRO DE PESQUISA E INOVAÇÃO"
+      ],
+      "Pós-Graduação / PPG": [
+        "PPG 003/2021"
+      ]
+    }
   },
   "IJSN": {
     "name": "Instituto Jones dos Santos Neves",
     "category": "Órgão Público Estadual / Autarquia e Pesquisa",
     "esfera": "Estadual",
-    "occurrences": 145,
-    "files_count": 20,
+    "occurrences": 240,
+    "files_count": 31,
     "sample_citations": [
       "raw-md/editais/edital-026-2025-programa-nossa-bolsa-2026-2a-retificacao-05-01-2026-assinado-1-9664bfd1.md, p. 25",
       "raw-md/editais/edital-026-2025-programa-nossa-bolsa-2026-2a-retificacao-05-01-2026-assinado-1-9664bfd1.md, p. 25",
@@ -639,8 +690,8 @@
     "name": "Banco de Desenvolvimento do Espírito Santo",
     "category": "Instituição Financeira Oficial Estadual",
     "esfera": "Estadual",
-    "occurrences": 202,
-    "files_count": 99,
+    "occurrences": 272,
+    "files_count": 108,
     "sample_citations": [
       "raw-md/editais/chamada-p-blica-parcerias-startups-2026-vers-o-final-1-altera-o-certo-6bb34437.md, p. 34",
       "raw-md/editais/chamada-publica-parcerias-startups-versao-06-to-1-1-04ebaf08.md, p. 29",
@@ -651,6 +702,12 @@
     "units": {
       "Acadêmica": [
         "CENTRO DE PESQUISAS"
+      ],
+      "Pós-Graduação / PPG": [
+        "PPGs"
+      ],
+      "Departamento": [
+        "Departamento de Impressa Oficial do Espírito Santo DIOES"
       ]
     }
   },
@@ -658,8 +715,8 @@
     "name": "Instituto de Tecnologia da Informação e Comunicação do Estado do ES",
     "category": "Empresa Pública Estadual de TIC",
     "esfera": "Estadual",
-    "occurrences": 42,
-    "files_count": 33,
+    "occurrences": 68,
+    "files_count": 40,
     "sample_citations": [
       "raw-md/bolsas/calendario-de-pagamento-de-bolsas-da-fapes-ano-2026-c3aaa1d7.md, p. 1",
       "raw-md/bolsas/nossa-bolsa-0bf1685d.md, p. 1",
@@ -673,21 +730,41 @@
     "name": "ArcelorMittal Brasil / Tubarão",
     "category": "Empresa Privada / Parceira Coinvestidora",
     "esfera": "Privada",
-    "occurrences": 1,
-    "files_count": 1,
+    "occurrences": 11,
+    "files_count": 8,
     "sample_citations": [
-      "raw-md/prestacao-contas/relatorio-de-ordenador-de-despesas-funcitec-80ecf93c.md, p. 29"
+      "raw-md/institucional/comissao-ueci-14-08-2017-e7cc79b2.md, p. 1",
+      "raw-md/institucional/is-079-2018-comissao-permanente-de-controle-interno-b897bcc5.md, p. 1",
+      "raw-md/prestacao-contas/2017-d2c7c4d7.md, p. 44",
+      "raw-md/prestacao-contas/relatorio-de-ordenador-de-despesas-funcitec-80ecf93c.md, p. 29",
+      "raw-md/prestacao-contas/relatorio-fapes2015-d90d9040.md, p. 31"
     ],
-    "units": {}
+    "units": {
+      "Acadêmica": [
+        "Centro de Climatologia do ES",
+        "Centro de Estudos Avançados em Climatologia do Estado do Espírito Santo"
+      ],
+      "Pós-Graduação / PPG": [
+        "PPG stricto sensu com curso",
+        "PPG stricto sensu com cursols",
+        "PPG stricto sensu que possuam Doutorado",
+        "PPGs Capixabas Emergentes sediados em IES/P",
+        "PPGs em IES/P do Estado"
+      ]
+    }
   },
   "VALE": {
     "name": "Vale S.A.",
     "category": "Empresa Privada / Parceira Coinvestidora",
     "esfera": "Privada",
-    "occurrences": 1,
-    "files_count": 1,
+    "occurrences": 6,
+    "files_count": 5,
     "sample_citations": [
-      "raw-md/prestacao-contas/relatorio-de-ordenador-de-despesas-funcitec-80ecf93c.md, p. 2"
+      "raw-md/institucional/comissao-ueci-14-08-2017-e7cc79b2.md, p. 1",
+      "raw-md/prestacao-contas/relatorio-de-ordenador-de-despesas-funcitec-80ecf93c.md, p. 2",
+      "raw-md/prestacao-contas/relges-2020-funcitec-120129b0.md, p. 6",
+      "raw-md/prestacao-contas/relges-funcitec-2016-1c205fc2.md, p. 45",
+      "raw-md/prestacao-contas/relges-funcitec-2016-1c205fc2.md, p. 46"
     ],
     "units": {}
   },
@@ -723,11 +800,14 @@
     "name": "Companhia de Gás do Espírito Santo (ES GÁS)",
     "category": "Empresa Privada Concessionária",
     "esfera": "Privada",
-    "occurrences": 2,
-    "files_count": 1,
+    "occurrences": 9,
+    "files_count": 2,
     "sample_citations": [
-      "raw-md/institucional/is-061-2021-comissao-permanente-de-controle-interno-501eaad7.md, p. 1",
-      "raw-md/institucional/is-061-2021-comissao-permanente-de-controle-interno-501eaad7.md, p. 1"
+      "raw-md/institucional/instrucao-de-ser-073-de-21-07-2022-ueci-ffdc627f.md, p. 1",
+      "raw-md/institucional/instrucao-de-ser-073-de-21-07-2022-ueci-ffdc627f.md, p. 1",
+      "raw-md/institucional/instrucao-de-ser-073-de-21-07-2022-ueci-ffdc627f.md, p. 1",
+      "raw-md/institucional/instrucao-de-ser-073-de-21-07-2022-ueci-ffdc627f.md, p. 1",
+      "raw-md/institucional/instrucao-de-ser-073-de-21-07-2022-ueci-ffdc627f.md, p. 1"
     ],
     "units": {
       "Acadêmica": [
@@ -742,9 +822,13 @@
     "name": "Associação TecVitória (Parque Tecnológico / Incubadora)",
     "category": "Ambiente Promotor de Inovação / Terceiro Setor",
     "esfera": "Privada (Sem fins lucrativos)",
-    "occurrences": 0,
-    "files_count": 0,
-    "sample_citations": [],
+    "occurrences": 3,
+    "files_count": 2,
+    "sample_citations": [
+      "raw-md/prestacao-contas/relatorio-fapes2015-d90d9040.md, p. 32",
+      "raw-md/prestacao-contas/relges-funcitec-2016-1c205fc2.md, p. 44",
+      "raw-md/prestacao-contas/relges-funcitec-2016-1c205fc2.md, p. 44"
+    ],
     "units": {}
   }
 }
