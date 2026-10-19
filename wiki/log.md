@@ -1,5 +1,9 @@
 # Log
 
+## 2026-10-19
+
+- **Update**: [wiki/entidades/avaliador.md](/entidades/avaliador.md) atualizado e humanizado com base nas novas fontes normativas e editais incorporados ao acervo: expansão de 16 para 22 modalidades avaliativas, inclusão das regras de convocação e prioridade algorítmica da IS FAPES nº 080/2025, tabela oficial de remuneração em VRTE e regime de gratuidade compulsória da IS FAPES nº 048/2026, comitês de governança interinstitucional (Inova SEGER e Comunidades Empreendedoras), comitês multilaterais transnacionais (RAMP/PILAR e SBEP), atuação da Comissão Interna de Diversidade e especificação de novos requisitos para o ConectaFapes.
+
 ## 2026-10-15
 
 - **Update**: [wiki/entidades/avaliador.md](/entidades/avaliador.md) reavaliado integralmente a partir de mineração profunda nos 580 arquivos de `raw-md/`, expandindo a tipologia de 10 para 16 modalidades funcionais com mapeamento exato de competências, requisitos de titulação, territorialidade, dinâmica de notas e correspondência com as tipologias de editais da FAPES.
