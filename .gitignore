@@ -1,10 +1,30 @@
+# Python / Venv
 .venv/
+venv/
 __pycache__/
+*.py[cod]
+
+# Testes, Linter e Tipagem
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Logs
+*.log
+
+# Editores e SO
 .DS_Store
-.env
-# dados coletados (recriáveis com o crawler); só _manifest.csv é versionado
-raw/*
-!raw/_manifest.csv
-raw-text/
+.idea/
+.vscode/
+*.swp
+
+# Ferramentas da Wiki
 .obsidian/
 .index/
+.env
+
+# Fontes brutas (recriáveis via crawler; só _manifest.csv é versionado)
+raw/*
+!raw/_manifest.csv

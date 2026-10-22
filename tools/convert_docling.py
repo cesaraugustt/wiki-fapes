@@ -6,7 +6,7 @@
 """Converte raw/ -> raw-md/ com Docling (GPU), espelhando a estrutura de pastas.
 
 Padrão OKF v0.2 para a Wiki FAPES.
-- Não altera raw/ nem raw-text/.
+- Não altera raw/.
 - Retomável: manifesto com sha256 + status; arquivos já convertidos são pulados.
 - Worker persistente com timeout e isolamento de processo.
 - Detector de páginas corrompidas (fontes CID sem ToUnicode, glifos quebrados).
@@ -33,7 +33,6 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 RAW = ROOT / "raw"
-RAW_TEXT = ROOT / "raw-text"
 RAW_MD = ROOT / "raw-md"
 MANIFEST_FILE = RAW / "_manifest.csv"
 
@@ -357,7 +356,7 @@ def main():
     ap.add_argument("--timeout", type=int, default=600, help="segundos por arquivo (padrão: 600s)")
     ap.add_argument("--limit", type=int, default=0, help="processa no máximo N arquivos")
     ap.add_argument("--only", default="", help="só caminhos que contenham este texto")
-    ap.add_argument("--missing-only", action="store_true", help="processa só os arquivos que não existem em raw-text/")
+    ap.add_argument("--missing-only", action="store_true", help="processa só os arquivos que não existem em raw-md/")
     ap.add_argument("--retry-failed", action="store_true", help="reprocessa apenas arquivos com status diferente de 'ok' (erros e suspeitos)")
     args = ap.parse_args()
 
@@ -377,8 +376,8 @@ def main():
         files = []
         for p in all_files:
             rel = p.relative_to(raw).as_posix()
-            txt_equiv = (RAW_TEXT / rel).with_suffix(".txt")
-            if not txt_equiv.exists():
+            md_equiv = (out / rel).with_suffix(".md")
+            if not md_equiv.exists():
                 files.append(p)
     elif args.retry_failed:
         files = [
