@@ -122,7 +122,7 @@ A FAPES financia e mantém parcerias com universidades, centros de pesquisa, ór
 - **Gestora financeira (fundação de apoio)**: fundação de direito privado credenciada para administrar compras, pagamentos e prestações de contas financeiras em projetos de ICTs públicas.[^lec-978-2021]
 - **Demandante ou parceiro**: secretaria de Estado ou autarquia que cofinancia a chamada, propõe problemas a serem investigados ou acolhe bolsistas.
 
-A relação completa de entidades, com a hierarquia de unidades e fontes no acervo, está estruturada em [tools/instituicoes_unidades.json](file:///home/cesar_augusto/projetos/fapes-wiki/tools/instituicoes_unidades.json).
+A relação completa de entidades, com a hierarquia de unidades agrupadas e papéis no acervo, está estruturada em [tools/instituicoes.json](file:///home/cesar_augusto/projetos/fapes-wiki/tools/instituicoes.json).
 
 ---
 

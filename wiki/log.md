@@ -1,5 +1,12 @@
 # Log
 
+## 2026-10-22
+
+- **Update**: `tools/instituicoes.json` unificado como base canônica do catálogo de entidades da FAPES: 76 instituições consolidadas, com unidades organizacionais categorizadas e lista de papéis institucionais, eliminando o campo CNPJ para evitar divergências cadastrais.
+- **Creation**: `tools/build_instituicoes_json.py` como gerador oficial de `tools/instituicoes.json`.
+- **Deprecation**: Expurgados 11 arquivos legados e intermediários obsoletos da pasta `tools/` (`extract.py`, `extract_institutions.py`, `extract_companies.py`, `build_clean_instituicoes_json.py`, `build_unified_institutions_json.py`, `instituicoes_unidades.json`, `companies_extracted.*`, `institutions_extracted.*` e `institutions_raw_md_evaluated.json`).
+- **Update**: [wiki/entidades/instituicoes-atendidas.md](/entidades/instituicoes-atendidas.md) atualizado para referenciar `tools/instituicoes.json`.
+
 ## 2026-10-19
 
 - **Update**: [wiki/entidades/avaliador.md](/entidades/avaliador.md) atualizado e humanizado com base nas novas fontes normativas e editais incorporados ao acervo: expansão de 16 para 22 modalidades avaliativas, inclusão das regras de convocação e prioridade algorítmica da IS FAPES nº 080/2025, tabela oficial de remuneração em VRTE e regime de gratuidade compulsória da IS FAPES nº 048/2026, comitês de governança interinstitucional (Inova SEGER e Comunidades Empreendedoras), comitês multilaterais transnacionais (RAMP/PILAR e SBEP), atuação da Comissão Interna de Diversidade e especificação de novos requisitos para o ConectaFapes.

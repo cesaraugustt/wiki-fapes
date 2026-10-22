@@ -1,0 +1,1562 @@
+#!/usr/bin/env python3
+"""Gera o catálogo mestre unificado de Instituições, Unidades e Papéis da FAPES.
+
+Gera: tools/instituicoes.json
+"""
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+
+INSTITUICOES = [
+    {
+        "nome": "Agência de Desenvolvimento das Micro e Pequenas Empresas e do Empreendedorismo",
+        "sigla": "ADERES",
+        "uf": "ES",
+        "categoria": "Autarquia Estadual",
+        "papeis": [
+            "Demandante",
+            "Parceiro Operacional"
+        ],
+        "unidades": {
+            "administrativas": [
+                "Diretoria Técnica"
+            ],
+            "programas": [
+                "Coordenação do Programa Comunidades Empreendedoras",
+                "Coordenação do Programa Capacitar para Empreender"
+            ]
+        }
+    },
+    {
+        "nome": "Agência de Regulação de Serviços Públicos do Espírito Santo",
+        "sigla": "ARSP",
+        "uf": "ES",
+        "categoria": "Autarquia Estadual",
+        "papeis": [
+            "Demandante"
+        ],
+        "unidades": {
+            "administrativas": [
+                "Diretoria de Saneamento Básico e Resíduos Sólidos Urbanos"
+            ]
+        }
+    },
+    {
+        "nome": "Agência Estadual de Recursos Hídricos",
+        "sigla": "AGERH",
+        "uf": "ES",
+        "categoria": "Autarquia Estadual",
+        "papeis": [
+            "Demandante",
+            "Parceiro Técnico"
+        ],
+        "unidades": {
+            "administrativas": [
+                "Diretoria-Presidente",
+                "Gerência de Planejamento e Recursos Hídricos",
+                "Diretoria de Planejamento e Regulação Hídrica",
+                "Gerência de Recursos Hídricos"
+            ],
+            "projetos": [
+                "Sistema Estadual de Informações sobre Recursos Hídricos",
+                "Programa de Segurança Hídrica e Bacias Hidrográficas"
+            ]
+        }
+    },
+    {
+        "nome": "ArcelorMittal Brasil S.A.",
+        "sigla": "ARCELORMITTAL",
+        "uf": "ES",
+        "categoria": "Empresa Coinvestidora Privada (Siderurgia)",
+        "papeis": [
+            "Parceira Coinvestidora",
+            "Demandante de Pesquisa"
+        ],
+        "unidades": {
+            "campi_unidades": [
+                "Planta Industrial de Tubarão (Serra/ES)"
+            ],
+            "complexos_plantas": [
+                "Usina de Tubarão (Serra/Vitória)"
+            ],
+            "centros_academicos": [
+                "Centro de Pesquisa e Desenvolvimento Siderúrgico"
+            ]
+        }
+    },
+    {
+        "nome": "Assembleia Legislativa do Estado do Espírito Santo",
+        "sigla": "ALES",
+        "uf": "ES",
+        "categoria": "Poder Legislativo Estadual",
+        "papeis": [
+            "Demandante",
+            "Co-financiador"
+        ],
+        "unidades": {
+            "administrativas": [
+                "Setor de Documentação e Memória Legislativa Capixaba"
+            ]
+        }
+    },
+    {
+        "nome": "Associação TecVitória",
+        "sigla": "TECVITÓRIA",
+        "uf": "ES",
+        "categoria": "Incubadora de Empresas / Ambiente de Inovação",
+        "papeis": [
+            "Ambiente Promotor de Inovação",
+            "Parceiro Operacional"
+        ],
+        "unidades": {
+            "inovacao_nits": [
+                "Incubadora de Empresas de Base Tecnológica TecVitória"
+            ]
+        }
+    },
+    {
+        "nome": "Banco de Desenvolvimento do Espírito Santo",
+        "sigla": "BANDES",
+        "uf": "ES",
+        "categoria": "Instituição Financeira Oficial Estadual",
+        "papeis": [
+            "Agente Financeiro do FUNCITEC",
+            "Parceiro de Fomento"
+        ],
+        "unidades": {
+            "administrativas": [
+                "Diretoria de Operações e Fundos",
+                "Gerência de Fundos e Parcerias Estratégicas",
+                "Gerência de Administração de Fundos do FUNCITEC"
+            ],
+            "inovacao_nits": [
+                "Gerência de Operações de Crédito e Fomento à Inovação"
+            ]
+        }
+    },
+    {
+        "nome": "Centro de Tecnologia Mineral",
+        "sigla": "CETEM",
+        "uf": "ES",
+        "categoria": "ICT Pública Federal (MCTI)",
+        "papeis": [
+            "Executora",
+            "Proponente",
+            "Parceiro Técnico"
+        ],
+        "unidades": {
+            "administrativas": [
+                "Núcleo Regional do Espírito Santo (Cachoeiro de Itapemirim - Rochas Ornamentais)"
+            ]
+        }
+    },
+    {
+        "nome": "Centro Estadual de Educação Técnica Vasco Coutinho",
+        "sigla": "CEET Vasco Coutinho",
+        "uf": "ES",
+        "categoria": "Instituição de Educação Técnica / Tecnológica Pública",
+        "papeis": [
+            "Executora"
+        ],
+        "unidades": {
+            "inovacao_nits": [
+                "Núcleo de Propriedade Intelectual e Difusão Tecnológica (Projeto Pat&Game)"
+            ],
+            "campi": [
+                "Vila Velha (Centro)"
+            ],
+            "programas": [
+                "Núcleo de Difusão de Propriedade Intelectual (Projeto Pat&Game)"
+            ]
+        }
+    },
+    {
+        "nome": "Centro Universitário do Espírito Santo",
+        "sigla": "UNESC",
+        "uf": "ES",
+        "categoria": "IES Privada / Comunitária",
+        "papeis": [
+            "Executora",
+            "Proponente",
+            "IES Aderente ao Nossa Bolsa"
+        ],
+        "unidades": {
+            "campi": [
+                "UNESC Colatina (Sede)",
+                "UNESC Serra",
+                "Campus Colatina (Sede)",
+                "Campus Serra"
+            ]
+        }
+    },
+    {
+        "nome": "Centro Universitário FAESA",
+        "sigla": "FAESA",
+        "uf": "ES",
+        "categoria": "IES Privada",
+        "papeis": [
+            "Executora",
+            "Proponente",
+            "IES Aderente ao Nossa Bolsa"
+        ],
+        "unidades": {
+            "campi": [
+                "FAESA Campus I (Vitória - Avenida Vitória)",
+                "FAESA Campus II",
+                "UNICAPE - FAESA Campus III",
+                "Campus I (Vitória - Av. Vitória)",
+                "Campus II (Vitória)",
+                "UNICAPE FAESA (Campus III)"
+            ],
+            "centros_academicos": [
+                "Centro de Tecnologia e Design",
+                "Unidade de Comunicação e Negócios"
+            ],
+            "administrativas": [
+                "Unidade São Pedro",
+                "Núcleo de Aplicação Tecnológica (NAT)"
+            ]
+        }
+    },
+    {
+        "nome": "Centro Universitário Salesiano (Católica Salesiana)",
+        "sigla": "UNISALES",
+        "uf": "ES",
+        "categoria": "IES Privada / Confessional",
+        "papeis": [
+            "Executora",
+            "IES Aderente ao Nossa Bolsa"
+        ],
+        "unidades": {
+            "campi": [
+                "Campus Vitória (Forte São João)"
+            ]
+        }
+    },
+    {
+        "nome": "Centro Universitário São Camilo - Espírito Santo",
+        "sigla": "SÃO CAMILO",
+        "uf": "ES",
+        "categoria": "IES Privada / Confessional",
+        "papeis": [
+            "Executora",
+            "IES Aderente ao Nossa Bolsa"
+        ],
+        "unidades": {
+            "campi": [
+                "Campus Cachoeiro de Itapemirim"
+            ]
+        }
+    },
+    {
+        "nome": "Centro Universitário Vale do Cricaré",
+        "sigla": "VALE DO CRICARÉ (UNIVC)",
+        "uf": "ES",
+        "categoria": "IES Privada",
+        "papeis": [
+            "Executora",
+            "Proponente",
+            "IES Aderente ao Nossa Bolsa"
+        ],
+        "unidades": {
+            "campi": [
+                "Campus São Mateus"
+            ],
+            "pos_graduacao_ppgs": [
+                "Mestrado Profissional em Ciência, Tecnologia e Educação",
+                "PPG em Ciência, Tecnologia e Educação"
+            ]
+        }
+    },
+    {
+        "nome": "Companhia de Gás do Espírito Santo",
+        "sigla": "ES GÁS",
+        "uf": "ES",
+        "categoria": "Empresa Privada Concessionária de Gás Canalizado",
+        "papeis": [
+            "Parceiras Regulatórias de PDI",
+            "Parceira Coinvestidora"
+        ],
+        "unidades": {
+            "administrativas": [
+                "Sede Operacional (Vitória)"
+            ]
+        }
+    },
+    {
+        "nome": "Conselho Nacional das Fundações Estaduais de Amparo à Pesquisa",
+        "sigla": "CONFAP",
+        "uf": "DF",
+        "categoria": "Conselho Nacional de FAPs",
+        "papeis": [
+            "Parceiro de Fomento"
+        ],
+        "unidades": {
+            "administrativas": [
+                "Presidência",
+                "Coordenação de Cooperação e Relações Internacionais"
+            ]
+        }
+    },
+    {
+        "nome": "Conselho Nacional de Desenvolvimento Científico e Tecnológico",
+        "sigla": "CNPq",
+        "uf": "DF",
+        "categoria": "Agência Federal de Fomento à Pesquisa",
+        "papeis": [
+            "Parceiro de Fomento",
+            "Co-financiador"
+        ],
+        "unidades": {
+            "administrativas": [
+                "Diretoria Científica",
+                "Diretoria de Cooperação Institucional (DCOI)"
+            ]
+        }
+    },
+    {
+        "nome": "Coordenação de Aperfeiçoamento de Pessoal de Nível Superior",
+        "sigla": "CAPES",
+        "uf": "DF",
+        "categoria": "Fundação Pública Federal de Pós-Graduação",
+        "papeis": [
+            "Parceiro de Fomento",
+            "Co-financiador"
+        ],
+        "unidades": {
+            "administrativas": [
+                "Diretoria de Avaliação"
+            ],
+            "programas": [
+                "Diretoria de Programas e Bolsas no País"
+            ]
+        }
+    },
+    {
+        "nome": "Departamento de Edificações e de Rodovias do Espírito Santo",
+        "sigla": "DER-ES",
+        "uf": "ES",
+        "categoria": "Autarquia Estadual",
+        "papeis": [
+            "Demandante"
+        ],
+        "unidades": {
+            "administrativas": [
+                "Diretoria-Geral",
+                "Diretoria de Engenharia Rodoviária"
+            ]
+        }
+    },
+    {
+        "nome": "Empresa Brasileira de Pesquisa Agropecuária",
+        "sigla": "EMBRAPA",
+        "uf": "DF",
+        "categoria": "ICT Pública Federal",
+        "papeis": [
+            "Executora",
+            "Proponente",
+            "Parceiro Técnico"
+        ],
+        "unidades": {
+            "administrativas": [
+                "Embrapa Café (Consórcio Pesquisa Café)",
+                "Embrapa Solos"
+            ]
+        }
+    },
+    {
+        "nome": "Escola Superior de Ciências da Santa Casa de Misericórdia de Vitória",
+        "sigla": "EMESCAM",
+        "uf": "ES",
+        "categoria": "IES Privada / Filantrópica",
+        "papeis": [
+            "Executora",
+            "Proponente",
+            "IES Aderente ao Nossa Bolsa"
+        ],
+        "unidades": {
+            "campi": [
+                "Campus Vitória (Ilha de Santa Maria / Hospital Santa Casa)"
+            ],
+            "centros_pesquisa": [
+                "Centro de Habilidades Cirúrgicas",
+                "Laboratório de Doenças Infecciosas"
+            ],
+            "pos_graduacao_ppgs": [
+                "Mestrado Profissional em Políticas Públicas e Desenvolvimento Local",
+                "PPG em Políticas Públicas e Desenvolvimento Local"
+            ],
+            "laboratorios": [
+                "Centro de Pesquisa Clínica"
+            ],
+            "administrativas": [
+                "Núcleo Docente Estruturante de Medicina"
+            ]
+        }
+    },
+    {
+        "nome": "Escola Superior São Francisco de Assis",
+        "sigla": "ESFA",
+        "uf": "ES",
+        "categoria": "IES Privada / Confessional",
+        "papeis": [
+            "Executora",
+            "IES Aderente ao Nossa Bolsa"
+        ],
+        "unidades": {
+            "campi": [
+                "Campus Santa Teresa"
+            ]
+        }
+    },
+    {
+        "nome": "Estaleiro Jurong Aracruz Ltda.",
+        "sigla": "JURONG",
+        "uf": "ES",
+        "categoria": "Empresa Coinvestidora Privada (Construção Naval / Offshore)",
+        "papeis": [
+            "Parceira Coinvestidora"
+        ],
+        "unidades": {
+            "complexos_plantas": [
+                "Estaleiro Barra do Sahy (Aracruz)"
+            ]
+        }
+    },
+    {
+        "nome": "Faculdade / Centro Universitário Multivix",
+        "sigla": "MULTIVIX",
+        "uf": "ES",
+        "categoria": "IES Privada",
+        "papeis": [
+            "Executora",
+            "IES Aderente ao Nossa Bolsa"
+        ],
+        "unidades": {
+            "campi": [
+                "MULTIVIX Vitória",
+                "FSG - MULTIVIX Cariacica",
+                "MULTIVIX Serra",
+                "MULTIVIX Vila Velha",
+                "UNES - MULTIVIX Cachoeiro de Itapemirim",
+                "MULTIVIX Nova Venécia",
+                "MULTIVIX São Mateus",
+                "MULTIVIX Castelo",
+                "FSG Multivix Cariacica (Campo Grande)"
+            ],
+            "administrativas": [
+                "UNES Multivix Cachoeiro de Itapemirim"
+            ]
+        }
+    },
+    {
+        "nome": "Faculdade América",
+        "sigla": "FACULDADE AMÉRICA",
+        "uf": "ES",
+        "categoria": "IES Privada",
+        "papeis": [
+            "Executora",
+            "IES Aderente ao Nossa Bolsa"
+        ],
+        "unidades": {
+            "campi": [
+                "Campus Cachoeiro de Itapemirim"
+            ]
+        }
+    },
+    {
+        "nome": "Faculdade Castelo Branco",
+        "sigla": "CASTELO BRANCO",
+        "uf": "ES",
+        "categoria": "IES Privada",
+        "papeis": [
+            "Executora",
+            "IES Aderente ao Nossa Bolsa"
+        ],
+        "unidades": {
+            "campi": [
+                "Campus Colatina"
+            ]
+        }
+    },
+    {
+        "nome": "Faculdade de Direito de Vitória",
+        "sigla": "FDV",
+        "uf": "ES",
+        "categoria": "IES Privada",
+        "papeis": [
+            "Executora",
+            "Proponente",
+            "IES Aderente ao Nossa Bolsa"
+        ],
+        "unidades": {
+            "campi": [
+                "Campus Vitória (Santa Lúcia)"
+            ],
+            "pos_graduacao_ppgs": [
+                "PPG em Direitos e Garantias Fundamentais (Mestrado e Doutorado)"
+            ]
+        }
+    },
+    {
+        "nome": "Faculdade de Ensino Superior de Linhares",
+        "sigla": "FACELI",
+        "uf": "ES",
+        "categoria": "IES Pública Municipal",
+        "papeis": [
+            "Proponente",
+            "Executora"
+        ],
+        "unidades": {
+            "administrativas": [
+                "Direção Acadêmica",
+                "Núcleo de Pesquisa e Extensão",
+                "Coordenação de Pesquisa e Extensão"
+            ],
+            "campi": [
+                "Linhares (Bairro Novo Horizonte)"
+            ]
+        }
+    },
+    {
+        "nome": "Faculdade de Filosofia, Ciências e Letras de Alegre",
+        "sigla": "FAFIA",
+        "uf": "ES",
+        "categoria": "IES Pública / Autarquia Municipal",
+        "papeis": [
+            "Executora",
+            "Proponente"
+        ],
+        "unidades": {
+            "campi": [
+                "Campus Alegre"
+            ]
+        }
+    },
+    {
+        "nome": "Faculdade de Música do Espírito Santo Maurício de Oliveira",
+        "sigla": "FAMES",
+        "uf": "ES",
+        "categoria": "IES Pública Estadual",
+        "papeis": [
+            "Proponente",
+            "Executora"
+        ],
+        "unidades": {
+            "administrativas": [
+                "Diretoria-Geral",
+                "Coordenação de Pesquisa e Pós-Graduação",
+                "Coordenação de Extensão Musical"
+            ],
+            "projetos_especiais": [
+                "Projeto Banda nas Escolas (parceria SEDU/SEDH)",
+                "Projeto Corais (parceria SEDU)"
+            ],
+            "programas": [
+                "Coordenação do Projeto Banda nas Escolas",
+                "Coordenação do Projeto Corais nas Escolas"
+            ]
+        }
+    },
+    {
+        "nome": "Faculdade do Centro Leste",
+        "sigla": "UCL",
+        "uf": "ES",
+        "categoria": "IES Privada",
+        "papeis": [
+            "Executora"
+        ],
+        "unidades": {
+            "campi": [
+                "Campus Serra (Manguinhos)"
+            ]
+        }
+    },
+    {
+        "nome": "Faculdade Estácio de Sá de Vitória e Vila Velha",
+        "sigla": "ESTÁCIO",
+        "uf": "ES",
+        "categoria": "IES Privada",
+        "papeis": [
+            "Executora",
+            "IES Aderente ao Nossa Bolsa"
+        ],
+        "unidades": {
+            "campi": [
+                "Estácio de Sá - Vitória",
+                "Estácio de Sá - Vila Velha",
+                "Campus Vitória (Jardim Camburi)",
+                "Campus Vila Velha"
+            ]
+        }
+    },
+    {
+        "nome": "Faculdade Novo Milênio",
+        "sigla": "NOVO MILÊNIO",
+        "uf": "ES",
+        "categoria": "IES Privada",
+        "papeis": [
+            "Executora"
+        ],
+        "unidades": {
+            "campi": [
+                "Campus Vila Velha (Coqueiral de Itaparica)"
+            ]
+        }
+    },
+    {
+        "nome": "Faculdade Pio XII",
+        "sigla": "PIO XII",
+        "uf": "ES",
+        "categoria": "IES Privada",
+        "papeis": [
+            "Executora",
+            "IES Aderente ao Nossa Bolsa"
+        ],
+        "unidades": {
+            "campi": [
+                "Campus Cariacica (Unidades 1, 2 e 3 - Campo Grande)"
+            ]
+        }
+    },
+    {
+        "nome": "Faculdade Venda Nova do Imigrante",
+        "sigla": "FAVENI",
+        "uf": "ES",
+        "categoria": "IES Privada",
+        "papeis": [
+            "Executora",
+            "IES Aderente ao Nossa Bolsa"
+        ],
+        "unidades": {
+            "campi": [
+                "Campus Venda Nova do Imigrante"
+            ]
+        }
+    },
+    {
+        "nome": "Faculdades Integradas de Aracruz",
+        "sigla": "FAACZ",
+        "uf": "ES",
+        "categoria": "IES Privada / Comunitária",
+        "papeis": [
+            "Executora",
+            "IES Aderente ao Nossa Bolsa"
+        ],
+        "unidades": {
+            "campi": [
+                "Campus Aracruz"
+            ]
+        }
+    },
+    {
+        "nome": "Federação das Indústrias do Estado do Espírito Santo / Findeslab",
+        "sigla": "FINDES / FINDESLAB",
+        "uf": "ES",
+        "categoria": "Ambiente de Inovação / Sistema S",
+        "papeis": [
+            "Ambiente Promotor de Inovação",
+            "Parceiro Operacional"
+        ],
+        "unidades": {
+            "espacos": [
+                "Hub de Inovação Aberta (Edifício Findes - Vitória)",
+                "Laboratório de Prototipagem e Indústria 4.0"
+            ],
+            "programas": [
+                "Programa de Empreendedorismo Industrial (aceleração de startups industriais com recursos FUNCITEC/MCI)"
+            ],
+            "laboratorios": [
+                "Hub de Inovação Findeslab (Vitória - Edifício Findes)",
+                "Laboratório de Prototipagem e Testes Acelerados"
+            ]
+        }
+    },
+    {
+        "nome": "Financiadora de Estudos e Projetos",
+        "sigla": "FINEP",
+        "uf": "RJ",
+        "categoria": "Empresa Pública Federal de Fomento à Inovação",
+        "papeis": [
+            "Parceiro de Fomento",
+            "Co-financiador"
+        ],
+        "unidades": {
+            "administrativas": [
+                "Diretoria de Desenvolvimento Científico e Tecnológico"
+            ],
+            "centros_academicos": [
+                "Departamento de Fomento Regional e Descentralizado"
+            ]
+        }
+    },
+    {
+        "nome": "FUCAPE Business School",
+        "sigla": "FUCAPE",
+        "uf": "ES",
+        "categoria": "IES Privada",
+        "papeis": [
+            "Executora",
+            "Proponente",
+            "IES Aderente ao Nossa Bolsa"
+        ],
+        "unidades": {
+            "campi": [
+                "Campus Vitória (Mata da Praia - Sede)",
+                "Campus Linhares"
+            ],
+            "inovacao_nits": [
+                "Hub Fucape de Inovação",
+                "Hub de Inovação Fucape"
+            ],
+            "pos_graduacao_ppgs": [
+                "PPG em Ciências Contábeis e Administração (Mestrado e Doutorado)"
+            ]
+        }
+    },
+    {
+        "nome": "Fundação Ceciliano Abel de Almeida",
+        "sigla": "FCAA",
+        "uf": "ES",
+        "categoria": "Fundação de Apoio",
+        "papeis": [
+            "Gestora Financeira Interveniente"
+        ],
+        "unidades": {
+            "administrativas": [
+                "Superintendência",
+                "Coordenação de Projetos Institucionais"
+            ],
+            "campi": [
+                "Sede Vitória (Campus Goiabeiras / UFES)"
+            ],
+            "programas": [
+                "Coordenação de Projetos Culturais e Editoriais"
+            ]
+        }
+    },
+    {
+        "nome": "Fundação de Amparo à Pesquisa e Inovação do Espírito Santo",
+        "sigla": "FAPES",
+        "uf": "ES",
+        "categoria": "Fundação Pública Estadual de Fomento",
+        "papeis": [
+            "Órgão Financiador e Gestor"
+        ],
+        "unidades": {
+            "governanca_colegiados": [
+                "Conselho Científico-Administrativo (CCAF)",
+                "Câmaras de Assessoramento Técnico-Científico"
+            ],
+            "diretorias": [
+                "Diretoria Executiva (DIREX)",
+                "Diretoria da Presidência (DIPRE)",
+                "Diretoria Técnico-Científica e de Inovação (DITEC)",
+                "Diretoria Administrativo-Financeira (DIRAF)"
+            ],
+            "gerencias_tecnicas": [
+                "Gerência de Formação e Capacitação Técnico-Científica (GECAP)",
+                "Gerência de Pesquisa e Difusão Científica e Tecnológica (GEPED)",
+                "Gerência de Inovação e Desenvolvimento (GEINOV)",
+                "Gerência de Gestão Orçamentária e Financeira (GEPOF)"
+            ],
+            "nucleos_orgaos_apoio": [
+                "Núcleo de Parcerias Estratégicas Interinstitucionais (NUPAR)",
+                "Núcleo de Programas Estratégicos e Extensão (NUPEX)",
+                "Unidade Executora de Controle Interno (UECI)",
+                "Assessoria Jurídica (ASJUR)"
+            ]
+        }
+    },
+    {
+        "nome": "Fundação de Apoio ao Desenvolvimento da Ciência e Tecnologia",
+        "sigla": "FACTO",
+        "uf": "ES",
+        "categoria": "Fundação de Apoio",
+        "papeis": [
+            "Gestora Financeira Interveniente"
+        ],
+        "unidades": {
+            "administrativas": [
+                "Diretoria Executiva",
+                "Gerência de Projetos Tecnológicos",
+                "Sede Vitória (Jucutuquara)"
+            ],
+            "programas": [
+                "Núcleo de Gestão de Projetos do IFES"
+            ]
+        }
+    },
+    {
+        "nome": "Fundação de Apoio à Pesquisa Agrícola",
+        "sigla": "FUNDAG",
+        "uf": "ES",
+        "categoria": "Fundação de Apoio",
+        "papeis": [
+            "Gestora Financeira Interveniente"
+        ],
+        "unidades": {
+            "administrativas": [
+                "Coordenação de Convênios Agropecuários",
+                "Unidade Operacional Espírito Santo (Apoio INCAPER)"
+            ]
+        }
+    },
+    {
+        "nome": "Fundação Espírito-Santense de Tecnologia",
+        "sigla": "FEST",
+        "uf": "ES",
+        "categoria": "Fundação de Apoio",
+        "papeis": [
+            "Gestora Financeira Interveniente"
+        ],
+        "unidades": {
+            "administrativas": [
+                "Diretoria Executiva",
+                "Gerência de Projetos",
+                "Setor de Compras e Importação",
+                "Setor de Prestação de Contas",
+                "Gerência de Compras e Importações"
+            ],
+            "campi": [
+                "Sede Administrativa (Vitória - Goiabeiras / Campus UFES)"
+            ],
+            "programas": [
+                "Gerência de Gestão de Projetos e Convênios"
+            ],
+            "estacoes_fazendas": [
+                "Gerência Financeira e Prestação de Contas"
+            ]
+        }
+    },
+    {
+        "nome": "Fundação Oswaldo Cruz",
+        "sigla": "FIOCRUZ",
+        "uf": "RJ",
+        "categoria": "ICT Pública Federal / Saúde",
+        "papeis": [
+            "Executora",
+            "Proponente",
+            "Parceiro Técnico"
+        ],
+        "unidades": {
+            "administrativas": [
+                "Instituto de Tecnologia em Imunobiológicos (Bio-Manguinhos)",
+                "Instituto Oswaldo Cruz (IOC)"
+            ]
+        }
+    },
+    {
+        "nome": "Instituto Capixaba de Ensino, Pesquisa e Inovação em Saúde",
+        "sigla": "ICEPI",
+        "uf": "ES",
+        "categoria": "ICT Pública Estadual / Saúde (SESA)",
+        "papeis": [
+            "Executora",
+            "Demandante"
+        ],
+        "unidades": {
+            "administrativas": [
+                "Diretoria-Geral",
+                "Coordenação de Pesquisa e Evidências em Saúde",
+                "Coordenação de Evidências em Saúde Coletiva",
+                "Gerência de Ensino e Pesquisa",
+                "Núcleo Técnico Científico do PPSUS Espírito Santo"
+            ],
+            "programas": [
+                "Programa Pesquisa para o SUS (PPSUS)",
+                "Programa de Residência Médica e Multiprofissional"
+            ]
+        }
+    },
+    {
+        "nome": "Instituto Capixaba de Pesquisa, Assistência Técnica e Extensão Rural",
+        "sigla": "INCAPER",
+        "uf": "ES",
+        "categoria": "ICT Pública Estadual",
+        "papeis": [
+            "Proponente",
+            "Executora",
+            "Demandante"
+        ],
+        "unidades": {
+            "administrativas": [
+                "Diretoria-Presidente",
+                "Diretoria Técnica",
+                "Gerência de Pesquisa",
+                "Sede / Diretoria-Geral (Vitória)"
+            ],
+            "inovacao_nits": [
+                "Incaper-NIT (Núcleo de Inovação Tecnológica)",
+                "Núcleo de Inovação Tecnológica (Incaper-NIT)"
+            ],
+            "estacoes_fazendas": [
+                "Centro Regional de Desenvolvimento Rural (CRDR) Centro-Serrano",
+                "Fazenda Experimental de Marilândia",
+                "Fazenda Experimental de Linhares",
+                "Fazenda Bananal do Norte (Cachoeiro de Itapemirim)",
+                "Fazenda Experimental de Sooretama",
+                "Centro Regional de Desenvolvimento Rural Centro-Serrano (CRDR)",
+                "Fazenda Experimental Bananal do Norte (Cachoeiro de Itapemirim)"
+            ],
+            "laboratorios": [
+                "Laboratório de Solos e Nutrição de Plantas",
+                "Laboratório de Entomologia e Fitopatologia",
+                "Laboratório de Biotecnologia Vegetal"
+            ]
+        }
+    },
+    {
+        "nome": "Instituto de Defesa Agropecuária e Florestal do Espírito Santo",
+        "sigla": "IDAF",
+        "uf": "ES",
+        "categoria": "Autarquia Estadual",
+        "papeis": [
+            "Demandante",
+            "Parceiro Técnico"
+        ],
+        "unidades": {
+            "administrativas": [
+                "Diretoria Técnica",
+                "Gerência de Defesa Sanitária Vegetal e Animal"
+            ],
+            "programas": [
+                "Coordenação do Programa IDAF 4.0",
+                "Coordenação do Projeto IntegraCAR (Cadastro Ambiental Rural)"
+            ]
+        }
+    },
+    {
+        "nome": "Instituto de Tecnologia da Informação e Comunicação do Estado do Espírito Santo",
+        "sigla": "PRODEST",
+        "uf": "ES",
+        "categoria": "Empresa Pública Estadual de TIC",
+        "papeis": [
+            "Parceiro Tecnológico",
+            "Provedor de Infraestrutura"
+        ],
+        "unidades": {
+            "administrativas": [
+                "Diretoria-Presidente",
+                "Diretoria Técnica de Sistemas e Infraestrutura",
+                "Gerência de Infraestrutura e Redes",
+                "Equipe Gestora do Sistema E-Docs e E-Flow"
+            ],
+            "plataformas": [
+                "Sistema de Gestão de Documentos (E-Docs)",
+                "Sistema de Gestão da FAPES (SIGFAPES)",
+                "Sistema de Automação de Fluxos (E-Flow)"
+            ],
+            "centros_academicos": [
+                "Centro de Operações de Rede do Governo Estadual"
+            ]
+        }
+    },
+    {
+        "nome": "Instituto Estadual de Meio Ambiente e Recursos Hídricos",
+        "sigla": "IEMA",
+        "uf": "ES",
+        "categoria": "Autarquia Estadual",
+        "papeis": [
+            "Demandante",
+            "Parceiro Técnico"
+        ],
+        "unidades": {
+            "administrativas": [
+                "Coordenação de Educação Ambiental",
+                "Diretoria Técnica",
+                "Coordenação de Áreas Protegidas e Biodiversidade"
+            ],
+            "centros_credenciados": [
+                "Centros de Educação Ambiental (CEAs) do Estado"
+            ]
+        }
+    },
+    {
+        "nome": "Instituto Federal de Educação, Ciência e Tecnologia do Espírito Santo",
+        "sigla": "IFES",
+        "uf": "ES",
+        "categoria": "ICT e IES Pública",
+        "papeis": [
+            "Proponente",
+            "Executora"
+        ],
+        "unidades": {
+            "administrativas": [
+                "Reitoria",
+                "Pró-Reitoria de Pesquisa e Pós-Graduação (PRPPG)",
+                "Pró-Reitoria de Extensão (PROEX)"
+            ],
+            "inovacao_nits": [
+                "NIT-Ifes (Núcleo de Inovação Tecnológica)",
+                "Agifes (Agência de Inovação do Ifes)",
+                "Rede de Incubadoras do Ifes",
+                "Agência de Inovação do Ifes (Agifes / NIT-Ifes)"
+            ],
+            "departamentos": [
+                "Departamento de Engenharia Mecânica e Elétrica"
+            ],
+            "campi": [
+                "Campus Vitória",
+                "Campus Vila Velha",
+                "Campus Serra",
+                "Campus Cariacica",
+                "Campus Aracruz",
+                "Campus Colatina",
+                "Campus Linhares",
+                "Campus São Mateus",
+                "Campus Cachoeiro de Itapemirim",
+                "Campus Alegre",
+                "Campus Itapina",
+                "Campus Santa Teresa",
+                "Campus Venda Nova do Imigrante",
+                "Campus Guarapari",
+                "Campus Piúma",
+                "Campus Montanha",
+                "Campus Ibatiba",
+                "Campus Viana",
+                "Campus Barra de São Francisco"
+            ],
+            "pos_graduacao_ppgs": [
+                "Mestrado Profissional em Educação Profissional e Tecnológica (ProfEPT)",
+                "PPG em Agroecologia",
+                "PPG em Engenharia Metalúrgica e de Materiais",
+                "PPG em Educação Profissional e Tecnológica (ProfEPT)"
+            ],
+            "centros_academicos": [
+                "Departamento de Engenharia Mecânica e Engenharia Elétrica"
+            ]
+        }
+    },
+    {
+        "nome": "Instituto Jones dos Santos Neves",
+        "sigla": "IJSN",
+        "uf": "ES",
+        "categoria": "Autarquia Estadual de Pesquisa",
+        "papeis": [
+            "Proponente",
+            "Executora",
+            "Demandante"
+        ],
+        "unidades": {
+            "administrativas": [
+                "Diretoria de Estudos e Pesquisas",
+                "Coordenação de Indicadores Sociais",
+                "Diretoria-Presidente",
+                "Coordenação de Indicadores Socioeconômicos"
+            ],
+            "centros": [
+                "Centros de Referência das Juventudes (CRJs)"
+            ],
+            "inovacao_nits": [
+                "Coordenação do Sistema de Monitoramento e Avaliação de Políticas Públicas (SiMAPP)"
+            ]
+        }
+    },
+    {
+        "nome": "Instituto Sustentabilidade Brasil",
+        "sigla": "ISB",
+        "uf": "ES",
+        "categoria": "Organização da Sociedade Civil (OSC / Terceiro Setor)",
+        "papeis": [
+            "Executora",
+            "Parceiro Técnico"
+        ],
+        "unidades": {
+            "administrativas": [
+                "Sede Operacional (Vila Velha)"
+            ]
+        }
+    },
+    {
+        "nome": "Lume Robotics Ltda.",
+        "sigla": "LUME ROBOTICS",
+        "uf": "ES",
+        "categoria": "Empresa de Base Tecnológica / Startup Coinvestidora",
+        "papeis": [
+            "Beneficiária de Subvenção Econômica",
+            "Parceira Coinvestidora"
+        ],
+        "unidades": {
+            "administrativas": [
+                "Sede de P&D (Vitória)"
+            ]
+        }
+    },
+    {
+        "nome": "Petróleo Brasileiro S.A.",
+        "sigla": "PETROBRAS",
+        "uf": "RJ",
+        "categoria": "Empresa Estatal Mista (Energia e Petróleo)",
+        "papeis": [
+            "Parceira Coinvestidora",
+            "Demandante de Pesquisa"
+        ],
+        "unidades": {
+            "administrativas": [
+                "Unidade de Operações de Exploração e Produção do Espírito Santo (UO-ES)"
+            ]
+        }
+    },
+    {
+        "nome": "Polícia Civil do Estado do Espírito Santo / Polícia Científica",
+        "sigla": "PCES / PCIES",
+        "uf": "ES",
+        "categoria": "Órgão Público Estadual (Administração Direta / Segurança Pública)",
+        "papeis": [
+            "Demandante"
+        ],
+        "unidades": {
+            "centros_academicos": [
+                "Departamento de Criminalística"
+            ],
+            "administrativas": [
+                "Instituto Médico Legal (IML)",
+                "Coordenação de Pesquisa Forense e Pericial"
+            ]
+        }
+    },
+    {
+        "nome": "Receita Federal do Brasil / Alfândega do Porto de Vitória",
+        "sigla": "RFB / ALF-VIT",
+        "uf": "ES",
+        "categoria": "Órgão Público Federal",
+        "papeis": [
+            "Demandante",
+            "Parceiro Técnico"
+        ],
+        "unidades": {
+            "programas": [
+                "Alfândega do Porto de Vitória (ALF/VIT - Projeto e-Trânsito Aduaneiro)"
+            ]
+        }
+    },
+    {
+        "nome": "Rede de Ensino Doctum / Faculdades Doctum",
+        "sigla": "DOCTUM",
+        "uf": "ES",
+        "categoria": "IES Privada",
+        "papeis": [
+            "Executora",
+            "IES Aderente ao Nossa Bolsa"
+        ],
+        "unidades": {
+            "campi": [
+                "Campus Vitória",
+                "Campus Vila Velha",
+                "Campus Serra",
+                "Campus Guarapari"
+            ]
+        }
+    },
+    {
+        "nome": "Secretaria de Estado da Agricultura, Abastecimento, Aquicultura e Pesca",
+        "sigla": "SEAG",
+        "uf": "ES",
+        "categoria": "Órgão Público Estadual (Administração Direta)",
+        "papeis": [
+            "Demandante",
+            "Co-financiador"
+        ],
+        "unidades": {
+            "administrativas": [
+                "Gabinete do Secretário",
+                "Subsecretaria de Agropecuária",
+                "Subsecretaria de Desenvolvimento Rural"
+            ],
+            "programas": [
+                "Programa FAPES/SEAG InovAgro (Pesquisa e Inovação Agropecuária)",
+                "Comitê Técnico Gestor do Programa InovAgro"
+            ]
+        }
+    },
+    {
+        "nome": "Secretaria de Estado da Ciência, Tecnologia, Inovação e Educação Profissional",
+        "sigla": "SECTI",
+        "uf": "ES",
+        "categoria": "Órgão Público Estadual (Administração Direta)",
+        "papeis": [
+            "Órgão Vinculador",
+            "Formulador de Políticas",
+            "Demandante"
+        ],
+        "unidades": {
+            "administrativas": [
+                "Gabinete do Secretário",
+                "Subsecretaria de Ciência, Tecnologia e Inovação",
+                "Subsecretaria de Educação Profissional"
+            ],
+            "centros_vinculados": [
+                "Centro Técnico Criativo (CTC)",
+                "Centro Estadual de Educação Técnica Vasco Coutinho"
+            ],
+            "inovacao_nits": [
+                "Redetec (Rede de Inovação e Tecnologia)"
+            ],
+            "programas": [
+                "Coordenação dos Centros Estaduais de Educação Técnica (CEETs)"
+            ]
+        }
+    },
+    {
+        "nome": "Secretaria de Estado da Cultura",
+        "sigla": "SECULT",
+        "uf": "ES",
+        "categoria": "Órgão Público Estadual (Administração Direta)",
+        "papeis": [
+            "Demandante",
+            "Co-financiador"
+        ],
+        "unidades": {
+            "administrativas": [
+                "Gabinete do Secretário",
+                "Gerência do Fundo de Cultura do Espírito Santo (Funcultura)"
+            ],
+            "programas": [
+                "Coordenação do Programa Pensar Cultura"
+            ]
+        }
+    },
+    {
+        "nome": "Secretaria de Estado da Educação",
+        "sigla": "SEDU",
+        "uf": "ES",
+        "categoria": "Órgão Público Estadual (Administração Direta)",
+        "papeis": [
+            "Demandante",
+            "Co-financiador"
+        ],
+        "unidades": {
+            "administrativas": [
+                "Gabinete do Secretário",
+                "Gerência de Ensino Médio",
+                "Gerência de Tecnologias Educacionais",
+                "Superintendências Regionais de Educação (SREs)"
+            ],
+            "programas": [
+                "Programa Letramento Científico",
+                "Iniciação Científica Júnior (PIC Jr)",
+                "Escola do Futuro",
+                "Coordenação do Programa PIPEI",
+                "Coordenação do Programa PIC Jr",
+                "Coordenação do ProEduca",
+                "Coordenação do SerONU"
+            ]
+        }
+    },
+    {
+        "nome": "Secretaria de Estado da Fazenda",
+        "sigla": "SEFAZ",
+        "uf": "ES",
+        "categoria": "Órgão Público Estadual (Administração Direta)",
+        "papeis": [
+            "Demandante",
+            "Parceiro Técnico"
+        ],
+        "unidades": {
+            "administrativas": [
+                "Gabinete do Secretário",
+                "Receita Estadual"
+            ]
+        }
+    },
+    {
+        "nome": "Secretaria de Estado da Justiça",
+        "sigla": "SEJUS",
+        "uf": "ES",
+        "categoria": "Órgão Público Estadual (Administração Direta)",
+        "papeis": [
+            "Demandante",
+            "Co-financiador"
+        ],
+        "unidades": {
+            "administrativas": [
+                "Gabinete do Secretário",
+                "Diretoria de Ressocialização e Qualificação do Sistema Prisional"
+            ]
+        }
+    },
+    {
+        "nome": "Secretaria de Estado da Saúde",
+        "sigla": "SESA",
+        "uf": "ES",
+        "categoria": "Órgão Público Estadual (Administração Direta)",
+        "papeis": [
+            "Demandante",
+            "Co-financiador"
+        ],
+        "unidades": {
+            "orgaos_vinculados": [
+                "Instituto Capixaba de Ensino, Pesquisa e Inovação em Saúde (ICEPi)",
+                "Laboratório Central de Saúde Pública do Espírito Santo (LACEN/ES)"
+            ],
+            "programas": [
+                "Programa Pesquisa para o SUS (PPSUS)"
+            ],
+            "administrativas": [
+                "Gabinete do Secretário",
+                "Comissão Gestora Bipartite do PPSUS Espírito Santo",
+                "Gerência de Vigilância em Saúde (Pesquisas em Febre Oropouche)"
+            ]
+        }
+    },
+    {
+        "nome": "Secretaria de Estado de Direitos Humanos",
+        "sigla": "SEDH",
+        "uf": "ES",
+        "categoria": "Órgão Público Estadual (Administração Direta)",
+        "papeis": [
+            "Demandante",
+            "Co-financiador"
+        ],
+        "unidades": {
+            "administrativas": [
+                "Gabinete do Secretário"
+            ],
+            "programas": [
+                "Coordenação dos Centros de Referência das Juventudes (CRJs)"
+            ]
+        }
+    },
+    {
+        "nome": "Secretaria de Estado de Gestão e Recursos Humanos",
+        "sigla": "SEGER",
+        "uf": "ES",
+        "categoria": "Órgão Público Estadual (Administração Direta)",
+        "papeis": [
+            "Demandante",
+            "Co-financiador"
+        ],
+        "unidades": {
+            "administrativas": [
+                "Gabinete do Secretário",
+                "Escola de Serviço Público do Espírito Santo (ESESP)",
+                "Laboratório de Inovação na Gestão (LAB.ges)",
+                "Gabinete da Secretária"
+            ],
+            "programas": [
+                "Programa Talentos Globais - Mestrado Internacional para Servidores",
+                "Inova Seger / Residência em Gestão Governamental",
+                "Coordenação do Prêmio Inoves",
+                "Gerência de Desenvolvimento de Pessoas (Programa Talentos Globais)"
+            ],
+            "laboratorios": [
+                "Laboratório de Inovação na Gestão do Espírito Santo (LAB.ges)"
+            ],
+            "inovacao_nits": [
+                "Coordenação do Programa Inova Seger"
+            ]
+        }
+    },
+    {
+        "nome": "Secretaria de Estado de Saneamento, Habitação e Desenvolvimento Urbano",
+        "sigla": "SEDURB",
+        "uf": "ES",
+        "categoria": "Órgão Público Estadual (Administração Direta)",
+        "papeis": [
+            "Demandante"
+        ],
+        "unidades": {
+            "administrativas": [
+                "Diretoria de Saneamento e Habitação"
+            ]
+        }
+    },
+    {
+        "nome": "Secretaria de Estado de Trabalho, Assistência e Desenvolvimento Social",
+        "sigla": "SETADES",
+        "uf": "ES",
+        "categoria": "Órgão Público Estadual (Administração Direta)",
+        "papeis": [
+            "Demandante",
+            "Co-financiador"
+        ],
+        "unidades": {
+            "administrativas": [
+                "Gabinete da Secretária",
+                "Subsecretaria de Trabalho e Qualificação"
+            ]
+        }
+    },
+    {
+        "nome": "Secretaria de Estado do Meio Ambiente e Recursos Hídricos",
+        "sigla": "SEAMA",
+        "uf": "ES",
+        "categoria": "Órgão Público Estadual (Administração Direta)",
+        "papeis": [
+            "Demandante",
+            "Co-financiador"
+        ],
+        "unidades": {
+            "administrativas": [
+                "Gabinete do Secretário"
+            ],
+            "programas": [
+                "Coordenação do Programa Pró-Sustentável",
+                "Coordenação do Inventário de Emissões de GEE"
+            ]
+        }
+    },
+    {
+        "nome": "Secretaria de Estado do Turismo",
+        "sigla": "SETUR",
+        "uf": "ES",
+        "categoria": "Órgão Público Estadual (Administração Direta)",
+        "papeis": [
+            "Demandante"
+        ],
+        "unidades": {
+            "administrativas": [
+                "Coordenação de Planejamento e Estruturação Turística"
+            ]
+        }
+    },
+    {
+        "nome": "Serviço Federal de Processamento de Dados",
+        "sigla": "SERPRO",
+        "uf": "DF",
+        "categoria": "Empresa Pública Federal de TIC",
+        "papeis": [
+            "Parceiro Tecnológico"
+        ],
+        "unidades": {
+            "administrativas": [
+                "Superintendência de Soluções de Comércio Exterior"
+            ]
+        }
+    },
+    {
+        "nome": "Sindicato do Comércio Atacadista e Distribuidor do Estado do Espírito Santo",
+        "sigla": "SINCADES",
+        "uf": "ES",
+        "categoria": "Ambiente de Inovação / Entidade Patronal",
+        "papeis": [
+            "Parceiro de Inovação Setorial"
+        ],
+        "unidades": {
+            "programas": [
+                "Aceleração de Soluções e Startups para a Cadeia de Logística e Comércio Atacadista"
+            ],
+            "inovacao_nits": [
+                "Hub de Inovação Sincades Tech"
+            ]
+        }
+    },
+    {
+        "nome": "Universidade Federal do Espírito Santo",
+        "sigla": "UFES",
+        "uf": "ES",
+        "categoria": "ICT e IES Pública",
+        "papeis": [
+            "Proponente",
+            "Executora"
+        ],
+        "unidades": {
+            "administrativas": [
+                "Reitoria",
+                "Pró-Reitoria de Pesquisa e Pós-Graduação (PRPPG)",
+                "Pró-Reitoria de Extensão (PROEX)",
+                "Pró-Reitoria de Planejamento (PROPLAN)",
+                "Pró-Reitoria de Administração (PROAD)",
+                "Pró-Reitoria de Graduação (PROGRAD)"
+            ],
+            "inovacao_nits": [
+                "INIT-Ufes (Diretoria de Inovação Tecnológica / Núcleo de Inovação Tecnológica)"
+            ],
+            "centros_academicos": [
+                "Centro Tecnológico (CT)",
+                "Centro de Ciências da Saúde (CCS)",
+                "Centro de Ciências Humanas e Naturais (CCHN)",
+                "Centro de Ciências Exatas (CCE)",
+                "Centro de Ciências Jurídicas e Econômicas (CCJE)",
+                "Centro de Educação Física e Desportos (CEFD)",
+                "Centro de Educação (CE)",
+                "Centro de Ciências Agrárias e Engenharias (CCAE)",
+                "Centro Universitário Norte do Espírito Santo (CEUNES)"
+            ],
+            "campi": [
+                "Campus Goiabeiras (Vitória)",
+                "Campus Maruípe (Vitória)",
+                "Campus de Alegre (Alegre)",
+                "Campus São Mateus (São Mateus)"
+            ],
+            "pos_graduacao_ppgs": [
+                "PPG em Informática",
+                "PPG em Engenharia Elétrica",
+                "PPG em Biotecnologia",
+                "PPG em Doenças Infecciosas",
+                "PPG em Saúde Coletiva",
+                "PPG em Química",
+                "PPG em Física",
+                "PPG em História",
+                "PPG em Educação"
+            ],
+            "laboratorios": [
+                "LabTel (Laboratório de Telecomunicações)",
+                "LabPetro (Laboratório de Pesquisa em Petróleo)",
+                "Lab NB-3 (Laboratório de Nível de Biossegurança 3)",
+                "LabPOC (Laboratório de Polímeros e Compósitos)"
+            ]
+        }
+    },
+    {
+        "nome": "Universidade Vila Velha",
+        "sigla": "UVV",
+        "uf": "ES",
+        "categoria": "IES Privada / Comunitária",
+        "papeis": [
+            "Executora",
+            "Proponente",
+            "IES Aderente ao Nossa Bolsa"
+        ],
+        "unidades": {
+            "campi": [
+                "Campus Boa Vista (Vila Velha - Sede)",
+                "Campus Nossa Senhora da Penha (Hospital Veterinário)"
+            ],
+            "inovacao_nits": [
+                "Inova UVV (Núcleo de Inovação e Transferência Tecnológica)"
+            ],
+            "pos_graduacao_ppgs": [
+                "PPG em Biotecnologia Vegetal",
+                "PPG em Ciência Animal",
+                "PPG em Ecologia de Ecossistemas",
+                "PPG em Ciências Farmacêuticas",
+                "PPG em Segurança Pública"
+            ]
+        }
+    },
+    {
+        "nome": "Vale S.A.",
+        "sigla": "VALE",
+        "uf": "ES",
+        "categoria": "Empresa Coinvestidora Privada (Mineração e Logística)",
+        "papeis": [
+            "Parceira Coinvestidora"
+        ],
+        "unidades": {
+            "complexos": [
+                "Complexo de Tubarão (Vitória/Serra)"
+            ],
+            "complexos_plantas": [
+                "Complexo de Tubarão (Vitória)"
+            ],
+            "administrativas": [
+                "Instituto Tecnológico Vale (ITV)"
+            ]
+        }
+    }
+]
+
+
+def main():
+    target_path = ROOT / "tools" / "instituicoes.json"
+    with open(target_path, "w", encoding="utf-8") as f:
+        json.dump(INSTITUICOES, f, indent=2, ensure_ascii=False)
+        f.write("\n")
+    print(f"Catálogo gerado com sucesso em {target_path} ({len(INSTITUICOES)} instituições).")
+
+
+if __name__ == "__main__":
+    main()
